@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="https://arlier1.github.io/"/>
-  <updated>2017-04-16T14:29:36.645Z</updated>
+  <updated>2017-04-16T14:34:06.633Z</updated>
   <id>https://arlier1.github.io/</id>
   
   <author>
@@ -20,13 +20,15 @@
     <link href="https://arlier1.github.io/2017/04/16/installhexo/"/>
     <id>https://arlier1.github.io/2017/04/16/installhexo/</id>
     <published>2017-04-16T14:26:14.000Z</published>
-    <updated>2017-04-16T14:29:36.645Z</updated>
+    <updated>2017-04-16T14:34:06.633Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="testing"><a href="#testing" class="headerlink" title="testing"></a>testing</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="HEXO-安装记录"><a href="#HEXO-安装记录" class="headerlink" title="HEXO 安装记录"></a>HEXO 安装记录</h1><p>主要参考<a href="http://www.jianshu.com/p/0823e387c019" target="_blank" rel="external">这篇文章</a></p>
+<h3 id="hexo-主页无法显示"><a href="#hexo-主页无法显示" class="headerlink" title="hexo 主页无法显示"></a>hexo 主页无法显示</h3><p><code>root: /</code>改成<code>root:/https://arlier1.github.io/arlier1.github.io/</code> 就可以了</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;testing&quot;&gt;&lt;a href=&quot;#testing&quot; class=&quot;headerlink&quot; title=&quot;testing&quot;&gt;&lt;/a&gt;testing&lt;/h1&gt;
+      &lt;h1 id=&quot;HEXO-安装记录&quot;&gt;&lt;a href=&quot;#HEXO-安装记录&quot; class=&quot;headerlink&quot; title=&quot;HEXO 安装记录&quot;&gt;&lt;/a&gt;HEXO 安装记录&lt;/h1&gt;&lt;p&gt;主要参考&lt;a href=&quot;http://www.jianshu.com/p/0823
     
     </summary>
     
