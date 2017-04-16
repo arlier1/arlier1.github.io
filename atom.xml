@@ -77,4 +77,39 @@
     
   </entry>
   
+  <entry>
+    <title>HEXO 安装记录</title>
+    <link href="https://arlier1.github.io/2016/04/16/installhexo1/"/>
+    <id>https://arlier1.github.io/2016/04/16/installhexo1/</id>
+    <published>2016-04-16T14:26:14.000Z</published>
+    <updated>2017-04-16T15:01:36.599Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HEXO-安装记录"><a href="#HEXO-安装记录" class="headerlink" title="HEXO 安装记录"></a>HEXO 安装记录</h1><p>再次折腾HEXO有几个原因：</p>
+<ul>
+<li>之前在本地电脑上写博客，换台电脑就不方便了（尤其是我对git还不熟悉）；频繁更换环境很容易出问题，于是决定在服务器上写博客。这样每次用一些在线的Markdown编辑器（百度非常多）写好博客之后ssh登录服务器，轻松就能完成一篇博客。</li>
+<li>在服务器上很容易实现文件的备份，不用担心数据丢失问题。</li>
+<li>打算好好经营一个博客，记录一些比较有用和重要的东西，如果有人能看到也算是一种分享；初步的计划是每篇博客自己至少认真修改两遍，不能出现低级错误，并尽量使排版美观。</li>
+<li>觉得记忆力不如以前了，许多做过的东西不记下来下次还要到其他地方去查。</li>
+</ul>
+<p>安装过程主要参考<a href="http://www.jianshu.com/p/0823e387c019" target="_blank" rel="external">这篇文章</a>，因为之前花了许多</p>
+<h3 id="hexo-主页无法显示"><a href="#hexo-主页无法显示" class="headerlink" title="hexo 主页无法显示"></a>hexo 主页无法显示</h3><p><code>root: /</code>改成<code>root:/https://arlier1.github.io/arlier1.github.io/</code> 就可以了</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HEXO-安装记录&quot;&gt;&lt;a href=&quot;#HEXO-安装记录&quot; class=&quot;headerlink&quot; title=&quot;HEXO 安装记录&quot;&gt;&lt;/a&gt;HEXO 安装记录&lt;/h1&gt;&lt;p&gt;再次折腾HEXO有几个原因：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;之前在本地电脑上写博客，换台
+    
+    </summary>
+    
+    
+      <category term="nstall" scheme="https://arlier1.github.io/tags/nstall/"/>
+    
+      <category term="exo" scheme="https://arlier1.github.io/tags/exo/"/>
+    
+      <category term="ecord" scheme="https://arlier1.github.io/tags/ecord/"/>
+    
+  </entry>
+  
 </feed>
