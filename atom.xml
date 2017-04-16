@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="https://arlier1.github.io/"/>
-  <updated>2017-04-16T12:41:37.503Z</updated>
+  <updated>2017-04-16T14:27:40.142Z</updated>
   <id>https://arlier1.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>installhexo</title>
+    <link href="https://arlier1.github.io/2017/04/16/installhexo/"/>
+    <id>https://arlier1.github.io/2017/04/16/installhexo/</id>
+    <published>2017-04-16T14:26:14.000Z</published>
+    <updated>2017-04-16T14:27:40.142Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="testing"><a href="#testing" class="headerlink" title="testing"></a>testing</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;testing&quot;&gt;&lt;a href=&quot;#testing&quot; class=&quot;headerlink&quot; title=&quot;testing&quot;&gt;&lt;/a&gt;testing&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="-install -hexo -record" scheme="https://arlier1.github.io/tags/install-hexo-record/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
