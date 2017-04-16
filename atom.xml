@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="https://arlier1.github.io/"/>
-  <updated>2017-04-16T14:27:40.142Z</updated>
+  <updated>2017-04-16T14:29:36.645Z</updated>
   <id>https://arlier1.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://arlier1.github.io/2017/04/16/installhexo/"/>
     <id>https://arlier1.github.io/2017/04/16/installhexo/</id>
     <published>2017-04-16T14:26:14.000Z</published>
-    <updated>2017-04-16T14:27:40.142Z</updated>
+    <updated>2017-04-16T14:29:36.645Z</updated>
     
     <content type="html"><![CDATA[<h1 id="testing"><a href="#testing" class="headerlink" title="testing"></a>testing</h1>]]></content>
     
@@ -31,7 +31,11 @@
     </summary>
     
     
-      <category term="-install -hexo -record" scheme="https://arlier1.github.io/tags/install-hexo-record/"/>
+      <category term="nstall" scheme="https://arlier1.github.io/tags/nstall/"/>
+    
+      <category term="exo" scheme="https://arlier1.github.io/tags/exo/"/>
+    
+      <category term="ecord" scheme="https://arlier1.github.io/tags/ecord/"/>
     
   </entry>
   
