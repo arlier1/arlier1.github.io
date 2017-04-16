@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 零基础建立HEXO+github博客的详细教程 · Hexo</title><meta name="description" content="零基础建立HEXO+github博客的详细教程 - arlier"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="https:/arlier1.github.io/favicon.png"><link rel="stylesheet" href="https:/arlier1.github.io/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://arlier1.github.io/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="https:/arlier1.github.io/" class="logo-link"><img src="https:/arlier1.github.io/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="https:/arlier1.github.io/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="https:/arlier1.github.io/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://arlier.work" target="_blank" class="nav-list-link">WORK</a></li><li class="nav-list-item"><a href="https://github.com/arlier" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="http://hithep.science" target="_blank" class="nav-list-link">HITHEP</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">零基础建立HEXO+github博客的详细教程</h1><div class="post-info">Jun 23, 2016</div><div class="post-content"><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>使用 <strong>HEXO</strong> 和github可以快速建立一个博客系统，成本几乎为零。如果你是一个小白，你所需要的仅仅是耐心和一些时间。这样一个博客的工作原理是：利用hexo根据你写的源文件生成博客的所有网页内容，再通过github把这些内容展示出来。本文以win10环境（其他环境类似）下为例，详细介绍搭建过程。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在建立博客之前，最好先了解一下<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>以及<a href="https://github.com/" target="_blank" rel="external">github</a>的工作原理的基本概念，这样有助于解决安装过程中可能出现的问题。</p>
+<h3 id="安装git和node-js"><a href="#安装git和node-js" class="headerlink" title="安装git和node.js"></a>安装git和node.js</h3><ol>
+<li>去<a href="https://www.git-scm.com/" target="_blank" rel="external">git官网</a>下载对应文件并安装。</li>
+<li>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>并安装，建议使用推荐版本，比较稳定。<br>这样你就有了JavaScript环境和git版本控制系统，进行下一步操作。<a id="more"></a>
+</li>
+</ol>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><ol>
+<li>任意找到一个文件夹，右键选择<code>git bash here</code>弹出git窗口。<br><img src="http://o98383o2a.bkt.clouddn.com/gitbash.png" alt="gitbash"></li>
+<li><p>输入命令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p><em>这里-g表示全局命令（global），与具体在哪个路径执行无关，所以可以任选文件夹</em><br>安装过程会有一些警告，不影响。</p>
+</li>
+<li>找一个存放你的网站的路径（文件夹），比如/f/myblog/,右键选择<code>git bash here</code>，依次输入命令：<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>对hexo进行初始化，并安装依赖包。<br>安装成功后命令窗口会有提示 start blogging with hexo.</p>
+<h3 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h3><p>完成以上操作就相当于在本地实现了hexo博客系统，此时你可以通过本地端口来访问默认生成的博客。在之前的命令窗口输入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>这样就生成了默认的页面，并连接了本地访问，此时在浏览器地址栏输入 <em>localhost:4000</em> 就可以查看博客；有时4000端口被占用，你可以使用 ：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server -p <span class="number">3600</span></div></pre></td></tr></table></figure></p>
+<p>把访问端口改到3600（其他端口也行），同样在浏览器地址栏输入 <em>localhost:3600</em> 。<br><img src="http://o98383o2a.bkt.clouddn.com/localhost.png" alt="localhost"><br>看起来还不错吧！</p>
+<h2 id="连接到github"><a href="#连接到github" class="headerlink" title="连接到github"></a>连接到github</h2><h3 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a>创建repository</h3><ol>
+<li>去<a href="https://github.com/" target="_blank" rel="external">github官网</a>注册账号（顺便学习入门教程）</li>
+<li>新建一个repository，命名为<code>yourname</code>.github.io<br>这里的<code>yourname</code>是你的github的账号名字<br>这是固定写法，不能是其他名字</li>
+</ol>
+<h3 id="设置deploy"><a href="#设置deploy" class="headerlink" title="设置deploy"></a>设置deploy</h3><ol>
+<li><p>在你的网站目录找到_config.yml，也就是博客的配置文件。用一个文本编辑器（我用的是<a href="https://atom.io/" target="_blank" rel="external">atom</a>）打开，修改其中的deploy：部分</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/arlier/arlier.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p><em>注意这里的repository: 填写你自己的github的repository地址</em></p>
+</li>
+<li><p>在建立repository的时候会有提供https连接，如下图：<br><img src="http://o98383o2a.bkt.clouddn.com/repository.png" alt="repository"></p>
+</li>
+<li><p>修改完成后保存文件</p>
+</li>
+</ol>
+<h3 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a>部署网站</h3><p>  有两种方法连接你的github，ssh秘钥或者用户名密码（查看github教程或者百度），这里介绍SSHkey的方法。</p>
+<ol>
+<li><p>在命令窗口输入：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youemail@gmail.com"</span></div></pre></td></tr></table></figure>
+<p>上面的邮箱是你注册github的邮箱</p>
+</li>
+<li>回车后提示保存秘钥的路径，可以自己选也可以直接回车选默认的</li>
+<li>提示输入密码，直接回车，表示没有密码。之后会提示成功，并显示秘钥对的保存路径</li>
+<li><p>依次输入命令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ssh-agent -s</div><div class="line">ssh-add ~/.ssh/id_rsa</div><div class="line">eval `ssh-agent -s`</div><div class="line">ssh-add</div></pre></td></tr></table></figure>
+<p> <em>其中~/.ssh/id_rsa是你的秘钥保存的路径</em> ，成功后会提示Identity added<br>以上步骤完成本地SSH key，下一步需要在github上绑定公钥</p>
+</li>
+</ol>
+<h3 id="配置公钥"><a href="#配置公钥" class="headerlink" title="配置公钥"></a>配置公钥</h3><ul>
+<li>登录你的github账户，在右上角选择setting</li>
+<li>选择侧边栏的SSH and GPG Keys，在选择new SSH key，随便写一个名字</li>
+<li>用编辑器打开（atom就可以）刚才在本地生成的密钥对中的公钥，以.pub结尾的那个，把其中的内容粘贴到Key</li>
+<li>选择add SSH key，添加成功<br>最后测试一下你的连接， 在命令窗口输入：<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果提示：<em>Are you sure …..</em> ，输入 yes就行<br>最后提示 <em>You have successfully authenticated ….</em> 表示连接成功</p>
+<h3 id="部署-deploy"><a href="#部署-deploy" class="headerlink" title="部署-deploy"></a>部署-deploy</h3><p>  连接成功后就可以上传网站了~好开心<br>  依次输入命令：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>  <em>上面的命令分别表示清除、产生（generate）、上传（deploy）网站</em> ，以后每一次修改网站都运行以下这几个命令。<br>上传完成后，在浏览器地址栏输入<code>yourname</code>.github.io应该就能打开你的博客了，祝好运！<br>   如果以上过程中出现问题，请百度或者去hexo的官网查询相关内容。</p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>  至此你已经有了一个可以公网访问，并且完全由自己控制的博客了。<br><strong>你下一步的目标当然是进行各种基本的设置，并着手写作以及美化你的博客</strong>，这些内容请参考hexo的<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a>。</p>
+</div></article></div></main><footer><div class="paginator"><a href="https:/arlier1.github.io/2016/06/23/exercise/" class="prev">PREV</a><a href="https:/arlier1.github.io/2016/06/24/ROOT入门教程/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 - 2017 <a href="https://arlier1.github.io">arlier</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

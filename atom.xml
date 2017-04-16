@@ -102,114 +102,486 @@
   </entry>
   
   <entry>
-    <title>apt-get被锁</title>
-    <link href="https://arlier1.github.io/2016/12/24/apt-get%E8%A2%AB%E9%94%81/"/>
-    <id>https://arlier1.github.io/2016/12/24/apt-get被锁/</id>
-    <published>2016-12-24T20:56:17.000Z</published>
-    <updated>2017-04-16T16:53:29.829Z</updated>
+    <title>拯救我的360云盘</title>
+    <link href="https://arlier1.github.io/2017/04/03/%E6%8B%AF%E6%95%91%E6%88%91%E7%9A%84360%E4%BA%91%E7%9B%98/"/>
+    <id>https://arlier1.github.io/2017/04/03/拯救我的360云盘/</id>
+    <published>2017-04-03T23:45:43.000Z</published>
+    <updated>2017-04-16T16:56:19.493Z</updated>
     
-    <content type="html"><![CDATA[<p>执行命令sudo apt-get update<br>显示：无法获得锁 /var/lib/apt/lists/lock - open (11: 资源暂时不可用)<br>搜索得知是因为意外退出apt导致的，于是<code>sudo rm /var/lib/apt/lists/lock</code>进行解锁就可以了。</p>
+    <content type="html"><![CDATA[<h1 id="挺折腾的"><a href="#挺折腾的" class="headerlink" title="挺折腾的"></a>挺折腾的</h1><p>去年360关闭个人云盘服务，我的几十GB的数据一直没来得及下载，这眼看就要到截止日期了。本来不是什么麻烦事可是宿舍的网太烂，所里的网收费太夸张，又不好找别人帮忙下载，挺烦的。</p>
+<p>解决方法倒是有几个，比如在所里的网挂代理又比如给360升级到企业版（最低价100rmb）。最后我选择了一个最折腾的办法：用腾讯云服务器下载，然后传到所里服务器，最后再从所里的服务器下载到自己电脑。之所以这样是因为我有一个几乎免费的腾讯云主机而且所里下载服务器的文件免流量，腾讯云本身也不限流量。</p>
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>在腾讯云控制台重装系统Windows server，然后下载360的文件，压缩后改成linux镜像名（防止被所里管理员发现）。再通过xftp上传到所里的服务器，用自己电脑下载回来就行。</p>
+<h1 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h1><p>这其实是一种新的免流量方法，虽然比较绕，自己用小心一些也是没问题的。哈哈哈哈，这么折腾的初衷并不止是为了省钱，这种geek的风格才是真正的乐趣所在。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;执行命令sudo apt-get update&lt;br&gt;显示：无法获得锁 /var/lib/apt/lists/lock - open (11: 资源暂时不可用)&lt;br&gt;搜索得知是因为意外退出apt导致的，于是&lt;code&gt;sudo rm /var/lib/apt/lists/
+      &lt;h1 id=&quot;挺折腾的&quot;&gt;&lt;a href=&quot;#挺折腾的&quot; class=&quot;headerlink&quot; title=&quot;挺折腾的&quot;&gt;&lt;/a&gt;挺折腾的&lt;/h1&gt;&lt;p&gt;去年360关闭个人云盘服务，我的几十GB的数据一直没来得及下载，这眼看就要到截止日期了。本来不是什么麻烦事可是宿舍的网太烂，
     
     </summary>
     
       <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="apt" scheme="https://arlier1.github.io/tags/apt/"/>
+      <category term="360" scheme="https://arlier1.github.io/tags/360/"/>
     
   </entry>
   
   <entry>
-    <title>bash读取一行文本文件</title>
-    <link href="https://arlier1.github.io/2016/10/18/c-%E8%AF%BB%E5%8F%96%E4%B8%80%E8%A1%8C%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/"/>
-    <id>https://arlier1.github.io/2016/10/18/c-读取一行文本文件/</id>
-    <published>2016-10-18T01:45:29.000Z</published>
-    <updated>2017-04-16T16:53:28.494Z</updated>
+    <title>Matplot画图</title>
+    <link href="https://arlier1.github.io/2017/03/14/Matplot%E7%94%BB%E5%9B%BE/"/>
+    <id>https://arlier1.github.io/2017/03/14/Matplot画图/</id>
+    <published>2017-03-14T00:59:48.000Z</published>
+    <updated>2017-04-16T16:57:10.090Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/ihep.jpg" alt=""></p>
-<h1 id="方法一，指定换行符读取："><a href="#方法一，指定换行符读取：" class="headerlink" title="方法一，指定换行符读取："></a>方法一，指定换行符读取：</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
-<h1 id="方法二，文件重定向给read处理："><a href="#方法二，文件重定向给read处理：" class="headerlink" title="方法二，文件重定向给read处理："></a>方法二，文件重定向给read处理：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
-<h1 id="方法三，用read读取文件重定向："><a href="#方法三，用read读取文件重定向：" class="headerlink" title="方法三，用read读取文件重定向："></a>方法三，用read读取文件重定向：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/patplot.png" alt=""></p>
+<h1 id="安装环境python"><a href="#安装环境python" class="headerlink" title="安装环境python"></a>安装环境python</h1> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-numpy</div><div class="line">sudo apt-get install python-matplotlib</div></pre></td></tr></table></figure>
+<p> 要显示中文在windows不太好弄，在linux设置字体和编码就可以了。<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#-*- coding: utf-8 -*-</span></div><div class="line"><span class="string">"""</span></div><div class="line">==========</div><div class="line">matplotlib</div><div class="line">==========</div><div class="line"></div><div class="line">Thanks to Tony Yu &lt;tsyu80@gmail.com&gt; for the logo design</div><div class="line">"""</div><div class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> matplotlib,mpl</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> mpl</div><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"><span class="keyword">import</span> matplotlib.cm <span class="keyword">as</span> cm</div><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontManager</div><div class="line"><span class="keyword">import</span> subprocess</div><div class="line">myfont = matplotlib.font_manager.FontProperties(fname=<span class="string">'/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf'</span>)</div><div class="line"><span class="comment"># mpl.rcParams['axes.unicode_minus'] = False</span></div><div class="line"><span class="comment"># pi = 3.1415926</span></div><div class="line"><span class="comment"># t = np.arange(-5*pi, 5*pi, 0.01)</span></div><div class="line"><span class="comment"># y = np.sin(t)/t</span></div><div class="line"><span class="comment"># plt.plot(t, y)</span></div><div class="line"><span class="comment"># plt.title(u'这里写的是中文',fontproperties=myfont) #指定字体</span></div><div class="line"><span class="comment"># plt.xlabel(u'X坐标',fontproperties=myfont)</span></div><div class="line"><span class="comment"># plt.ylabel(u'Y坐标',fontproperties=myfont)</span></div><div class="line"><span class="comment"># plt.show()</span></div><div class="line">mpl.rcParams[<span class="string">'xtick.labelsize'</span>] = <span class="number">10</span></div><div class="line">mpl.rcParams[<span class="string">'ytick.labelsize'</span>] = <span class="number">12</span></div><div class="line">mpl.rcParams[<span class="string">'axes.edgecolor'</span>] = <span class="string">'gray'</span></div><div class="line"></div><div class="line">axalpha = <span class="number">0.05</span></div><div class="line">figcolor = <span class="string">'white'</span></div><div class="line">dpi = <span class="number">80</span></div><div class="line">fig = plt.figure(figsize=(<span class="number">6</span>, <span class="number">1.1</span>), dpi=dpi)</div><div class="line">fig.figurePatch.set_edgecolor(figcolor)</div><div class="line">fig.figurePatch.set_facecolor(figcolor)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_math_background</span><span class="params">()</span>:</span></div><div class="line">    ax = fig.add_axes([<span class="number">0.</span>, <span class="number">0.</span>, <span class="number">1.</span>, <span class="number">1.</span>])</div><div class="line"></div><div class="line">    text = []</div><div class="line">    text.append(</div><div class="line">        (<span class="string">r"$W^&#123;3\beta&#125;_&#123;\delta_1 \rho_1 \sigma_2&#125; = "</span></div><div class="line">         <span class="string">r"U^&#123;3\beta&#125;_&#123;\delta_1 \rho_1&#125; + \frac&#123;1&#125;&#123;8 \pi 2&#125;"</span></div><div class="line">         <span class="string">r"\int^&#123;\alpha_2&#125;_&#123;\alpha_2&#125; d \alpha^\prime_2 "</span></div><div class="line">         <span class="string">r"\left[\frac&#123; U^&#123;2\beta&#125;_&#123;\delta_1 \rho_1&#125; - "</span></div><div class="line">         <span class="string">r"\alpha^\prime_2U^&#123;1\beta&#125;_&#123;\rho_1 \sigma_2&#125; "</span></div><div class="line">         <span class="string">r"&#125;&#123;U^&#123;0\beta&#125;_&#123;\rho_1 \sigma_2&#125;&#125;\right]$"</span>, (<span class="number">0.7</span>, <span class="number">0.2</span>), <span class="number">20</span>))</div><div class="line">    text.append((<span class="string">r"$\frac&#123;d\rho&#125;&#123;d t&#125; + \rho \vec&#123;v&#125;\cdot\nabla\vec&#123;v&#125; "</span></div><div class="line">                 <span class="string">r"= -\nabla p + \mu\nabla^2 \vec&#123;v&#125; + \rho \vec&#123;g&#125;$"</span>,</div><div class="line">                 (<span class="number">0.35</span>, <span class="number">0.9</span>), <span class="number">20</span>))</div><div class="line">    text.append((<span class="string">r"$\int_&#123;-\infty&#125;^\infty e^&#123;-x^2&#125;dx=\sqrt&#123;\pi&#125;$"</span>,</div><div class="line">                 (<span class="number">0.15</span>, <span class="number">0.3</span>), <span class="number">25</span>))</div><div class="line">    text.append((<span class="string">r"$F_G = G\frac&#123;m_1m_2&#125;&#123;r^2&#125;$"</span>,</div><div class="line">                 (<span class="number">0.85</span>, <span class="number">0.7</span>), <span class="number">30</span>))</div><div class="line">    <span class="keyword">for</span> eq, (x, y), size <span class="keyword">in</span> text:</div><div class="line">        ax.text(x, y, eq, ha=<span class="string">'center'</span>, va=<span class="string">'center'</span>, color=<span class="string">"#11557c"</span>,</div><div class="line">                alpha=<span class="number">0.25</span>, transform=ax.transAxes, fontsize=size)</div><div class="line">    ax.set_axis_off()</div><div class="line">    <span class="keyword">return</span> ax</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_matplotlib_text</span><span class="params">(ax)</span>:</span></div><div class="line">    ax.text(<span class="number">0.95</span>, <span class="number">0.5</span>,<span class="string">u'我的第一张ｍａｔｐｌｏｔ的图'</span>,fontproperties=myfont, color=<span class="string">'#11557c'</span>, fontsize=<span class="number">15</span>,</div><div class="line">            ha=<span class="string">'right'</span>, va=<span class="string">'center'</span>, alpha=<span class="number">1.0</span>, transform=ax.transAxes)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_polar_bar</span><span class="params">()</span>:</span></div><div class="line">    ax = fig.add_axes([<span class="number">0.025</span>, <span class="number">0.075</span>, <span class="number">0.2</span>, <span class="number">0.85</span>], projection=<span class="string">'polar'</span>)</div><div class="line"></div><div class="line">    ax.axesPatch.set_alpha(axalpha)</div><div class="line">    ax.set_axisbelow(<span class="keyword">True</span>)</div><div class="line">    N = <span class="number">7</span></div><div class="line">    arc = <span class="number">2.</span> * np.pi</div><div class="line">    theta = np.arange(<span class="number">0.0</span>, arc, arc/N)</div><div class="line">    radii = <span class="number">10</span> * np.array([<span class="number">0.2</span>, <span class="number">0.6</span>, <span class="number">0.8</span>, <span class="number">0.7</span>, <span class="number">0.4</span>, <span class="number">0.5</span>, <span class="number">0.8</span>])</div><div class="line">    width = np.pi / <span class="number">4</span> * np.array([<span class="number">0.4</span>, <span class="number">0.4</span>, <span class="number">0.6</span>, <span class="number">0.8</span>, <span class="number">0.2</span>, <span class="number">0.5</span>, <span class="number">0.3</span>])</div><div class="line">    bars = ax.bar(theta, radii, width=width, bottom=<span class="number">0.0</span>)</div><div class="line">    <span class="keyword">for</span> r, bar <span class="keyword">in</span> zip(radii, bars):</div><div class="line">        bar.set_facecolor(cm.jet(r/<span class="number">10.</span>))</div><div class="line">        bar.set_alpha(<span class="number">0.6</span>)</div><div class="line"></div><div class="line">    <span class="keyword">for</span> label <span class="keyword">in</span> ax.get_xticklabels() + ax.get_yticklabels():</div><div class="line">        label.set_visible(<span class="keyword">True</span>)</div><div class="line"></div><div class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> ax.get_ygridlines() + ax.get_xgridlines():</div><div class="line">        line.set_lw(<span class="number">0.8</span>)</div><div class="line">        line.set_alpha(<span class="number">0.9</span>)</div><div class="line">        line.set_ls(<span class="string">'-'</span>)</div><div class="line">        line.set_color(<span class="string">'0.5'</span>)</div><div class="line"></div><div class="line">    ax.set_yticks(np.arange(<span class="number">1</span>, <span class="number">9</span>, <span class="number">2</span>))</div><div class="line">    ax.set_rmax(<span class="number">9</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main_axes = add_math_background()</div><div class="line">    add_polar_bar()</div><div class="line">    add_matplotlib_text(main_axes)</div><div class="line">    plt.show()</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/ihep.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;方法一，指定换行符读取：&quot;&gt;&lt;a href=&quot;#方法一，指定换行符读取：&quot; class=&quot;headerlink&quot; title=&quot;
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/patplot.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;安装环境python&quot;&gt;&lt;a href=&quot;#安装环境python&quot; class=&quot;headerlink&quot; title=&quot;安
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
     
     
-      <category term="bash" scheme="https://arlier1.github.io/tags/bash/"/>
-    
-      <category term="读文件" scheme="https://arlier1.github.io/tags/%E8%AF%BB%E6%96%87%E4%BB%B6/"/>
+      <category term="matplot" scheme="https://arlier1.github.io/tags/matplot/"/>
     
   </entry>
   
   <entry>
-    <title>back_up_all_my_work</title>
-    <link href="https://arlier1.github.io/2016/08/23/backupallmywork/"/>
-    <id>https://arlier1.github.io/2016/08/23/backupallmywork/</id>
-    <published>2016-08-23T15:46:01.000Z</published>
-    <updated>2017-04-16T16:53:29.636Z</updated>
+    <title>无能者无所求</title>
+    <link href="https://arlier1.github.io/2017/03/08/%E6%97%A0%E8%83%BD%E8%80%85%E6%97%A0%E6%89%80%E6%B1%82/"/>
+    <id>https://arlier1.github.io/2017/03/08/无能者无所求/</id>
+    <published>2017-03-08T23:02:54.000Z</published>
+    <updated>2017-04-16T16:56:26.594Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>在用texide的时候，我突然意识到我可以用pdf文件备份我所有的重要工作；因为我可以使用include命令，来对不同的文章和内容进行独立管理和编辑引用，再把它们整合起来；然后结合书签命令进行快速分类和索引。如果实施成功，那么我将能够高效、安全地保护我的数据，尤其是这些低熵数据。同时由于我试图保存所有重要数据，文件的安全性，私密性值得考虑；同时还得详细确定如何组织这些内容，采用什么样的构架和管理形式，保证以后内容的添加和删除；要考虑的尽可能长远；初步打算，在完成模型之后先进行测试，如果没什么大问题的话就可以逐步把所有之前的文件进行集合。</p>
-<h1 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h1><p>另一个问题是，确定一个明确的标准，即什么样的数据需要存储，什么样的数据不需要存储，或者只需要存储索引。然后就是怎么存储的问题，这个也需要明确的标准，对于存入的内容应该有具体的结构和标签之类的东西；总之要有统一的、确定的格式。怎么写着写着就感觉是在，用root进行数据存储。有点类似数据库的意思。</p>
-<h1 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h1><p>我想在完全执行这一步骤之后，我的数据基本上就是安全的。我把这些低熵的数据在云端和网盘进行了同时备份；对于照片和视频之类的文件，丢了也不是很可惜。假设发生意外我的硬盘损坏，数据完全丢失，那我的损失也许并不大；可能很多重要的文件没了，但理论上其他人的电脑上是肯定会有的。比如我下载的文件、软件、照片等；我所需要的只是建立相应的索引和链接。</p>
-<h1 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h1><p>1.临时工作目录，为知笔记随时记录想法和灵感，每周归档。<br>2.重要软件说明和索引，以及链接；对于可能失效的链接可以考虑备份文件到网盘。<br>3.重要第三方文件。<br>4.按照时间进行记录，然后添加分类和标签。<br>5.在开头进行格式说明，分类和标签列表；目录。<br>6.主文件全部采用include加注释形式，方便开关。</p>
-<h1 id="最后具体实施-gt"><a href="#最后具体实施-gt" class="headerlink" title="最后具体实施-&gt;"></a>最后具体实施-&gt;</h1>]]></content>
+    <content type="html"><![CDATA[<p><code>巧者劳而知者忧，无能者无所求。饱食而遨游，泛若不系之舟，虚而遨游者也</code><br>‘You can not have your cake and eat it’<br>最难的是和自己相处，在你完全没有必要掩饰或者表演的时候，在你面对自己内心的自我的时候，就是你看到的真正的自己。每个人都会有不同的欲望和需求，而且这些需求之间往往是矛盾的；这时候你就需要选择是have the cake 还是eat the cake。比如，你拥有了名誉，就会被名誉带来的繁杂事务所干扰；你追求内心的平和与宁静就要放弃外在的评价；你拥有了某个东西，你就必然被它的不好的一面所困扰，这就是人之本性决定的，无法避免的。to possess is to be possessed.</p>
+<p>我想这里面的区别就在于，对同样的事务不同的人的接受能力不一样，受到的困扰或者得到的喜悦也就不一样；显然人们会由于环境的影响选择自己所乐于从事或者至少能够接受的事务。在不断的选择和试错之后，这些内心的欲望和需求会在热力学定律的驱动下演化到最简单的状态-&gt;expect of the future，而这一点正是几乎所有生命存在的理由。</p>
+<p>anyhow,fight for your passion.</p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;备份&quot;&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h1&gt;&lt;p&gt;在用texide的时候，我突然意识到我可以用pdf文件备份我所有的重要工作；因为我可以使用include命令，来对不同的文章和内容进行独立管
+      &lt;p&gt;&lt;code&gt;巧者劳而知者忧，无能者无所求。饱食而遨游，泛若不系之舟，虚而遨游者也&lt;/code&gt;&lt;br&gt;‘You can not have your cake and eat it’&lt;br&gt;最难的是和自己相处，在你完全没有必要掩饰或者表演的时候，在你面对自己内心的自我的时候，
     
     </summary>
     
       <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="backup" scheme="https://arlier1.github.io/tags/backup/"/>
-    
-      <category term="allmywork" scheme="https://arlier1.github.io/tags/allmywork/"/>
-    
-      <category term="数据无价" scheme="https://arlier1.github.io/tags/%E6%95%B0%E6%8D%AE%E6%97%A0%E4%BB%B7/"/>
+      <category term="随想" scheme="https://arlier1.github.io/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
   <entry>
-    <title>decision condition of decisions</title>
-    <link href="https://arlier1.github.io/2016/08/11/decisionconditionofdecisions/"/>
-    <id>https://arlier1.github.io/2016/08/11/decisionconditionofdecisions/</id>
-    <published>2016-08-11T15:04:27.000Z</published>
-    <updated>2017-04-16T16:53:28.259Z</updated>
+    <title>复古and装逼的终端</title>
+    <link href="https://arlier1.github.io/2017/02/27/%E5%A4%8D%E5%8F%A4and%E8%A3%85%E9%80%BC%E7%9A%84%E7%BB%88%E7%AB%AF/"/>
+    <id>https://arlier1.github.io/2017/02/27/复古and装逼的终端/</id>
+    <published>2017-02-27T19:49:24.000Z</published>
+    <updated>2017-04-16T16:56:49.699Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/pku.jpg" alt=""><br>你在意的东西越少，就越容易快乐。<br>An expert is a person who has made all the mistakes that can be made in a very narrow field. -Niels Bohr.<br><a id="more"></a></p>
-<h1 id="dilemma"><a href="#dilemma" class="headerlink" title="dilemma"></a>dilemma</h1><p>最近遇到一个两难的决定，去中山还是高能所？影响的因素太多，又没有决定性的因素，很纠结。然后决定去操场溜几圈，冷静分析一下。是不是我们走的太远，以至于忘记了为什么出发？我们发现的太多，得到的太多，以至于有了太多的牵挂和留恋？哦，也许整件事就这么简单。如果把问题简单化，为什么读博？我想我内心深处的回答(key answer)是“To find something out”;下一个问题，为什么想出国？我的回答也许是“遇到更厉害的人”，但显然这是一个不成熟的答案；以这个核心的条件去判别其他表面的“优劣”，答案就会很明了。我们不可能做每件事都有明确的目的，但一旦在某个局域内迷失，总要有指出方向的东西。于是做出决定：如果4年时间做不出像样的东西，就在形式上离开这个领域。如果这是一个合理的决定，那么许多年之后再回首这样的选择应该不会感到虚度年华。</p>
-<h1 id="how-to"><a href="#how-to" class="headerlink" title="how to"></a>how to</h1><p>然后总结出一个经验：很简单的原则，如果你要做一个几乎影响人生轨迹的决定，请考虑十年之后你在干什么，或者设想十年之后你需要什么；如果你要做一个比较大的决定，你只要考虑一年之后大约的情形就很容易选择；最后那些小决定就很随意了，毕竟每个人的适应能力都足以应付可能的意外。如果跳出这个思维，其实有很多时候很多事情都是“没得选”的，甚至你会本能地作出决定；就好比你遇到一个轻松而且高薪的工作和一个艰苦并且薪水很低的工作，你甚至都不觉得这需要选择。也就是说你根本觉查不到很多东西是需要选择的，这才是真正subtle的地方。</p>
-<h1 id="finally-three-rules"><a href="#finally-three-rules" class="headerlink" title="finally three rules"></a>finally three rules</h1><ul>
-<li>do not fool yourself</li>
-<li>to find something out</li>
-<li>whenever you are in a dileama,think about the two rules above.</li>
+    <content type="html"><![CDATA[<h1 id="cool-retro-term"><a href="#cool-retro-term" class="headerlink" title="cool-retro-term"></a>cool-retro-term</h1><p>看看效果先：<br><img src="http://o98383o2a.bkt.clouddn.com/green.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/yellow.jpg" alt=""></p>
+<h1 id="ubuntu-的安装"><a href="#ubuntu-的安装" class="headerlink" title="ubuntu 的安装"></a>ubuntu 的安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:noobslab/apps</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install cool-retro-term</div></pre></td></tr></table></figure>
+<p>具体可参看 <a href="https://linux.cn/article-6599-1-rel.html" target="_blank" rel="external">https://linux.cn/article-6599-1-rel.html</a></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>去/etc/pass 修改默认shell<br>使用zsh，添加主题和插件<br>ubuntu在/etc/hostname 修改主机名。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;cool-retro-term&quot;&gt;&lt;a href=&quot;#cool-retro-term&quot; class=&quot;headerlink&quot; title=&quot;cool-retro-term&quot;&gt;&lt;/a&gt;cool-retro-term&lt;/h1&gt;&lt;p&gt;看看效果先：&lt;br&gt;&lt;img src
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="终端" scheme="https://arlier1.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>录制终端操作</title>
+    <link href="https://arlier1.github.io/2017/02/27/%E5%BD%95%E5%88%B6%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/"/>
+    <id>https://arlier1.github.io/2017/02/27/录制终端操作/</id>
+    <published>2017-02-27T16:33:57.000Z</published>
+    <updated>2017-04-16T16:56:43.777Z</updated>
+    
+    <content type="html"><![CDATA[<p>来源于这篇<a href="https://linux.cn/article-7573-1.html" target="_blank" rel="external">文章</a>。<br><img src="http://o98383o2a.bkt.clouddn.com/recexample.gif" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/compressedgif.gif" alt=""></p>
+<h1 id="安装记录和播放"><a href="#安装记录和播放" class="headerlink" title="安装记录和播放"></a>安装记录和播放</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">安装</div><div class="line">sudo apt-get install ttyrec</div><div class="line">sudo apt-get install imagemagick</div><div class="line">sudo apt-get install python-opster</div><div class="line">记录</div><div class="line">ttyprec</div><div class="line">exit</div><div class="line">播放，在主目录找到ttyrec</div><div class="line">ttyplay ttyrec</div></pre></td></tr></table></figure>
+<h1 id="输出gif"><a href="#输出gif" class="headerlink" title="输出gif"></a>输出gif</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">python tty2gif.py typing ttyrecord</div><div class="line">convert -delay 25 -loop 0 *.gif example.gif</div></pre></td></tr></table></figure>
+<p>尝试压缩</p>
+<ul>
+<li><a href="http://www.gifreducer.com" target="_blank" rel="external">http://www.gifreducer.com</a></li>
+<li><a href="http://www.yasuotu.com/" target="_blank" rel="external">http://www.yasuotu.com/</a><br>效果还行。</li>
 </ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/pku.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;你在意的东西越少，就越容易快乐。&lt;br&gt;An expert is a person who has made all the mistakes that can be made in a very narrow field. -Niels Bohr.&lt;br&gt;
+      &lt;p&gt;来源于这篇&lt;a href=&quot;https://linux.cn/article-7573-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文章&lt;/a&gt;。&lt;br&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="终端" scheme="https://arlier1.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>G4+Qt</title>
+    <link href="https://arlier1.github.io/2017/02/26/G4-Qt/"/>
+    <id>https://arlier1.github.io/2017/02/26/G4-Qt/</id>
+    <published>2017-02-26T20:33:45.000Z</published>
+    <updated>2017-04-16T16:57:20.377Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过几天的折腾，总算是把QT给安装好了，这种GUI的交互显然比命令行更适合于新手的操作。运行了基本的例子，效果很有艺术风格，哈哈。<br><img src="http://o98383o2a.bkt.clouddn.com/g4qt1.png" alt="这都是什么"><br><img src="http://o98383o2a.bkt.clouddn.com/g4qt2.png" alt="这都是什么"></p>
+<h1 id="路漫漫其修远兮"><a href="#路漫漫其修远兮" class="headerlink" title="路漫漫其修远兮"></a>路漫漫其修远兮</h1><p>这只是个开始，有了软件环境，还得继续摸索，可以预期会遇到很多烦人的错误和问题。只有继续折腾了。</p>
+<h1 id="重要配置"><a href="#重要配置" class="headerlink" title="重要配置"></a>重要配置</h1><figure class="highlight cmake"><figcaption><span>-DGeant4_DIR=/home/arlier/geant4/g4install/lib/Geant4-10.3.0/ -DCMAKE_MODULE_PATH=/home/arlier/geant4/g4install/lib/Geant4-10.3.0/Modules ../../task3/task</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="number">3</span>b/            cmake的编译配置</div></pre></td></tr></table></figure>
+<p>这里通过Modules的设置可以加入ROOT模块。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经过几天的折腾，总算是把QT给安装好了，这种GUI的交互显然比命令行更适合于新手的操作。运行了基本的例子，效果很有艺术风格，哈哈。&lt;br&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/g4qt1.png&quot; alt=&quot;这都是什么&quot;&gt;&lt;b
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="Qt" scheme="https://arlier1.github.io/tags/Qt/"/>
+    
+      <category term="geant4" scheme="https://arlier1.github.io/tags/geant4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给ubuntu设置ssh登陆</title>
+    <link href="https://arlier1.github.io/2017/02/26/%E7%BB%99ubuntu%E8%AE%BE%E7%BD%AEssh%E7%99%BB%E9%99%86/"/>
+    <id>https://arlier1.github.io/2017/02/26/给ubuntu设置ssh登陆/</id>
+    <published>2017-02-26T20:14:12.000Z</published>
+    <updated>2017-04-16T16:56:49.018Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="设置ssh"><a href="#设置ssh" class="headerlink" title="设置ssh"></a>设置ssh</h1><p>ubuntu 默认是不提供远程ssh登录的，为了在局域网控制我的电脑，需要在ubuntu系统安装并开启ssh服务。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install openssh-server</div><div class="line">sudo service ssh start 或者 sudo /etc/init.d/ssh restart</div></pre></td></tr></table></figure></p>
+<p>这样就可以在局域网登录这台电脑了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;设置ssh&quot;&gt;&lt;a href=&quot;#设置ssh&quot; class=&quot;headerlink&quot; title=&quot;设置ssh&quot;&gt;&lt;/a&gt;设置ssh&lt;/h1&gt;&lt;p&gt;ubuntu 默认是不提供远程ssh登录的，为了在局域网控制我的电脑，需要在ubuntu系统安装并开启ssh服务。&lt;
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="ssh" scheme="https://arlier1.github.io/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为了QT再次安装G4</title>
+    <link href="https://arlier1.github.io/2017/02/24/%E4%B8%BA%E4%BA%86QT%E5%86%8D%E6%AC%A1%E5%AE%89%E8%A3%85G4/"/>
+    <id>https://arlier1.github.io/2017/02/24/为了QT再次安装G4/</id>
+    <published>2017-02-24T09:01:05.000Z</published>
+    <updated>2017-04-16T16:56:32.706Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考 <a href="http://www.xuephp.com/main/detail.php?cid=33991" target="_blank" rel="external">http://www.xuephp.com/main/detail.php?cid=33991</a></p>
+<p>在g4build执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/debian/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_QT=ON -DQT_QMAKE_EXECUTABLE=/usr/qmake /home/debian/geant4/geant4.10.03</div><div class="line">sudo make</div></pre></td></tr></table></figure></p>
+<p>之前编译过，这次非常快。 主要是在进行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[ 84%] Generating basic/include/moc_G4UIQt.cpp</div><div class="line">Scanning dependencies of target G4interfaces</div><div class="line">Building CXX object source/interfaces/CMakeFiles/G4interfaces.dir/basic/src/G4UIQt.cc.o</div></pre></td></tr></table></figure></p>
+<p>这个make的过程是可以中断的，接着安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo make install</div><div class="line">source ~/geant4/g4install/share/Geant4-10.3.0/geant4make/geant4make.sh   编译的时候有问题</div><div class="line">cmake -DGeant4_DIR=/home/arlier/geant4/g4install/lib/Geant4-10.3.0/ -DCMAKE_MODULE_PATH=/home/arlier/geant4/g4install/lib/Geant4-10.3.0/Modules ../../task3/task3b/</div><div class="line">这里的Modules可以导入通过cmake安装的ROOT模块，不然会编译错误。</div></pre></td></tr></table></figure></p>
+<p>有用的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grep -nr *** 查找文件内部内容</div></pre></td></tr></table></figure></p>
+<p>在构建物理过程的时候添加auto ParticleIterator=GetParticleIterator();</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考 &lt;a href=&quot;http://www.xuephp.com/main/detail.php?cid=33991&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.xuephp.com/main/detail.php?cid=339
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="QT" scheme="https://arlier1.github.io/tags/QT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装QT</title>
+    <link href="https://arlier1.github.io/2017/02/23/%E5%AE%89%E8%A3%85QT/"/>
+    <id>https://arlier1.github.io/2017/02/23/安装QT/</id>
+    <published>2017-02-23T15:15:58.000Z</published>
+    <updated>2017-04-16T16:56:55.040Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Debian用下面的命令很快就安装成功了：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install qt5-qmake</div><div class="line">sudo apt-get install qtbase5-dev-tools</div><div class="line">sudo apt-get install qt5-default qtcreator</div></pre></td></tr></table></figure></p>
+<p>QT可以鼠标界面交互，比OPENGL方便多了。对于一个普通用户来说，这种直观的方式更容易学习。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在Debian用下面的命令很快就安装成功了：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="Qt" scheme="https://arlier1.github.io/tags/Qt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>发现的乐趣</title>
+    <link href="https://arlier1.github.io/2017/02/21/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B9%90%E8%B6%A3/"/>
+    <id>https://arlier1.github.io/2017/02/21/发现的乐趣/</id>
+    <published>2017-02-21T09:24:04.000Z</published>
+    <updated>2017-04-16T16:56:50.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>从网上看到C.H.I.P单片机比较好玩，而且只要9$，果断弄来一个玩。可是它的视频输出只要复合的模拟信号，需要单独的转接器才能输出到HDMI或者VGA，而且这个转接器非常贵，想想还是用模拟输出吧反正我对显示几乎没有什么要求。</p>
+<h1 id="设置wifi"><a href="#设置wifi" class="headerlink" title="设置wifi"></a>设置wifi</h1><p>这个CHIP没有网线接口，只是内置了wifi模块，所以要通过ssh控制的话必须先连上wifi，这个只能通过显示器来操作。于是买了一根小米盒子的复合视频线，可是三个接头都不能连上，只是在插上红色的音频线之后会有某种连上的迹象，但完全看不清是什么。</p>
+<h2 id="开始尝试"><a href="#开始尝试" class="headerlink" title="开始尝试"></a>开始尝试</h2><p>最简单的想法就是可能电视出了问题，再换过各个接口并设设置各种模式之后我决定换个终端；在一台投影仪上测试后还是不行，这说明很可能是连接线的问题。于是到CHIP的官网上去查询，果然提到某些种类的线可能会不支持，因为这个3.5mm的线会有不同的定义。在进行了这些初步的尝试失败之后，我觉得应该进行一些进一步的验证了。</p>
+<h2 id="继续试验"><a href="#继续试验" class="headerlink" title="继续试验"></a>继续试验</h2><p><img src="http://o98383o2a.bkt.clouddn.com/videoline.JPG" alt=""><br>接着我打算看一下这根线的连通情况，发现它们使用一根公共地线然后分别成为一路；用万用表测出来是直接连通的，没有内部芯片，我意识到这个问题似乎很容易了。按照官网的连接示意图我很快发现我的这根线的定义和官网给出的不一样，这样问题很可能就是线的连接方式错了。</p>
+<h2 id="如何解决"><a href="#如何解决" class="headerlink" title="如何解决"></a>如何解决</h2><p>这种视频线的连接只有两根线，问题就非常简单了，我只要监测出复合端口上的两个对应出点再去分别和CHIP的出点试触就能很快找到正确接法。可是由于没有很好的工具，又不想使用电烙铁，就只好采用粗暴的办法，直接把连接线剪断。然后按照官网的连接图，交换两根线的连接一下子就好了！<br><img src="http://o98383o2a.bkt.clouddn.com/chip.jpg" alt=""></p>
+<h1 id="乐趣所在"><a href="#乐趣所在" class="headerlink" title="乐趣所在"></a>乐趣所在</h1><p>这样的问题一开始总是看起来很难，只有仔细地去思考和验证，找到其中可能的联系才渐渐地了解了其中的机理。也就是这样一步步的前进中，我发现了许多自己所不知道的东西，而最终解决了小小的问题正是这种发现带来的乐趣之一。</p>
+<p>这次连接再次让我意识到物理的神奇之处，那就是如果有一些异常出现，这背后一定隐藏着某些你还不了解的内部机制。因为物理学定律得到了如此广泛的验证，很难在以此不那么精密的观测中出现。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从网上看到C.H.I.P单片机比较好玩，而且只要9$，果断弄来一个玩。可是它的视频输出只要复合的模拟信号，需要单独的转接器才能输出到HDMI或者VGA，而且这个转接器非常贵，想想还是用模拟输出吧反正我对显示几乎没有什么要求。&lt;/p&gt;
+&lt;h1 id=&quot;设置wifi&quot;&gt;&lt;a h
+    
+    </summary>
+    
+      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+    
+    
+      <category term="发现" scheme="https://arlier1.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The-Value-of-Science</title>
+    <link href="https://arlier1.github.io/2017/02/20/The-Value-of-Science/"/>
+    <id>https://arlier1.github.io/2017/02/20/The-Value-of-Science/</id>
+    <published>2017-02-20T17:04:20.000Z</published>
+    <updated>2017-04-16T16:57:01.627Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="The-Value-of-Science"><a href="#The-Value-of-Science" class="headerlink" title="The Value of Science"></a>The Value of Science</h1><p>from R.P.feynman<br><img src="http://o98383o2a.bkt.clouddn.com/feynman_sea.jpg" alt=""></p>
+<p>stand at the seashore, alone, and start to think.</p>
+<p>There are the rushing waves<br>mountains of molecules<br>each stupidly minding its own business<br>trillions apart<br>yet forming white surf in unison</p>
+<p>Ages on ages<br>before any eyes could see<br>year after year<br>thunderously pounding the shore as now.<br>For whom, for what?<br>On a dead planet<br>with no life to entertain.</p>
+<p>Never at rest<br>tortured by energy<br>wasted prodigiously by the Sun<br>poured into space.<br>A mite makes the sea roar.</p>
+<p>Deep in the sea<br>all molecules repeat<br>the patterns of one another<br>till complex new ones are formed.<br>They make others like themselves<br>and a new dance starts.<br>Growing in size and complexity<br>living things<br>masses of atoms<br>DNA, protein<br>dancing a pattern ever more intricate.</p>
+<p>Out of the cradle<br>onto dry land<br>here it is<br>standing:<br>atoms with consciousness;<br>matter with curiosity.</p>
+<p>Stands at the sea,<br>wonders at wondering: I<br>a universe of atoms<br>an atom in the Universe</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;The-Value-of-Science&quot;&gt;&lt;a href=&quot;#The-Value-of-Science&quot; class=&quot;headerlink&quot; title=&quot;The Value of Science&quot;&gt;&lt;/a&gt;The Value of Science&lt;/h1&gt;&lt;
     
     </summary>
     
       <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="decision" scheme="https://arlier1.github.io/tags/decision/"/>
+      <category term="feynman" scheme="https://arlier1.github.io/tags/feynman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于搞懂了回车与换行的区别</title>
+    <link href="https://arlier1.github.io/2017/01/29/%E7%BB%88%E4%BA%8E%E6%90%9E%E6%87%82%E4%BA%86%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://arlier1.github.io/2017/01/29/终于搞懂了回车与换行的区别/</id>
+    <published>2017-01-29T22:01:33.000Z</published>
+    <updated>2017-04-16T16:56:17.929Z</updated>
+    
+    <content type="html"><![CDATA[<p>转载自： <a href="http://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html" target="_blank" rel="external">http://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html</a><br>关于换行和回车其实平时我们不太在意，所以关于两者的区别也不太清楚，在平时开发时可能会遇到一些文件处理的问题，放到不同的操作系统上出现各种坑。那么回车和换行到底有哪些区别呢？今天咱们就来总结一下。</p>
+<h1 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h1><p>在计算机还没有出现之前，有一种叫做电传打字机（Teletype Model 33）的机械打字机，每秒钟可以打10个字符。但是它有一个问题，就是打完一行换行的时候，要用去0.2秒，正好可以打两个字符。要是在这0.2秒里面，又有新的字符传过来，那么这个字符将丢失。<br>于是，研制人员想了个办法解决这个问题，就是在每行后面加两个表示结束的字符。一个叫做“回车”，告诉打字机把打印头定位在左边界，不卷动滚筒；另一个叫做“换行”，告诉打字机把滚筒卷一格，不改变水平位置。<br>这就是“换行”和“回车”的由来。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>后来，计算机发明了，这两个概念也就被般到了计算机上。那时，存储器很贵，一些科学家认为在每行结尾加两个字符太浪费了，加一个就可以。于是，就出现了分歧。<br>回车 \r 本义是光标重新回到本行开头，r的英文return，控制字符可以写成CR，即Carriage Return<br>换行 \n 本义是光标往下一行（不一定到下一行行首），n的英文newline，控制字符可以写成LF，即Line Feed<br>符号    ASCII码      意义<br>\n        10        换行NL<br>\r        13        回车CR<br>在不同的操作系统这几个字符表现不同，比如在WIN系统下，这两个字符就是表现的本义，在UNIX类系统，换行\n就表现为光标下一行并回到行首，在MAC上，\r就表现为回到本行开头并往下一行，至于ENTER键的定义是与操作系统有关的。通常用的Enter是两个加起来。</p>
+<p>不同操作系统下的含义：<br>\n:  UNIX 系统行末结束符<br>\n\r: window 系统行末结束符<br>\r:  MAC OS 系统行末结束符</p>
+<p>我们经常遇到的一个问题就是，Unix/Mac系统下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix/Mac下打开的话，在每行的结尾可能会多出一个^M符号。</p>
+<h1 id="软回车和硬回车"><a href="#软回车和硬回车" class="headerlink" title="软回车和硬回车"></a>软回车和硬回车</h1><p>再扩展一下回车的一些知识。<br>硬回车就是普通我们按回车产生的，它在换行的同时也起着段落分隔的作用。<br>软回车是用 Shift + Enter 产生的，它换行，但是并不换段，即前后两段文字在 Word 中属于同一“段”。在应用格式时你会体会到这一点。<br>软回车能使前后两行的行间距大幅度缩小，因为它不是段落标记，要和法定的段落标记——硬回车区别出来。硬回车的html代码是</p><p>..</p>，段落的内容就夹在里面，而软回车的代码很精悍：<br>。网页的文字如果复制到word中，则硬回车变为弯曲的箭头，软回车变为向下的箭头。<p></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转载自： &lt;a href=&quot;http://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.pythontab.com/htm
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="回车与换行" scheme="https://arlier1.github.io/tags/%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派相册</title>
+    <link href="https://arlier1.github.io/2016/12/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9B%B8%E5%86%8C/"/>
+    <id>https://arlier1.github.io/2016/12/28/树莓派相册/</id>
+    <published>2016-12-28T13:30:13.000Z</published>
+    <updated>2017-04-16T16:56:38.064Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="GALLERY-ON-PI"><a href="#GALLERY-ON-PI" class="headerlink" title="GALLERY ON PI"></a>GALLERY ON PI</h1><p>  通过树莓派派制作一个数码相册真的是一个非常好的想法，可控性非常强；可以通过脚本控制显示方式和内容，配合路由器还能进行远程控制，简直太好玩。国外有许多非常好的项目，先收集起来，等有时间慢慢玩。<br>  <a id="more"></a> </p>
+<h1 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h1><ul>
+<li><a href="http://www.shumeipai.net/thread-457-1-4.html?_dsign=3fc65a2b" target="_blank" rel="external">http://www.shumeipai.net/thread-457-1-4.html?_dsign=3fc65a2b</a></li>
+<li><a href="http://hackaday.com/2014/12/11/raspberry-pi-powered-super-digital-photo-frame/" target="_blank" rel="external">http://hackaday.com/2014/12/11/raspberry-pi-powered-super-digital-photo-frame/</a></li>
+<li><a href="http://superuser.com/questions/211561/loop-pictures-from-a-folder-and-display-fullscreen-slideshow" target="_blank" rel="external">http://superuser.com/questions/211561/loop-pictures-from-a-folder-and-display-fullscreen-slideshow</a></li>
+<li><a href="http://betzmobileengineering.blogspot.com/search?q=pi" target="_blank" rel="external">http://betzmobileengineering.blogspot.com/search?q=pi</a></li>
+<li><a href="http://betzmobileengineering.blogspot.com/" target="_blank" rel="external">http://betzmobileengineering.blogspot.com/</a></li>
+<li><a href="http://hackaday.com/2012/09/17/turning-a-kindle-into-a-weather-display/" target="_blank" rel="external">http://hackaday.com/2012/09/17/turning-a-kindle-into-a-weather-display/</a></li>
+<li><a href="http://blog.jacobean.net/?p=941" target="_blank" rel="external">http://blog.jacobean.net/?p=941</a></li>
+<li><a href="https://drjohnstechtalk.com/blog/2015/01/what-im-working-on-a-ras-pi-media-display/" target="_blank" rel="external">https://drjohnstechtalk.com/blog/2015/01/what-im-working-on-a-ras-pi-media-display/</a></li>
+<li><a href="http://www.queryadmin.com/435/create-image-slideshow-raspberry-pi/" target="_blank" rel="external">http://www.queryadmin.com/435/create-image-slideshow-raspberry-pi/</a></li>
+<li><a href="https://paulstamatiou.com/" target="_blank" rel="external">https://paulstamatiou.com/</a></li>
+<li><a href="https://paulstamatiou.com/getting-started-raspberry-pi/" target="_blank" rel="external">https://paulstamatiou.com/getting-started-raspberry-pi/</a></li>
+<li><a href="http://rberrypi.blogspot.com/2013/05/a-raspberry-pi-based-digital-picture.html" target="_blank" rel="external">http://rberrypi.blogspot.com/2013/05/a-raspberry-pi-based-digital-picture.html</a></li>
+<li><a href="http://rasterweb.net/raster/2016/01/31/raspberry-pi-slide-show/" target="_blank" rel="external">http://rasterweb.net/raster/2016/01/31/raspberry-pi-slide-show/</a></li>
+<li><a href="http://www.instructables.com/id/Easy-Raspberry-Pi-Based-ScreensaverSlideshow-for-E/?ALLSTEPS" target="_blank" rel="external">http://www.instructables.com/id/Easy-Raspberry-Pi-Based-ScreensaverSlideshow-for-E/?ALLSTEPS</a></li>
+<li><a href="http://www.jonathansblog.net/raspberry-pi-powered-presentation-display-foyer-screen" target="_blank" rel="external">http://www.jonathansblog.net/raspberry-pi-powered-presentation-display-foyer-screen</a></li>
+<li><a href="http://www.ofbrooklyn.com/2014/01/2/building-photo-frame-raspberry-pi-motion-detector/" target="_blank" rel="external">http://www.ofbrooklyn.com/2014/01/2/building-photo-frame-raspberry-pi-motion-detector/</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;GALLERY-ON-PI&quot;&gt;&lt;a href=&quot;#GALLERY-ON-PI&quot; class=&quot;headerlink&quot; title=&quot;GALLERY ON PI&quot;&gt;&lt;/a&gt;GALLERY ON PI&lt;/h1&gt;&lt;p&gt;  通过树莓派派制作一个数码相册真的是一个非常好的想法，可控性非常强；可以通过脚本控制显示方式和内容，配合路由器还能进行远程控制，简直太好玩。国外有许多非常好的项目，先收集起来，等有时间慢慢玩。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+    
+    
+      <category term="树莓派" scheme="https://arlier1.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kindle天气显示</title>
+    <link href="https://arlier1.github.io/2016/12/27/kindle%E5%A4%A9%E6%B0%94%E6%98%BE%E7%A4%BA/"/>
+    <id>https://arlier1.github.io/2016/12/27/kindle天气显示/</id>
+    <published>2016-12-27T23:53:04.000Z</published>
+    <updated>2017-04-16T16:57:16.829Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/kinweather.jpg" alt=""><br>不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。<br><a id="more"></a></p>
+<h1 id="安装记录"><a href="#安装记录" class="headerlink" title="安装记录"></a>安装记录</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /home/</div><div class="line">mkdir weatherdisp</div><div class="line">yum install git</div><div class="line">git <span class="built_in">clone</span> https://github.com/mpetroff/kindle-weather-display.git</div><div class="line">mkdir weatheroutput</div><div class="line"><span class="built_in">cd</span> kindle-weather-display/</div><div class="line"><span class="built_in">cd</span> server/</div><div class="line">vi weather-script.sh   修改了路径</div><div class="line">yum install librsvg2</div><div class="line"><span class="built_in">cd</span> /etc/yum.repos.d/</div><div class="line">wget http://download.opensuse.org/repositories/utilities/CentOS_6/utilities.repo</div><div class="line">yum install pngcrush</div><div class="line"><span class="built_in">cd</span> /home/kindle-weather-display/server/</div><div class="line">bash weather-script.sh</div><div class="line"></div><div class="line">mkfontscale</div><div class="line">mkfontdir</div><div class="line"> <span class="built_in">fc</span>-cache -fv</div><div class="line">http://103.79.76.44/kindle-weather-display/outpng/weather-script-output.png</div><div class="line"></div><div class="line">/mnt/us/weather/init-weather.sh</div><div class="line">vi /etc/crontab/root</div><div class="line"></div><div class="line">crontab</div><div class="line">*/15****/usr/sbin/checkpmond</div><div class="line">*/15****/usr/sbin/tinyrot</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info tmpfs</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info <span class="built_in">local</span>Vars</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info memusedump</div><div class="line">*/15****/usr/sbin/<span class="built_in">log</span> info powerdcheck</div><div class="line">*/2**** /mnt/us/weather/init-weather.sh</div><div class="line">/var/spool/cron/crontabs/root</div><div class="line">*/2**** /mnt/us/weather/init-weather.sh</div></pre></td></tr></table></figure>
+<p>问题比较多，暂时搁置；等待下次玩。<br>比如配置cron，更改系统只读属性，挂载；ssh连接；等。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://mpetroff.net/2012/09/kindle-weather-display/" target="_blank" rel="external">https://mpetroff.net/2012/09/kindle-weather-display/</a></li>
+<li><a href="http://www.jb51.net/article/65278.htm" target="_blank" rel="external">http://www.jb51.net/article/65278.htm</a></li>
+<li><a href="http://www.jb51.net/LINUXjishu/19905.html" target="_blank" rel="external">http://www.jb51.net/LINUXjishu/19905.html</a></li>
+<li><a href="http://www.shatteredhaven.com/" target="_blank" rel="external">http://www.shatteredhaven.com/</a></li>
+<li><a href="https://mpetroff.net/2012/09/kindle-weather-display/" target="_blank" rel="external">https://mpetroff.net/2012/09/kindle-weather-display/</a></li>
+<li><a href="http://www.cnblogs.com/lhb25/p/method-draw-web-based-editor.html" target="_blank" rel="external">http://www.cnblogs.com/lhb25/p/method-draw-web-based-editor.html</a></li>
+<li><a href="http://www.galacticstudios.org/kindle-weather-display/" target="_blank" rel="external">http://www.galacticstudios.org/kindle-weather-display/</a><h1 id="继续"><a href="#继续" class="headerlink" title="继续"></a>继续</h1>mntroot rw<br>vi /etc/crontab/root<br>/usr/sbin/crond restart<br>#终于成功了<br>把init-weather.sh放到launchpad的文件夹，然后在对应的ini文件中添加快捷键启动就好了。爽歪歪<br>主要还是看了作者博客下面的第一条评论然后阅读launchpad的README文件，很快就学会了，太爽了。<br>以后一定要阅读和写作README文件，这个太重要了。<br>#接着还有很多折腾的<br>比如：</li>
+<li>修改svg文件，让界面更好看</li>
+<li>修改城市，让天气准确</li>
+<li>修改更新频率，和服务器对应</li>
+<li>修改字体等</li>
+<li>添加新的内容</li>
+<li>在crontab优化和调试语音等操作</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/kinweather.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;不知道怎么看到这个项目的，感觉非常好玩，花了大约两天的空闲时间弄好了。添加了一些自己的改动，比如距离过年和毕业的时间。还在中间加了个每日信息，放了些平假名学学。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+    
+    
+      <category term="kindle" scheme="https://arlier1.github.io/tags/kindle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux清除大文件</title>
+    <link href="https://arlier1.github.io/2016/12/27/linux%E6%B8%85%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/"/>
+    <id>https://arlier1.github.io/2016/12/27/linux清除大文件/</id>
+    <published>2016-12-27T23:52:38.000Z</published>
+    <updated>2017-04-16T16:57:12.142Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>#&gt; access.log</li>
+<li>#: &gt; access.log</li>
+<li>cat /dev/null &gt; access.log    #cp /dev/null access.log</li>
+<li>echo -n “” &gt; access.log</li>
+<li>truncate -s 0 access.log<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><a href="http://www.tecmint.com/empty-delete-file-content-linux/" target="_blank" rel="external">http://www.tecmint.com/empty-delete-file-content-linux/</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;#&amp;gt; access.log&lt;/li&gt;
+&lt;li&gt;#: &amp;gt; access.log&lt;/li&gt;
+&lt;li&gt;cat /dev/null &amp;gt; access.log    #cp /dev/null access.log&lt;/li&gt;
+&lt;li&gt;echo -n “”
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="linux" scheme="https://arlier1.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派上运行GEANT4</title>
+    <link href="https://arlier1.github.io/2016/12/26/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E8%BF%90%E8%A1%8CGEANT4/"/>
+    <id>https://arlier1.github.io/2016/12/26/树莓派上运行GEANT4/</id>
+    <published>2016-12-26T23:13:02.000Z</published>
+    <updated>2017-04-16T16:56:38.904Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/pigeant41.jpg" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/b4arun.png" alt=""></p>
+<h1 id="竟然成功了"><a href="#竟然成功了" class="headerlink" title="竟然成功了"></a>竟然成功了</h1><p>经过一番努力和尝试，我真的在树莓派上运行了GEANT4，整个安装过程和ubuntu系统几乎一模一样，因为ubuntu也是基于Debian的。只是安装过程可能会出现一些意外，需要一一去解决。<br><a id="more"></a></p>
+<h1 id="安装记录"><a href="#安装记录" class="headerlink" title="安装记录"></a>安装记录</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libxt-dev libxmu-dev libxi-dev zlib1g-dev libgl2ps-dev    libexpat1-dev libxerces-c-dev</div><div class="line">mkdir geant4</div><div class="line"><span class="built_in">cd</span> geant4/</div><div class="line">sudo wget http://geant4.cern.ch/support/<span class="built_in">source</span>/geant4.10.03.tar.gz</div><div class="line">sudo tar -zxf geant4.10.03.tar.gz</div><div class="line">mkdir &#123;g4build,g4install&#125;</div><div class="line"><span class="built_in">cd</span> /usr</div><div class="line">sudo wget https://cmake.org/files/v3.7/cmake-3.7.1.tar.gz</div><div class="line">sudo tar zxvf cmake-3.7.1.tar.gz</div><div class="line"><span class="built_in">cd</span> cmake-3.7.1/</div><div class="line">sudo ./configure</div><div class="line">sudo make</div><div class="line">sudo make install</div><div class="line"><span class="built_in">cd</span> ~/geant4/g4build/</div><div class="line">sudo cmake -DCMAKE_INSTALL_PREFIX=/home/debian/geant4/g4install -DGEANT4_USE_OPENGL_X11=ON /home/debian/geant4/geant4.10.03</div><div class="line">sudo make -j4   /多核安装可能会使系统崩溃，尤其是硬件不太好的时候，非常占资源，我的PINE就黑屏了。。</div><div class="line">所以最好还是安全一些选择 sudo make 比较稳妥</div><div class="line">sudo make install</div><div class="line"> <span class="built_in">cd</span> /home/debian/geant4/g4install/share/Geant4-10.3.0</div><div class="line">sudo mkdir data</div><div class="line"> <span class="built_in">cd</span> data</div><div class="line">sudo scp -r pi@192.168.1.218:/home/pi/geant4/g4install/share/Geant4-10.3.0/data .</div><div class="line">至此数据文件安装好了</div><div class="line"><span class="built_in">source</span> /home/debian/geant4/g4install/bin/geant4.sh</div><div class="line">env | grep G4</div><div class="line"></div><div class="line"><span class="built_in">cd</span> /home/debian/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo mkdir buildB1</div><div class="line"><span class="built_in">cd</span> buildB1</div><div class="line">sudo cmake -DGeant4_DIR=/home/debian/geant4/g4install/lib/Geant4-10.3.0 /home/debian/geant4/g4install/share/Geant4-10.3.0/examples/basic/B1</div><div class="line">sudo make</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/pigeant41.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/b4arun.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;竟然成功了&quot;&gt;&lt;a href=&quot;#竟然成功了&quot; class=&quot;headerlink&quot; title=&quot;竟然成功了&quot;&gt;&lt;/a&gt;竟然成功了&lt;/h1&gt;&lt;p&gt;经过一番努力和尝试，我真的在树莓派上运行了GEANT4，整个安装过程和ubuntu系统几乎一模一样，因为ubuntu也是基于Debian的。只是安装过程可能会出现一些意外，需要一一去解决。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>正式学习SolidWorks</title>
+    <link href="https://arlier1.github.io/2016/12/26/%E6%AD%A3%E5%BC%8F%E5%AD%A6%E4%B9%A0SolidWorks/"/>
+    <id>https://arlier1.github.io/2016/12/26/正式学习SolidWorks/</id>
+    <published>2016-12-26T22:59:19.000Z</published>
+    <updated>2017-04-16T16:56:19.255Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/22.JPG" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/first.JPG" alt=""><br>安装了个2015的破解版，根据youtube上的视频学，看起来非常有意思。一直没找到合适的机会学习，现在来看这个软件真的很强大，很方便，而且学起来不难。软件对细节的处理很到位，适合精密的设计和开发；相比而言sketchup就是那种可以快速得到原型的软件。。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/22.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/first.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;安装了个2015的破
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="SolidWorks" scheme="https://arlier1.github.io/tags/SolidWorks/"/>
     
   </entry>
   
