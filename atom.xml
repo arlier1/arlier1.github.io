@@ -101,4 +101,116 @@
     
   </entry>
   
+  <entry>
+    <title>apt-get被锁</title>
+    <link href="https://arlier1.github.io/2016/12/24/apt-get%E8%A2%AB%E9%94%81/"/>
+    <id>https://arlier1.github.io/2016/12/24/apt-get被锁/</id>
+    <published>2016-12-24T20:56:17.000Z</published>
+    <updated>2017-04-16T16:53:29.829Z</updated>
+    
+    <content type="html"><![CDATA[<p>执行命令sudo apt-get update<br>显示：无法获得锁 /var/lib/apt/lists/lock - open (11: 资源暂时不可用)<br>搜索得知是因为意外退出apt导致的，于是<code>sudo rm /var/lib/apt/lists/lock</code>进行解锁就可以了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;执行命令sudo apt-get update&lt;br&gt;显示：无法获得锁 /var/lib/apt/lists/lock - open (11: 资源暂时不可用)&lt;br&gt;搜索得知是因为意外退出apt导致的，于是&lt;code&gt;sudo rm /var/lib/apt/lists/
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="apt" scheme="https://arlier1.github.io/tags/apt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bash读取一行文本文件</title>
+    <link href="https://arlier1.github.io/2016/10/18/c-%E8%AF%BB%E5%8F%96%E4%B8%80%E8%A1%8C%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/"/>
+    <id>https://arlier1.github.io/2016/10/18/c-读取一行文本文件/</id>
+    <published>2016-10-18T01:45:29.000Z</published>
+    <updated>2017-04-16T16:53:28.494Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/ihep.jpg" alt=""></p>
+<h1 id="方法一，指定换行符读取："><a href="#方法一，指定换行符读取：" class="headerlink" title="方法一，指定换行符读取："></a>方法一，指定换行符读取：</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"><span class="keyword">for</span> LINE in `cat /etc/passwd`  </div><div class="line"><span class="keyword">do</span>   </div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法二，文件重定向给read处理："><a href="#方法二，文件重定向给read处理：" class="headerlink" title="方法二，文件重定向给read处理："></a>方法二，文件重定向给read处理：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line">cat /etc/passwd | <span class="keyword">while</span> read LINE  </div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done</div></pre></td></tr></table></figure>
+<h1 id="方法三，用read读取文件重定向："><a href="#方法三，用read读取文件重定向：" class="headerlink" title="方法三，用read读取文件重定向："></a>方法三，用read读取文件重定向：</h1> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#! /bin/bash  </div><div class="line"></div><div class="line"><span class="keyword">while</span> read LINE</div><div class="line"><span class="keyword">do</span></div><div class="line">        echo $LINE</div><div class="line">done &lt; /etc/passwd</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/ihep.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;方法一，指定换行符读取：&quot;&gt;&lt;a href=&quot;#方法一，指定换行符读取：&quot; class=&quot;headerlink&quot; title=&quot;
+    
+    </summary>
+    
+      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+    
+      <category term="bash" scheme="https://arlier1.github.io/tags/bash/"/>
+    
+      <category term="读文件" scheme="https://arlier1.github.io/tags/%E8%AF%BB%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>back_up_all_my_work</title>
+    <link href="https://arlier1.github.io/2016/08/23/backupallmywork/"/>
+    <id>https://arlier1.github.io/2016/08/23/backupallmywork/</id>
+    <published>2016-08-23T15:46:01.000Z</published>
+    <updated>2017-04-16T16:53:29.636Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>在用texide的时候，我突然意识到我可以用pdf文件备份我所有的重要工作；因为我可以使用include命令，来对不同的文章和内容进行独立管理和编辑引用，再把它们整合起来；然后结合书签命令进行快速分类和索引。如果实施成功，那么我将能够高效、安全地保护我的数据，尤其是这些低熵数据。同时由于我试图保存所有重要数据，文件的安全性，私密性值得考虑；同时还得详细确定如何组织这些内容，采用什么样的构架和管理形式，保证以后内容的添加和删除；要考虑的尽可能长远；初步打算，在完成模型之后先进行测试，如果没什么大问题的话就可以逐步把所有之前的文件进行集合。</p>
+<h1 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h1><p>另一个问题是，确定一个明确的标准，即什么样的数据需要存储，什么样的数据不需要存储，或者只需要存储索引。然后就是怎么存储的问题，这个也需要明确的标准，对于存入的内容应该有具体的结构和标签之类的东西；总之要有统一的、确定的格式。怎么写着写着就感觉是在，用root进行数据存储。有点类似数据库的意思。</p>
+<h1 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h1><p>我想在完全执行这一步骤之后，我的数据基本上就是安全的。我把这些低熵的数据在云端和网盘进行了同时备份；对于照片和视频之类的文件，丢了也不是很可惜。假设发生意外我的硬盘损坏，数据完全丢失，那我的损失也许并不大；可能很多重要的文件没了，但理论上其他人的电脑上是肯定会有的。比如我下载的文件、软件、照片等；我所需要的只是建立相应的索引和链接。</p>
+<h1 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h1><p>1.临时工作目录，为知笔记随时记录想法和灵感，每周归档。<br>2.重要软件说明和索引，以及链接；对于可能失效的链接可以考虑备份文件到网盘。<br>3.重要第三方文件。<br>4.按照时间进行记录，然后添加分类和标签。<br>5.在开头进行格式说明，分类和标签列表；目录。<br>6.主文件全部采用include加注释形式，方便开关。</p>
+<h1 id="最后具体实施-gt"><a href="#最后具体实施-gt" class="headerlink" title="最后具体实施-&gt;"></a>最后具体实施-&gt;</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;备份&quot;&gt;&lt;a href=&quot;#备份&quot; class=&quot;headerlink&quot; title=&quot;备份&quot;&gt;&lt;/a&gt;备份&lt;/h1&gt;&lt;p&gt;在用texide的时候，我突然意识到我可以用pdf文件备份我所有的重要工作；因为我可以使用include命令，来对不同的文章和内容进行独立管
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="backup" scheme="https://arlier1.github.io/tags/backup/"/>
+    
+      <category term="allmywork" scheme="https://arlier1.github.io/tags/allmywork/"/>
+    
+      <category term="数据无价" scheme="https://arlier1.github.io/tags/%E6%95%B0%E6%8D%AE%E6%97%A0%E4%BB%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>decision condition of decisions</title>
+    <link href="https://arlier1.github.io/2016/08/11/decisionconditionofdecisions/"/>
+    <id>https://arlier1.github.io/2016/08/11/decisionconditionofdecisions/</id>
+    <published>2016-08-11T15:04:27.000Z</published>
+    <updated>2017-04-16T16:53:28.259Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/pku.jpg" alt=""><br>你在意的东西越少，就越容易快乐。<br>An expert is a person who has made all the mistakes that can be made in a very narrow field. -Niels Bohr.<br><a id="more"></a></p>
+<h1 id="dilemma"><a href="#dilemma" class="headerlink" title="dilemma"></a>dilemma</h1><p>最近遇到一个两难的决定，去中山还是高能所？影响的因素太多，又没有决定性的因素，很纠结。然后决定去操场溜几圈，冷静分析一下。是不是我们走的太远，以至于忘记了为什么出发？我们发现的太多，得到的太多，以至于有了太多的牵挂和留恋？哦，也许整件事就这么简单。如果把问题简单化，为什么读博？我想我内心深处的回答(key answer)是“To find something out”;下一个问题，为什么想出国？我的回答也许是“遇到更厉害的人”，但显然这是一个不成熟的答案；以这个核心的条件去判别其他表面的“优劣”，答案就会很明了。我们不可能做每件事都有明确的目的，但一旦在某个局域内迷失，总要有指出方向的东西。于是做出决定：如果4年时间做不出像样的东西，就在形式上离开这个领域。如果这是一个合理的决定，那么许多年之后再回首这样的选择应该不会感到虚度年华。</p>
+<h1 id="how-to"><a href="#how-to" class="headerlink" title="how to"></a>how to</h1><p>然后总结出一个经验：很简单的原则，如果你要做一个几乎影响人生轨迹的决定，请考虑十年之后你在干什么，或者设想十年之后你需要什么；如果你要做一个比较大的决定，你只要考虑一年之后大约的情形就很容易选择；最后那些小决定就很随意了，毕竟每个人的适应能力都足以应付可能的意外。如果跳出这个思维，其实有很多时候很多事情都是“没得选”的，甚至你会本能地作出决定；就好比你遇到一个轻松而且高薪的工作和一个艰苦并且薪水很低的工作，你甚至都不觉得这需要选择。也就是说你根本觉查不到很多东西是需要选择的，这才是真正subtle的地方。</p>
+<h1 id="finally-three-rules"><a href="#finally-three-rules" class="headerlink" title="finally three rules"></a>finally three rules</h1><ul>
+<li>do not fool yourself</li>
+<li>to find something out</li>
+<li>whenever you are in a dileama,think about the two rules above.</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/pku.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;你在意的东西越少，就越容易快乐。&lt;br&gt;An expert is a person who has made all the mistakes that can be made in a very narrow field. -Niels Bohr.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="decision" scheme="https://arlier1.github.io/tags/decision/"/>
+    
+  </entry>
+  
 </feed>
