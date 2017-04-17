@@ -4,9 +4,9 @@
   
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
-  <link href="https://arlier1.github.io/"/>
-  <updated>2017-04-16T15:28:55.110Z</updated>
-  <id>https://arlier1.github.io/</id>
+  <link href="/"/>
+  <updated>2017-04-17T13:54:54.424Z</updated>
+  <id>/</id>
   
   <author>
     <name>arlier</name>
@@ -16,9 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>失去的网站</title>
+    <link href="/2017/04/17/%E5%A4%B1%E5%8E%BB%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+    <id>/2017/04/17/失去的网站/</id>
+    <published>2017-04-17T13:54:04.000Z</published>
+    <updated>2017-04-17T13:54:54.424Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="失去的网站"><a href="#失去的网站" class="headerlink" title="失去的网站"></a>失去的网站</h1><h4 id="失去的网站-1"><a href="#失去的网站-1" class="headerlink" title="失去的网站"></a>失去的网站</h4><p>今天发现我之前放在GitHub的一个网站<code>迷失</code>了，准确的说我找不到GitHub的用户名了。当时买了一个博客主题搭在腾讯的服务器上，结果因为没有备案被发现，然后决定放在GitHub上。由于比较匆忙可能是弄了个小号吧，结果现在怎么也找不到登录邮箱了，试了好几个可能的邮箱都不行。。。。</p>
+<p>虽说这个网站也没什么重要的，心里还是放不下，总想找回来。也许这就是烦恼的源头了。现在折腾了几个小时我就开始觉得以后还是少点事比较好，有点感觉心累了不再想去折腾了，这算是成熟还是说老去了呢？</p>
+<p>###人生的经验<br>仔细一想，从小长大我们其实一直都在不断地失去一些东西：曾经无比珍视无比用心的东西，后来可能想都想不起来；曾经十分熟悉的朋友，后来渐渐失去联系。那么，过了很久之后（比如当我们个体生命消逝）我们拥有的东西都会失去，所以失去某一样东西是必然的，而且无时无刻不再发生，只是个人的主观感受和体验不同罢了。有些人患得患失，有些人毫不在意。</p>
+<p>如果从热力学第二定律的角度来看，世界的演化是单方向的，所以人们需要通过“患得患失”来维持内部的小系统，保持某种负熵的传递。</p>
+<h3 id="如果你认为不重要，就扔了它"><a href="#如果你认为不重要，就扔了它" class="headerlink" title="如果你认为不重要，就扔了它"></a>如果你认为不重要，就扔了它</h3><p>我们总会制作和产出许多东西，比如一些文字，语音，照片，小制作等等。这些东西绝大多数只对自己有意义，在某些时刻让你产生特定的思维和感情但对于绝大多数人是没有什么用处的。比如你小时候写的一篇作文或者画的一幅画，当你失去它的时候你或许会感到惋惜，但你几乎找不到另一个在乎它们的人。这样的东西有很多，它们的存在作用最可能就算在很久之后勾起你一些回忆。</p>
+<p>所以从长远的角度考虑，如果某些东西失去了之后只会影响你的感情，那么就说明它不重要。丢弃它们以免成为你的管理负担。</p>
+<h3 id="追求简单"><a href="#追求简单" class="headerlink" title="追求简单"></a>追求简单</h3><p>显然集中精力把一件事做到极致显然要比同时进行很多工作重要。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;失去的网站&quot;&gt;&lt;a href=&quot;#失去的网站&quot; class=&quot;headerlink&quot; title=&quot;失去的网站&quot;&gt;&lt;/a&gt;失去的网站&lt;/h1&gt;&lt;h4 id=&quot;失去的网站-1&quot;&gt;&lt;a href=&quot;#失去的网站-1&quot; class=&quot;headerlink&quot; title=
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>termbox</title>
-    <link href="https://arlier1.github.io/2017/04/16/termbox/"/>
-    <id>https://arlier1.github.io/2017/04/16/termbox/</id>
+    <link href="/2017/04/16/termbox/"/>
+    <id>/2017/04/16/termbox/</id>
     <published>2017-04-16T15:19:12.000Z</published>
     <updated>2017-04-16T15:28:55.110Z</updated>
     
@@ -34,14 +59,14 @@
     </summary>
     
     
-      <category term="termbox" scheme="https://arlier1.github.io/tags/termbox/"/>
+      <category term="termbox" scheme="/tags/termbox/"/>
     
   </entry>
   
   <entry>
     <title>HEXO 安装记录</title>
-    <link href="https://arlier1.github.io/2017/04/16/installhexo/"/>
-    <id>https://arlier1.github.io/2017/04/16/installhexo/</id>
+    <link href="/2017/04/16/installhexo/"/>
+    <id>/2017/04/16/installhexo/</id>
     <published>2017-04-16T14:26:14.000Z</published>
     <updated>2017-04-16T15:06:58.487Z</updated>
     
@@ -66,18 +91,18 @@
     </summary>
     
     
-      <category term="nstall" scheme="https://arlier1.github.io/tags/nstall/"/>
+      <category term="nstall" scheme="/tags/nstall/"/>
     
-      <category term="exo" scheme="https://arlier1.github.io/tags/exo/"/>
+      <category term="exo" scheme="/tags/exo/"/>
     
-      <category term="ecord" scheme="https://arlier1.github.io/tags/ecord/"/>
+      <category term="ecord" scheme="/tags/ecord/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://arlier1.github.io/2017/04/16/hello-world/"/>
-    <id>https://arlier1.github.io/2017/04/16/hello-world/</id>
+    <link href="/2017/04/16/hello-world/"/>
+    <id>/2017/04/16/hello-world/</id>
     <published>2017-04-16T12:41:37.503Z</published>
     <updated>2017-04-16T12:41:37.503Z</updated>
     
@@ -103,8 +128,8 @@
   
   <entry>
     <title>拯救我的360云盘</title>
-    <link href="https://arlier1.github.io/2017/04/03/%E6%8B%AF%E6%95%91%E6%88%91%E7%9A%84360%E4%BA%91%E7%9B%98/"/>
-    <id>https://arlier1.github.io/2017/04/03/拯救我的360云盘/</id>
+    <link href="/2017/04/03/%E6%8B%AF%E6%95%91%E6%88%91%E7%9A%84360%E4%BA%91%E7%9B%98/"/>
+    <id>/2017/04/03/拯救我的360云盘/</id>
     <published>2017-04-03T23:45:43.000Z</published>
     <updated>2017-04-16T16:56:19.493Z</updated>
     
@@ -120,17 +145,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="360" scheme="https://arlier1.github.io/tags/360/"/>
+      <category term="360" scheme="/tags/360/"/>
     
   </entry>
   
   <entry>
     <title>Matplot画图</title>
-    <link href="https://arlier1.github.io/2017/03/14/Matplot%E7%94%BB%E5%9B%BE/"/>
-    <id>https://arlier1.github.io/2017/03/14/Matplot画图/</id>
+    <link href="/2017/03/14/Matplot%E7%94%BB%E5%9B%BE/"/>
+    <id>/2017/03/14/Matplot画图/</id>
     <published>2017-03-14T00:59:48.000Z</published>
     <updated>2017-04-16T16:57:10.090Z</updated>
     
@@ -146,17 +171,17 @@
     
     </summary>
     
-      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+      <category term="share" scheme="/categories/share/"/>
     
     
-      <category term="matplot" scheme="https://arlier1.github.io/tags/matplot/"/>
+      <category term="matplot" scheme="/tags/matplot/"/>
     
   </entry>
   
   <entry>
     <title>无能者无所求</title>
-    <link href="https://arlier1.github.io/2017/03/08/%E6%97%A0%E8%83%BD%E8%80%85%E6%97%A0%E6%89%80%E6%B1%82/"/>
-    <id>https://arlier1.github.io/2017/03/08/无能者无所求/</id>
+    <link href="/2017/03/08/%E6%97%A0%E8%83%BD%E8%80%85%E6%97%A0%E6%89%80%E6%B1%82/"/>
+    <id>/2017/03/08/无能者无所求/</id>
     <published>2017-03-08T23:02:54.000Z</published>
     <updated>2017-04-16T16:56:26.594Z</updated>
     
@@ -171,17 +196,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="随想" scheme="https://arlier1.github.io/tags/%E9%9A%8F%E6%83%B3/"/>
+      <category term="随想" scheme="/tags/%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
   <entry>
     <title>复古and装逼的终端</title>
-    <link href="https://arlier1.github.io/2017/02/27/%E5%A4%8D%E5%8F%A4and%E8%A3%85%E9%80%BC%E7%9A%84%E7%BB%88%E7%AB%AF/"/>
-    <id>https://arlier1.github.io/2017/02/27/复古and装逼的终端/</id>
+    <link href="/2017/02/27/%E5%A4%8D%E5%8F%A4and%E8%A3%85%E9%80%BC%E7%9A%84%E7%BB%88%E7%AB%AF/"/>
+    <id>/2017/02/27/复古and装逼的终端/</id>
     <published>2017-02-27T19:49:24.000Z</published>
     <updated>2017-04-16T16:56:49.699Z</updated>
     
@@ -197,17 +222,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="终端" scheme="https://arlier1.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+      <category term="终端" scheme="/tags/%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>录制终端操作</title>
-    <link href="https://arlier1.github.io/2017/02/27/%E5%BD%95%E5%88%B6%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/"/>
-    <id>https://arlier1.github.io/2017/02/27/录制终端操作/</id>
+    <link href="/2017/02/27/%E5%BD%95%E5%88%B6%E7%BB%88%E7%AB%AF%E6%93%8D%E4%BD%9C/"/>
+    <id>/2017/02/27/录制终端操作/</id>
     <published>2017-02-27T16:33:57.000Z</published>
     <updated>2017-04-16T16:56:43.777Z</updated>
     
@@ -227,17 +252,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="终端" scheme="https://arlier1.github.io/tags/%E7%BB%88%E7%AB%AF/"/>
+      <category term="终端" scheme="/tags/%E7%BB%88%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>G4+Qt</title>
-    <link href="https://arlier1.github.io/2017/02/26/G4-Qt/"/>
-    <id>https://arlier1.github.io/2017/02/26/G4-Qt/</id>
+    <link href="/2017/02/26/G4-Qt/"/>
+    <id>/2017/02/26/G4-Qt/</id>
     <published>2017-02-26T20:33:45.000Z</published>
     <updated>2017-04-16T16:57:20.377Z</updated>
     
@@ -253,19 +278,19 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="Qt" scheme="https://arlier1.github.io/tags/Qt/"/>
+      <category term="Qt" scheme="/tags/Qt/"/>
     
-      <category term="geant4" scheme="https://arlier1.github.io/tags/geant4/"/>
+      <category term="geant4" scheme="/tags/geant4/"/>
     
   </entry>
   
   <entry>
     <title>给ubuntu设置ssh登陆</title>
-    <link href="https://arlier1.github.io/2017/02/26/%E7%BB%99ubuntu%E8%AE%BE%E7%BD%AEssh%E7%99%BB%E9%99%86/"/>
-    <id>https://arlier1.github.io/2017/02/26/给ubuntu设置ssh登陆/</id>
+    <link href="/2017/02/26/%E7%BB%99ubuntu%E8%AE%BE%E7%BD%AEssh%E7%99%BB%E9%99%86/"/>
+    <id>/2017/02/26/给ubuntu设置ssh登陆/</id>
     <published>2017-02-26T20:14:12.000Z</published>
     <updated>2017-04-16T16:56:49.018Z</updated>
     
@@ -279,17 +304,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="ssh" scheme="https://arlier1.github.io/tags/ssh/"/>
+      <category term="ssh" scheme="/tags/ssh/"/>
     
   </entry>
   
   <entry>
     <title>为了QT再次安装G4</title>
-    <link href="https://arlier1.github.io/2017/02/24/%E4%B8%BA%E4%BA%86QT%E5%86%8D%E6%AC%A1%E5%AE%89%E8%A3%85G4/"/>
-    <id>https://arlier1.github.io/2017/02/24/为了QT再次安装G4/</id>
+    <link href="/2017/02/24/%E4%B8%BA%E4%BA%86QT%E5%86%8D%E6%AC%A1%E5%AE%89%E8%A3%85G4/"/>
+    <id>/2017/02/24/为了QT再次安装G4/</id>
     <published>2017-02-24T09:01:05.000Z</published>
     <updated>2017-04-16T16:56:32.706Z</updated>
     
@@ -307,17 +332,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="QT" scheme="https://arlier1.github.io/tags/QT/"/>
+      <category term="QT" scheme="/tags/QT/"/>
     
   </entry>
   
   <entry>
     <title>安装QT</title>
-    <link href="https://arlier1.github.io/2017/02/23/%E5%AE%89%E8%A3%85QT/"/>
-    <id>https://arlier1.github.io/2017/02/23/安装QT/</id>
+    <link href="/2017/02/23/%E5%AE%89%E8%A3%85QT/"/>
+    <id>/2017/02/23/安装QT/</id>
     <published>2017-02-23T15:15:58.000Z</published>
     <updated>2017-04-16T16:56:55.040Z</updated>
     
@@ -331,17 +356,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="Qt" scheme="https://arlier1.github.io/tags/Qt/"/>
+      <category term="Qt" scheme="/tags/Qt/"/>
     
   </entry>
   
   <entry>
     <title>发现的乐趣</title>
-    <link href="https://arlier1.github.io/2017/02/21/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B9%90%E8%B6%A3/"/>
-    <id>https://arlier1.github.io/2017/02/21/发现的乐趣/</id>
+    <link href="/2017/02/21/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B9%90%E8%B6%A3/"/>
+    <id>/2017/02/21/发现的乐趣/</id>
     <published>2017-02-21T09:24:04.000Z</published>
     <updated>2017-04-16T16:56:50.172Z</updated>
     
@@ -361,17 +386,17 @@
     
     </summary>
     
-      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+      <category term="share" scheme="/categories/share/"/>
     
     
-      <category term="发现" scheme="https://arlier1.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
+      <category term="发现" scheme="/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
     <title>The-Value-of-Science</title>
-    <link href="https://arlier1.github.io/2017/02/20/The-Value-of-Science/"/>
-    <id>https://arlier1.github.io/2017/02/20/The-Value-of-Science/</id>
+    <link href="/2017/02/20/The-Value-of-Science/"/>
+    <id>/2017/02/20/The-Value-of-Science/</id>
     <published>2017-02-20T17:04:20.000Z</published>
     <updated>2017-04-16T16:57:01.627Z</updated>
     
@@ -391,17 +416,17 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://arlier1.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="feynman" scheme="https://arlier1.github.io/tags/feynman/"/>
+      <category term="feynman" scheme="/tags/feynman/"/>
     
   </entry>
   
   <entry>
     <title>终于搞懂了回车与换行的区别</title>
-    <link href="https://arlier1.github.io/2017/01/29/%E7%BB%88%E4%BA%8E%E6%90%9E%E6%87%82%E4%BA%86%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://arlier1.github.io/2017/01/29/终于搞懂了回车与换行的区别/</id>
+    <link href="/2017/01/29/%E7%BB%88%E4%BA%8E%E6%90%9E%E6%87%82%E4%BA%86%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>/2017/01/29/终于搞懂了回车与换行的区别/</id>
     <published>2017-01-29T22:01:33.000Z</published>
     <updated>2017-04-16T16:56:17.929Z</updated>
     
@@ -419,17 +444,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="回车与换行" scheme="https://arlier1.github.io/tags/%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C/"/>
+      <category term="回车与换行" scheme="/tags/%E5%9B%9E%E8%BD%A6%E4%B8%8E%E6%8D%A2%E8%A1%8C/"/>
     
   </entry>
   
   <entry>
     <title>树莓派相册</title>
-    <link href="https://arlier1.github.io/2016/12/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9B%B8%E5%86%8C/"/>
-    <id>https://arlier1.github.io/2016/12/28/树莓派相册/</id>
+    <link href="/2016/12/28/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9B%B8%E5%86%8C/"/>
+    <id>/2016/12/28/树莓派相册/</id>
     <published>2016-12-28T13:30:13.000Z</published>
     <updated>2017-04-16T16:56:38.064Z</updated>
     
@@ -460,17 +485,17 @@
     
     </summary>
     
-      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+      <category term="share" scheme="/categories/share/"/>
     
     
-      <category term="树莓派" scheme="https://arlier1.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>kindle天气显示</title>
-    <link href="https://arlier1.github.io/2016/12/27/kindle%E5%A4%A9%E6%B0%94%E6%98%BE%E7%A4%BA/"/>
-    <id>https://arlier1.github.io/2016/12/27/kindle天气显示/</id>
+    <link href="/2016/12/27/kindle%E5%A4%A9%E6%B0%94%E6%98%BE%E7%A4%BA/"/>
+    <id>/2016/12/27/kindle天气显示/</id>
     <published>2016-12-27T23:53:04.000Z</published>
     <updated>2017-04-16T16:57:16.829Z</updated>
     
@@ -500,17 +525,17 @@
     
     </summary>
     
-      <category term="share" scheme="https://arlier1.github.io/categories/share/"/>
+      <category term="share" scheme="/categories/share/"/>
     
     
-      <category term="kindle" scheme="https://arlier1.github.io/tags/kindle/"/>
+      <category term="kindle" scheme="/tags/kindle/"/>
     
   </entry>
   
   <entry>
     <title>linux清除大文件</title>
-    <link href="https://arlier1.github.io/2016/12/27/linux%E6%B8%85%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/"/>
-    <id>https://arlier1.github.io/2016/12/27/linux清除大文件/</id>
+    <link href="/2016/12/27/linux%E6%B8%85%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/"/>
+    <id>/2016/12/27/linux清除大文件/</id>
     <published>2016-12-27T23:52:38.000Z</published>
     <updated>2017-04-16T16:57:12.142Z</updated>
     
@@ -533,17 +558,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="linux" scheme="https://arlier1.github.io/tags/linux/"/>
+      <category term="linux" scheme="/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>树莓派上运行GEANT4</title>
-    <link href="https://arlier1.github.io/2016/12/26/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E8%BF%90%E8%A1%8CGEANT4/"/>
-    <id>https://arlier1.github.io/2016/12/26/树莓派上运行GEANT4/</id>
+    <link href="/2016/12/26/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E8%BF%90%E8%A1%8CGEANT4/"/>
+    <id>/2016/12/26/树莓派上运行GEANT4/</id>
     <published>2016-12-26T23:13:02.000Z</published>
     <updated>2017-04-16T16:56:38.904Z</updated>
     
@@ -559,29 +584,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>正式学习SolidWorks</title>
-    <link href="https://arlier1.github.io/2016/12/26/%E6%AD%A3%E5%BC%8F%E5%AD%A6%E4%B9%A0SolidWorks/"/>
-    <id>https://arlier1.github.io/2016/12/26/正式学习SolidWorks/</id>
-    <published>2016-12-26T22:59:19.000Z</published>
-    <updated>2017-04-16T16:56:19.255Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://o98383o2a.bkt.clouddn.com/22.JPG" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/first.JPG" alt=""><br>安装了个2015的破解版，根据youtube上的视频学，看起来非常有意思。一直没找到合适的机会学习，现在来看这个软件真的很强大，很方便，而且学起来不难。软件对细节的处理很到位，适合精密的设计和开发；相比而言sketchup就是那种可以快速得到原型的软件。。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/22.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://o98383o2a.bkt.clouddn.com/first.JPG&quot; alt=&quot;&quot;&gt;&lt;br&gt;安装了个2015的破
-    
-    </summary>
-    
-      <category term="计算机" scheme="https://arlier1.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="SolidWorks" scheme="https://arlier1.github.io/tags/SolidWorks/"/>
     
   </entry>
   
