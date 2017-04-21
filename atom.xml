@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-04-18T11:06:38.166Z</updated>
+  <updated>2017-04-21T17:01:16.311Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webterm</title>
+    <link href="/2017/04/21/webterm/"/>
+    <id>/2017/04/21/webterm/</id>
+    <published>2017-04-21T16:59:25.000Z</published>
+    <updated>2017-04-21T17:01:16.311Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="SHELLINABOX-今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot-juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。-作为一个爱折腾的人，总会尝试一下没什么实用价值的功能-JUICESSH-通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了两篇帖子帖子-按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。-shellinbox-那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是Shellinabox-在centos7-中的搭建过程参考-http-www-linuxidc-com-Linux-2015-08-121865-htm-bash-yum-install-epel-release-yum-install-shellinabox-vi-etc-sysconfig-shellinaboxd-重启服务-sudo-systemctl-restart-shellinabox-开机启动-systemctl-enable-shellinaboxd-防火墙-firewall-cmd-permanent-add-port-4200-tcp-firewall-cmd-reload-配置好了-打开网址-：-https-ip-address-of-remote-servers-4200-一个wiki页面：-https-code-google-com-archive-p-shellinabox-wikis-shellinaboxd-man-wiki-事实上，这篇博客就是用shellinabox完成的。简直炫酷！"><a href="#SHELLINABOX-今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot-juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。-作为一个爱折腾的人，总会尝试一下没什么实用价值的功能-JUICESSH-通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了两篇帖子帖子-按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。-shellinbox-那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是Shellinabox-在centos7-中的搭建过程参考-http-www-linuxidc-com-Linux-2015-08-121865-htm-bash-yum-install-epel-release-yum-install-shellinabox-vi-etc-sysconfig-shellinaboxd-重启服务-sudo-systemctl-restart-shellinabox-开机启动-systemctl-enable-shellinaboxd-防火墙-firewall-cmd-permanent-add-port-4200-tcp-firewall-cmd-reload-配置好了-打开网址-：-https-ip-address-of-remote-servers-4200-一个wiki页面：-https-code-google-com-archive-p-shellinabox-wikis-shellinaboxd-man-wiki-事实上，这篇博客就是用shellinabox完成的。简直炫酷！" class="headerlink" title="SHELLINABOX 今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。 作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~ ### JUICESSH 通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了两篇帖子帖子 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。 ### shellinbox  那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是Shellinabox 在centos7 中的搭建过程参考 http://www.linuxidc.com/Linux/2015-08/121865.htm bash yum install epel-release yum install shellinabox vi /etc/sysconfig/shellinaboxd # 重启服务 sudo systemctl restart shellinabox # 开机启动 systemctl enable shellinaboxd # 防火墙 firewall-cmd --permanent --add-port=4200/tcp firewall-cmd --reload ### 配置好了 打开网址 ： https://ip-address-of-remote-servers:4200 一个wiki页面： https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki ### 事实上，这篇博客就是用shellinabox完成的。简直炫酷！"></a>SHELLINABOX 今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。 作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~ ### JUICESSH 通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了<a href="http://www.52pojie.cn/thread-502507-1-4.html" target="_blank" rel="external">两篇</a>帖子<a href="http://www.52pojie.cn/thread-557375-1-1.html" target="_blank" rel="external">帖子</a> 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。 ### shellinbox <img src="http://o98383o2a.bkt.clouddn.com/shellinabox1.png" alt=""> 那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是<a href="https://code.google.com/p/shellinabox/" target="_blank" rel="external">Shellinabox</a> 在centos7 中的搭建过程参考 <a href="http://www.linuxidc.com/Linux/2015-08/121865.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2015-08/121865.htm</a> <code>bash yum install epel-release yum install shellinabox vi /etc/sysconfig/shellinaboxd # 重启服务 sudo systemctl restart shellinabox # 开机启动 systemctl enable shellinaboxd # 防火墙 firewall-cmd --permanent --add-port=4200/tcp firewall-cmd --reload</code> ### 配置好了 打开网址 ： <a href="https://ip-address-of-remote-servers:4200" target="_blank" rel="external">https://ip-address-of-remote-servers:4200</a> 一个wiki页面： <a href="https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki" target="_blank" rel="external">https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki</a> ### 事实上，这篇博客就是用shellinabox完成的。简直炫酷！</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;SHELLINABOX-今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ROOT-note01</title>
@@ -550,39 +568,6 @@
     
     
       <category term="kindle" scheme="/tags/kindle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux清除大文件</title>
-    <link href="/2016/12/27/linux%E6%B8%85%E9%99%A4%E5%A4%A7%E6%96%87%E4%BB%B6/"/>
-    <id>/2016/12/27/linux清除大文件/</id>
-    <published>2016-12-27T23:52:38.000Z</published>
-    <updated>2017-04-16T16:57:12.142Z</updated>
-    
-    <content type="html"><![CDATA[<ul>
-<li>#&gt; access.log</li>
-<li>#: &gt; access.log</li>
-<li>cat /dev/null &gt; access.log    #cp /dev/null access.log</li>
-<li>echo -n “” &gt; access.log</li>
-<li>truncate -s 0 access.log<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><a href="http://www.tecmint.com/empty-delete-file-content-linux/" target="_blank" rel="external">http://www.tecmint.com/empty-delete-file-content-linux/</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;#&amp;gt; access.log&lt;/li&gt;
-&lt;li&gt;#: &amp;gt; access.log&lt;/li&gt;
-&lt;li&gt;cat /dev/null &amp;gt; access.log    #cp /dev/null access.log&lt;/li&gt;
-&lt;li&gt;echo -n “”
-    
-    </summary>
-    
-      <category term="计算机" scheme="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-    
-      <category term="linux" scheme="/tags/linux/"/>
     
   </entry>
   
