@@ -1,42 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+<search> 
   
-  <link href="https://arlier1.github.io/atom.xml" rel="self"/>
-  
-  <link href="/"/>
-  <updated>2017-05-31T02:36:51.062Z</updated>
-  <id>/</id>
-  
-  <author>
-    <name>arlier</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>webterm</title>
-    <link href="/2017/04/21/webterm/"/>
-    <id>/2017/04/21/webterm/</id>
-    <published>2017-04-21T16:59:25.000Z</published>
-    <updated>2017-05-31T02:36:51.062Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="SHELLINABOX"><a href="#SHELLINABOX" class="headerlink" title="SHELLINABOX"></a>SHELLINABOX</h3><p>今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。</p>
+    <entry>
+      <title><![CDATA[webterm]]></title>
+      <url>https://arlier1.github.io/2017/04/21/webterm/</url>
+      <content type="html"><![CDATA[<h3 id="SHELLINABOX"><a href="#SHELLINABOX" class="headerlink" title="SHELLINABOX"></a>SHELLINABOX</h3><p>今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。</p>
 <p>作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~</p>
 <h3 id="JUICESSH"><a href="#JUICESSH" class="headerlink" title="JUICESSH"></a>JUICESSH</h3><p>通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了<a href="http://www.52pojie.cn/thread-502507-1-4.html" target="_blank" rel="external">两篇</a>帖子<a href="http://www.52pojie.cn/thread-557375-1-1.html" target="_blank" rel="external">帖子</a> 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。</p>
 <h3 id="shellinbox"><a href="#shellinbox" class="headerlink" title="shellinbox"></a>shellinbox</h3><p><img src="http://o98383o2a.bkt.clouddn.com/shellinabox1.png" alt=""><br>那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是<a href="https://code.google.com/p/shellinabox/" target="_blank" rel="external">Shellinabox</a><br>在centos7 中的搭建过程参考 <a href="http://www.linuxidc.com/Linux/2015-08/121865.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2015-08/121865.htm</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"> yum install epel-release</div><div class="line"> yum install shellinabox</div><div class="line"> vi /etc/sysconfig/shellinaboxd</div><div class="line"> <span class="comment"># 重启服务</span></div><div class="line">sudo systemctl restart shellinabox</div><div class="line"><span class="comment"># 开机启动</span></div><div class="line">systemctl <span class="built_in">enable</span> shellinaboxd</div><div class="line"><span class="comment"># 防火墙</span></div><div class="line">firewall-cmd --permanent --add-port=4200/tcp</div><div class="line">firewall-cmd --reload</div></pre></td></tr></table></figure></p>
 <h3 id="配置好了"><a href="#配置好了" class="headerlink" title="配置好了"></a>配置好了</h3><p>打开网址 ： <a href="https://ip-address-of-remote-servers:4200" target="_blank" rel="external">https://ip-address-of-remote-servers:4200</a><br>一个wiki页面： <a href="https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki" target="_blank" rel="external">https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki</a></p>
 <p>###<br>事实上，这篇博客就是用shellinabox完成的。简直炫酷！</p>
 ]]></content>
+      
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h3 id=&quot;SHELLINABOX&quot;&gt;&lt;a href=&quot;#SHELLINABOX&quot; class=&quot;headerlink&quot; title=&quot;SHELLINABOX&quot;&gt;&lt;/a&gt;SHELLINABOX&lt;/h3&gt;&lt;p&gt;今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不
-    
-    </summary>
-    
-    
-  </entry>
   
-</feed>
+  
+</search>
