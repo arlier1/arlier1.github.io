@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/neutrino/index.html</loc>
+    
+    <lastmod>2017-06-01T12:34:19.040Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https:/arlier1.github.io/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/</loc>
     
     <lastmod>2017-06-01T08:04:30.430Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>/about/index.html</loc>
     
     <lastmod>2017-05-31T16:41:11.202Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/neutrino/index.html</loc>
-    
-    <lastmod>2017-05-31T09:04:17.314Z</lastmod>
     
   </url>
   
