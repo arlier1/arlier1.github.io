@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-01T08:04:30.430Z</updated>
+  <updated>2017-06-01T13:05:04.376Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zotera安装和使用</title>
+    <link href="/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
+    <id>/2017/06/01/zotera安装和使用/</id>
+    <published>2017-06-01T12:56:26.000Z</published>
+    <updated>2017-06-01T13:05:04.376Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="文献管理软件zotera"><a href="#文献管理软件zotera" class="headerlink" title="文献管理软件zotera"></a>文献管理软件zotera</h1><p>去年的时候师兄就告诉我说zotera非常好用，当时下载了个浏览器插件版，然后自己的使用频率不高就放在那里了。现在我觉得自己需要一个工具来整理看过的文献和笔记，比较各种文献管理软件之后我决定就使用zotera了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;文献管理软件zotera&quot;&gt;&lt;a href=&quot;#文献管理软件zotera&quot; class=&quot;headerlink&quot; title=&quot;文献管理软件zotera&quot;&gt;&lt;/a&gt;文献管理软件zotera&lt;/h1&gt;&lt;p&gt;去年的时候师兄就告诉我说zotera非常好用，当时下载了个浏
+    
+    </summary>
+    
+      <category term="program" scheme="/categories/program/"/>
+    
+    
+      <category term="zotera" scheme="/tags/zotera/"/>
+    
+      <category term="文献管理" scheme="/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>高能的物理-趣说普朗克常量</title>
