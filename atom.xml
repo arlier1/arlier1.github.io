@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-01T13:05:04.376Z</updated>
+  <updated>2017-06-01T13:24:32.012Z</updated>
   <id>/</id>
   
   <author>
@@ -20,14 +20,15 @@
     <link href="/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
     <id>/2017/06/01/zotera安装和使用/</id>
     <published>2017-06-01T12:56:26.000Z</published>
-    <updated>2017-06-01T13:05:04.376Z</updated>
+    <updated>2017-06-01T13:24:32.012Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="文献管理软件zotera"><a href="#文献管理软件zotera" class="headerlink" title="文献管理软件zotera"></a>文献管理软件zotera</h1><p>去年的时候师兄就告诉我说zotera非常好用，当时下载了个浏览器插件版，然后自己的使用频率不高就放在那里了。现在我觉得自己需要一个工具来整理看过的文献和笔记，比较各种文献管理软件之后我决定就使用zotera了。</p>
+    <content type="html"><![CDATA[<h1 id="文献管理软件zotera"><a href="#文献管理软件zotera" class="headerlink" title="文献管理软件zotera"></a>文献管理软件zotera</h1><p>去年的时候师兄就告诉我说<a href="https://www.zotero.org/" target="_blank" rel="external">zotera</a>非常好用，当时下载了个浏览器插件版，然后自己的使用频率不高就放在那里了。现在我觉得自己需要一个工具来整理看过的文献和笔记，比较各种文献管理软件之后我决定就使用zotera了。</p>
+<h1 id="ubuntu的安装"><a href="#ubuntu的安装" class="headerlink" title="ubuntu的安装"></a>ubuntu的安装</h1><p>先到<a href="https://www.zotero.org/download/" target="_blank" rel="external">官网</a>下载独版本立的安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">tar -jxvf Zotero-4.0.29.10_linux-x86_64.tar.bz2</div><div class="line"><span class="built_in">cd</span> Zotero_linux-x86_64 </div><div class="line">bash run-zotera.sh</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;文献管理软件zotera&quot;&gt;&lt;a href=&quot;#文献管理软件zotera&quot; class=&quot;headerlink&quot; title=&quot;文献管理软件zotera&quot;&gt;&lt;/a&gt;文献管理软件zotera&lt;/h1&gt;&lt;p&gt;去年的时候师兄就告诉我说zotera非常好用，当时下载了个浏
+      &lt;h1 id=&quot;文献管理软件zotera&quot;&gt;&lt;a href=&quot;#文献管理软件zotera&quot; class=&quot;headerlink&quot; title=&quot;文献管理软件zotera&quot;&gt;&lt;/a&gt;文献管理软件zotera&lt;/h1&gt;&lt;p&gt;去年的时候师兄就告诉我说&lt;a href=&quot;https://w
     
     </summary>
     
