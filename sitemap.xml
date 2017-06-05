@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https:/arlier1.github.io/2017/05/31/thisblog/</loc>
+    
+    <lastmod>2017-06-05T05:32:03.079Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/neutrino/index.html</loc>
     
     <lastmod>2017-06-05T05:26:23.148Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>/about/index.html</loc>
     
     <lastmod>2017-05-31T16:41:11.202Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https:/arlier1.github.io/2017/05/31/thisblog/</loc>
-    
-    <lastmod>2017-05-31T07:40:45.574Z</lastmod>
     
   </url>
   
