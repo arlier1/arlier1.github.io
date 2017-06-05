@@ -136,6 +136,43 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="https:/arlier1.github.io/2017/06/05/sshlogin/">
+        用密钥直接登录服务器
+      </a>
+    </h2>
+    
+    <time>
+      Jun 5, 2017
+    </time>
+		
+  </section>
+  <section class="article typo">
+	  <p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
+<h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
+<h2 id="配置sshd"><a href="#配置sshd" class="headerlink" title="配置sshd"></a>配置sshd</h2><p>打开/etc/ssh/sshd_config 文件，确认以下配置打开<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">RSAAuthentication yes</div><div class="line">PubkeyAuthentication yes</div><div class="line">AuthorizedKeysFile      .ssh/authorized_keys</div><div class="line">HostKey /etc/ssh/ssh_host_rsa_key</div><div class="line"><span class="comment"># 也可以顺便禁用密码登录</span></div><div class="line">ChallengeResponseAuthentication no</div><div class="line">PasswordAuthentication no</div><div class="line">UsePAM no</div></pre></td></tr></table></figure></p>
+<p>重启ssh服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service sshd restart</div><div class="line"><span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure></p>
+<h2 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h2><p>在本地电脑下载服务器上生成的id_rsa文件，保存~/.ssh路径;此时只要sshroot@server_ip就可以免密码登录了，非常方便。</p>
+
+
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="https:/arlier1.github.io/tags/sshkey-密钥登录/">sshkey 密钥登录</a>
+      
+	  </div>
+    
+  </section>
+</article>
+
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="https:/arlier1.github.io/2017/06/01/zotera安装和使用/">
         zotera安装和使用
       </a>
@@ -340,7 +377,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="https:/arlier1.github.io/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="https:/arlier1.github.io/tags/webterm/" style="font-size: 14px; color: #808080">webterm</a> <a href="https:/arlier1.github.io/tags/zotera/" style="font-size: 14px; color: #808080">zotera</a> <a href="https:/arlier1.github.io/tags/文献管理/" style="font-size: 14px; color: #808080">文献管理</a>
+        <a href="https:/arlier1.github.io/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="https:/arlier1.github.io/tags/sshkey-密钥登录/" style="font-size: 14px; color: #808080">sshkey 密钥登录</a> <a href="https:/arlier1.github.io/tags/webterm/" style="font-size: 14px; color: #808080">webterm</a> <a href="https:/arlier1.github.io/tags/zotera/" style="font-size: 14px; color: #808080">zotera</a> <a href="https:/arlier1.github.io/tags/文献管理/" style="font-size: 14px; color: #808080">文献管理</a>
     </div>
 </div>
 
