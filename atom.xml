@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-05T05:11:11.729Z</updated>
+  <updated>2017-06-05T05:14:21.437Z</updated>
   <id>/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="/2017/06/05/sshlogin/"/>
     <id>/2017/06/05/sshlogin/</id>
     <published>2017-06-05T04:42:08.000Z</published>
-    <updated>2017-06-05T05:11:11.729Z</updated>
+    <updated>2017-06-05T05:14:21.437Z</updated>
     
     <content type="html"><![CDATA[<p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
 <h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
@@ -35,6 +35,8 @@
 &lt;h1 id=&quot;在centos7上使用密钥登录&quot;&gt;&lt;a href=&quot;#在centos7上使用密钥登录&quot; class=&quot;headerlink&quot; title=
     
     </summary>
+    
+      <category term="computer" scheme="/categories/computer/"/>
     
     
       <category term="sshkey 密钥登录" scheme="/tags/sshkey-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/"/>

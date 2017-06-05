@@ -12,6 +12,12 @@
 <h2 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h2><p>在本地电脑下载服务器上生成的id_rsa文件，保存~/.ssh路径;此时只要sshroot@server_ip就可以免密码登录了，非常方便。</p>
 ]]></content>
       
+        <categories>
+            
+            <category> computer </category>
+            
+        </categories>
+        
         
         <tags>
             
