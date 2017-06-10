@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/ROOT/index.html</loc>
+    
+    <lastmod>2017-06-10T07:39:56.905Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https:/arlier1.github.io/2017/06/10/col%E5%92%8Ccolz/</loc>
     
     <lastmod>2017-06-10T07:27:31.947Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https:/arlier1.github.io/2017/06/08/thesiswriting/</loc>
     
     <lastmod>2017-06-08T04:36:08.495Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/ROOT/index.html</loc>
-    
-    <lastmod>2017-06-06T05:58:11.340Z</lastmod>
     
   </url>
   
