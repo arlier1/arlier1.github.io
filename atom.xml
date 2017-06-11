@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-11T08:30:45.879Z</updated>
+  <updated>2017-06-11T09:03:04.072Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ROOT画图技巧</title>
+    <link href="/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/"/>
+    <id>/2017/06/11/ROOT画图技巧/</id>
+    <published>2017-06-11T08:31:48.000Z</published>
+    <updated>2017-06-11T09:03:04.072Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h1><p>ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通过搜索引擎方便地找到答案;最后一步就是对细节进行微调，包括整体配色，线条尺寸，标记形状等进行合理优化，使得输出结果更加美观。</p>
+<h1 id="几个技巧"><a href="#几个技巧" class="headerlink" title="几个技巧"></a>几个技巧</h1><p>ROOT画图之后可以通过脚本详细调节，也可以用GUI调节（VIEW-EDITOR），脚本比较慢但好处是每次都能重复;GUI相对快一些但关闭之后就保存不了了。一般情况下（报告，网页等）使用GUI进行简单调节就可以了，调好之后另存为.root格式，方便以后继续修改;在往论文插图的时候需要使用脚本比较好。</p>
+<h1 id="图片输出"><a href="#图片输出" class="headerlink" title="图片输出"></a>图片输出</h1><p>一般输出ps,eps,pdf等矢量格式显示效果会很好，文件也不大;jpg，png等格式多用于网站，放大容易失真。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;基本理念&quot;&gt;&lt;a href=&quot;#基本理念&quot; class=&quot;headerlink&quot; title=&quot;基本理念&quot;&gt;&lt;/a&gt;基本理念&lt;/h1&gt;&lt;p&gt;ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系
+    
+    </summary>
+    
+      <category term="ROOTTIPS" scheme="/categories/ROOTTIPS/"/>
+    
+    
+      <category term="ROOT" scheme="/tags/ROOT/"/>
+    
+      <category term="画图" scheme="/tags/%E7%94%BB%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>Histogram进行积分</title>

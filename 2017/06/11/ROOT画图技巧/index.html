@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Tag: webterm | arlier的学习笔记</title>
+  <title>ROOT画图技巧 | arlier的学习笔记</title>
   <meta name="description" content="null" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,12 +12,17 @@
   <link rel="shortcut icon" href="https:/arlier1.github.io/">
   <link rel="alternate" href="https:/arlier1.github.io/atom.xml" title="arlier的学习笔记">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="arlier的学习笔记">
-<meta property="og:url" content="/tags/webterm/index.html">
+  <meta name="description" content="基本理念ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通">
+<meta name="keywords" content="ROOT,画图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ROOT画图技巧">
+<meta property="og:url" content="/2017/06/11/ROOT画图技巧/index.html">
 <meta property="og:site_name" content="arlier的学习笔记">
+<meta property="og:description" content="基本理念ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通">
+<meta property="og:updated_time" content="2017-06-11T09:03:04.072Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="arlier的学习笔记">
+<meta name="twitter:title" content="ROOT画图技巧">
+<meta name="twitter:description" content="基本理念ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -138,58 +143,53 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        
-  <script>
-    window.subData= { title:'Tag : webterm'}
-  </script>
-
-<section class="post-list">
+        <article id="post-ROOT画图技巧"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="https:/arlier1.github.io/2017/06/11/ROOT画图技巧/">
+    	ROOT画图技巧
+    </a>
+  </h2>
+	<time>
+	  Jun 11, 2017
+	</time>
 	
-    <div class='post-wrapper'>
-      <article class="post reveal">
-  <section class="meta">
-    
-    <h2 class="title">
-      <a href="https:/arlier1.github.io/2017/04/21/webterm/">
-        webterm
-      </a>
-    </h2>
-    
-    <time>
-      Apr 21, 2017
-    </time>
-		
     
     <div class='cats'>
-        <a href="https:/arlier1.github.io/categories/computer/">computer</a>
+        <a href="https:/arlier1.github.io/categories/ROOTTIPS/">ROOTTIPS</a>
     </div>
 
-  </section>
-  <section class="article typo">
-	  <h3 id="SHELLINABOX"><a href="#SHELLINABOX" class="headerlink" title="SHELLINABOX"></a>SHELLINABOX</h3><p>今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。</p>
-<p>作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~</p>
-<h3 id="JUICESSH"><a href="#JUICESSH" class="headerlink" title="JUICESSH"></a>JUICESSH</h3><p>通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了<a href="http://www.52pojie.cn/thread-502507-1-4.html" target="_blank" rel="external">两篇</a>帖子<a href="http://www.52pojie.cn/thread-557375-1-1.html" target="_blank" rel="external">帖子</a> 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。</p>
-<h3 id="shellinbox"><a href="#shellinbox" class="headerlink" title="shellinbox"></a>shellinbox</h3><p><img src="http://o98383o2a.bkt.clouddn.com/shellinabox1.png" alt=""><br>那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是<a href="https://code.google.com/p/shellinabox/" target="_blank" rel="external">Shellinabox</a><br>在centos7 中的搭建过程参考 <a href="http://www.linuxidc.com/Linux/2015-08/121865.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2015-08/121865.htm</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"> yum install epel-release</div><div class="line"> yum install shellinabox</div><div class="line"> vi /etc/sysconfig/shellinaboxd</div><div class="line"> <span class="comment"># 重启服务</span></div><div class="line">sudo systemctl restart shellinabox</div><div class="line"><span class="comment"># 开机启动</span></div><div class="line">systemctl <span class="built_in">enable</span> shellinaboxd</div><div class="line"><span class="comment"># 防火墙</span></div><div class="line">firewall-cmd --permanent --add-port=4200/tcp</div><div class="line">firewall-cmd --reload</div></pre></td></tr></table></figure></p>
-<h3 id="配置好了"><a href="#配置好了" class="headerlink" title="配置好了"></a>配置好了</h3><p>打开网址 ： <a href="https://ip-address-of-remote-servers:4200" target="_blank" rel="external">https://ip-address-of-remote-servers:4200</a><br>一个wiki页面： <a href="https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki" target="_blank" rel="external">https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki</a></p>
-<p>###<br>事实上，这篇博客就是用shellinabox完成的。简直炫酷！</p>
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#基本理念"><span class="toc-number">1.</span> <span class="toc-text">基本理念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#几个技巧"><span class="toc-number">2.</span> <span class="toc-text">几个技巧</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图片输出"><span class="toc-number">3.</span> <span class="toc-text">图片输出</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<h1 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h1><p>ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通过搜索引擎方便地找到答案;最后一步就是对细节进行微调，包括整体配色，线条尺寸，标记形状等进行合理优化，使得输出结果更加美观。</p>
+<h1 id="几个技巧"><a href="#几个技巧" class="headerlink" title="几个技巧"></a>几个技巧</h1><p>ROOT画图之后可以通过脚本详细调节，也可以用GUI调节（VIEW-EDITOR），脚本比较慢但好处是每次都能重复;GUI相对快一些但关闭之后就保存不了了。一般情况下（报告，网页等）使用GUI进行简单调节就可以了，调好之后另存为.root格式，方便以后继续修改;在往论文插图的时候需要使用脚本比较好。</p>
+<h1 id="图片输出"><a href="#图片输出" class="headerlink" title="图片输出"></a>图片输出</h1><p>一般输出ps,eps,pdf等矢量格式显示效果会很好，文件也不大;jpg，png等格式多用于网站，放大容易失真。</p>
 
-
-    
-    
-    
-	  <div class="full-width auto-padding tags">
+  	</div>
+	  
+	  <div class="article-tags tags">
       
-        <a href="https:/arlier1.github.io/tags/webterm/">webterm</a>
+        <a href="https:/arlier1.github.io/tags/ROOT/">ROOT</a>
+      
+        <a href="https:/arlier1.github.io/tags/画图/">画图</a>
       
 	  </div>
     
-  </section>
+	</section>
+	
 </article>
-
-    </div>
-  
-</section>
-
+<script>
+	window.subData = {
+		title: 'ROOT画图技巧',
+		tools: true
+	}
+</script>
 
       </div>
       <aside class='l_side'>
