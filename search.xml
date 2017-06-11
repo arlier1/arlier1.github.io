@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title><![CDATA[TMultiGraph添加title]]></title>
+      <url>https://arlier1.github.io/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/</url>
+      <content type="html"><![CDATA[<p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
+<p>总算明白了别人的画图代码加的这两行的用处了！</p>
+]]></content>
+      
+        <categories>
+            
+            <category> ROOTTIPS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> TMultiGraph </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ROOT画图技巧]]></title>
       <url>https://arlier1.github.io/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/</url>
       <content type="html"><![CDATA[<h1 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h1><p>ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通过搜索引擎方便地找到答案;最后一步就是对细节进行微调，包括整体配色，线条尺寸，标记形状等进行合理优化，使得输出结果更加美观。</p>

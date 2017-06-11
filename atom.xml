@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-11T09:03:04.072Z</updated>
+  <updated>2017-06-11T11:48:46.908Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TMultiGraph添加title</title>
+    <link href="/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/"/>
+    <id>/2017/06/11/TMultiGraph添加title/</id>
+    <published>2017-06-11T11:41:38.000Z</published>
+    <updated>2017-06-11T11:48:46.908Z</updated>
+    
+    <content type="html"><![CDATA[<p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
+<p>总算明白了别人的画图代码加的这两行的用处了！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;lin
+    
+    </summary>
+    
+      <category term="ROOTTIPS" scheme="/categories/ROOTTIPS/"/>
+    
+    
+      <category term="TMultiGraph" scheme="/tags/TMultiGraph/"/>
+    
+  </entry>
   
   <entry>
     <title>ROOT画图技巧</title>

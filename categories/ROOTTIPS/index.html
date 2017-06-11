@@ -150,6 +150,45 @@
   <section class="meta">
     
     <h2 class="title">
+      <a href="https:/arlier1.github.io/2017/06/11/TMultiGraph添加title/">
+        TMultiGraph添加title
+      </a>
+    </h2>
+    
+    <time>
+      Jun 11, 2017
+    </time>
+		
+    
+    <div class='cats'>
+        <a href="https:/arlier1.github.io/categories/ROOTTIPS/">ROOTTIPS</a>
+    </div>
+
+  </section>
+  <section class="article typo">
+	  <p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
+<p>总算明白了别人的画图代码加的这两行的用处了！</p>
+
+
+    
+    
+    
+	  <div class="full-width auto-padding tags">
+      
+        <a href="https:/arlier1.github.io/tags/TMultiGraph/">TMultiGraph</a>
+      
+	  </div>
+    
+  </section>
+</article>
+
+    </div>
+  
+    <div class='post-wrapper'>
+      <article class="post reveal">
+  <section class="meta">
+    
+    <h2 class="title">
       <a href="https:/arlier1.github.io/2017/06/11/ROOT画图技巧/">
         ROOT画图技巧
       </a>
@@ -314,7 +353,7 @@
     
     <ul class="entry">
     
-        <li><a class="flat-box" href="https:/arlier1.github.io/categories/ROOTTIPS/"><div class='name'>ROOTTIPS</div><div class='badget'>3</div></a></li>
+        <li><a class="flat-box" href="https:/arlier1.github.io/categories/ROOTTIPS/"><div class='name'>ROOTTIPS</div><div class='badget'>4</div></a></li>
     
         <li><a class="flat-box" href="https:/arlier1.github.io/categories/computer/"><div class='name'>computer</div><div class='badget'>2</div></a></li>
     
@@ -331,7 +370,7 @@
 <div class="m_widget tagcloud">
     <div class="header">Tags</div>
     <div class='content'>
-        <a href="https:/arlier1.github.io/tags/ROOT/" style="font-size: 14px; color: #808080">ROOT</a> <a href="https:/arlier1.github.io/tags/ROOT-COLZ/" style="font-size: 14px; color: #808080">ROOT COLZ</a> <a href="https:/arlier1.github.io/tags/ROOT-histogram/" style="font-size: 14px; color: #808080">ROOT histogram</a> <a href="https:/arlier1.github.io/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="https:/arlier1.github.io/tags/sshkey-密钥登录/" style="font-size: 14px; color: #808080">sshkey 密钥登录</a> <a href="https:/arlier1.github.io/tags/webterm/" style="font-size: 14px; color: #808080">webterm</a> <a href="https:/arlier1.github.io/tags/zotera/" style="font-size: 14px; color: #808080">zotera</a> <a href="https:/arlier1.github.io/tags/文献管理/" style="font-size: 14px; color: #808080">文献管理</a> <a href="https:/arlier1.github.io/tags/画图/" style="font-size: 14px; color: #808080">画图</a> <a href="https:/arlier1.github.io/tags/近似-approximation/" style="font-size: 14px; color: #808080">近似 approximation</a>
+        <a href="https:/arlier1.github.io/tags/ROOT/" style="font-size: 14px; color: #808080">ROOT</a> <a href="https:/arlier1.github.io/tags/ROOT-COLZ/" style="font-size: 14px; color: #808080">ROOT COLZ</a> <a href="https:/arlier1.github.io/tags/ROOT-histogram/" style="font-size: 14px; color: #808080">ROOT histogram</a> <a href="https:/arlier1.github.io/tags/TMultiGraph/" style="font-size: 14px; color: #808080">TMultiGraph</a> <a href="https:/arlier1.github.io/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="https:/arlier1.github.io/tags/sshkey-密钥登录/" style="font-size: 14px; color: #808080">sshkey 密钥登录</a> <a href="https:/arlier1.github.io/tags/webterm/" style="font-size: 14px; color: #808080">webterm</a> <a href="https:/arlier1.github.io/tags/zotera/" style="font-size: 14px; color: #808080">zotera</a> <a href="https:/arlier1.github.io/tags/文献管理/" style="font-size: 14px; color: #808080">文献管理</a> <a href="https:/arlier1.github.io/tags/画图/" style="font-size: 14px; color: #808080">画图</a> <a href="https:/arlier1.github.io/tags/近似-approximation/" style="font-size: 14px; color: #808080">近似 approximation</a>
     </div>
 </div>
 

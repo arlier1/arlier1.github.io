@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>webterm | arlier的学习笔记</title>
+  <title>TMultiGraph添加title | arlier的学习笔记</title>
   <meta name="description" content="null" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
@@ -12,19 +12,17 @@
   <link rel="shortcut icon" href="https:/arlier1.github.io/">
   <link rel="alternate" href="https:/arlier1.github.io/atom.xml" title="arlier的学习笔记">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SHELLINABOX今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一">
-<meta name="keywords" content="webterm">
+  <meta name="description" content="在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：1234mg-&amp;gt;Draw(&quot;ALP&quot;);   //一定要在draw之后设置相关内容mg-&amp;gt;GetYaxis()-&amp;gt;SetTitle(&quot;yaxis&quot;);mycan-&amp;gt;Update();gPad-&amp;gt;Modified(); 总算明白了别人的画图代码加的这两行的用处了！">
+<meta name="keywords" content="TMultiGraph">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webterm">
-<meta property="og:url" content="/2017/04/21/webterm/index.html">
+<meta property="og:title" content="TMultiGraph添加title">
+<meta property="og:url" content="/2017/06/11/TMultiGraph添加title/index.html">
 <meta property="og:site_name" content="arlier的学习笔记">
-<meta property="og:description" content="SHELLINABOX今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一">
-<meta property="og:image" content="http://o98383o2a.bkt.clouddn.com/shellinabox1.png">
-<meta property="og:updated_time" content="2017-05-31T03:41:11.431Z">
+<meta property="og:description" content="在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：1234mg-&amp;gt;Draw(&quot;ALP&quot;);   //一定要在draw之后设置相关内容mg-&amp;gt;GetYaxis()-&amp;gt;SetTitle(&quot;yaxis&quot;);mycan-&amp;gt;Update();gPad-&amp;gt;Modified(); 总算明白了别人的画图代码加的这两行的用处了！">
+<meta property="og:updated_time" content="2017-06-11T11:48:46.908Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webterm">
-<meta name="twitter:description" content="SHELLINABOX今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一">
-<meta name="twitter:image" content="http://o98383o2a.bkt.clouddn.com/shellinabox1.png">
+<meta name="twitter:title" content="TMultiGraph添加title">
+<meta name="twitter:description" content="在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：1234mg-&amp;gt;Draw(&quot;ALP&quot;);   //一定要在draw之后设置相关内容mg-&amp;gt;GetYaxis()-&amp;gt;SetTitle(&quot;yaxis&quot;);mycan-&amp;gt;Update();gPad-&amp;gt;Modified(); 总算明白了别人的画图代码加的这两行的用处了！">
     
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -145,42 +143,38 @@
   <div class="l_body">
     <div class='container clearfix'>
       <div class='l_main'>
-        <article id="post-webterm"
+        <article id="post-TMultiGraph添加title"
   class="post white-box article-type-post"
   itemscope itemprop="blogPost">
 	<section class='meta'>
 	<h2 class="title">
-  	<a href="https:/arlier1.github.io/2017/04/21/webterm/">
-    	webterm
+  	<a href="https:/arlier1.github.io/2017/06/11/TMultiGraph添加title/">
+    	TMultiGraph添加title
     </a>
   </h2>
 	<time>
-	  Apr 21, 2017
+	  Jun 11, 2017
 	</time>
 	
     
     <div class='cats'>
-        <a href="https:/arlier1.github.io/categories/computer/">computer</a>
+        <a href="https:/arlier1.github.io/categories/ROOTTIPS/">ROOTTIPS</a>
     </div>
 
 	</section>
 	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SHELLINABOX"><span class="toc-number">1.</span> <span class="toc-text">SHELLINABOX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JUICESSH"><span class="toc-number">2.</span> <span class="toc-text">JUICESSH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shellinbox"><span class="toc-number">3.</span> <span class="toc-text">shellinbox</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置好了"><span class="toc-number">4.</span> <span class="toc-text">配置好了</span></a></li></ol></section>
+		<section class="toc-wrapper"></section>
 	
 	<section class="article typo">
   	<div class="article-entry" itemprop="articleBody">
-    	<h3 id="SHELLINABOX"><a href="#SHELLINABOX" class="headerlink" title="SHELLINABOX"></a>SHELLINABOX</h3><p>今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。</p>
-<p>作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~</p>
-<h3 id="JUICESSH"><a href="#JUICESSH" class="headerlink" title="JUICESSH"></a>JUICESSH</h3><p>通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了<a href="http://www.52pojie.cn/thread-502507-1-4.html" target="_blank" rel="external">两篇</a>帖子<a href="http://www.52pojie.cn/thread-557375-1-1.html" target="_blank" rel="external">帖子</a> 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。</p>
-<h3 id="shellinbox"><a href="#shellinbox" class="headerlink" title="shellinbox"></a>shellinbox</h3><p><img src="http://o98383o2a.bkt.clouddn.com/shellinabox1.png" alt=""><br>那么还有一个类似的方法就是webterminal，网上有非常多的方案，我选择的是<a href="https://code.google.com/p/shellinabox/" target="_blank" rel="external">Shellinabox</a><br>在centos7 中的搭建过程参考 <a href="http://www.linuxidc.com/Linux/2015-08/121865.htm" target="_blank" rel="external">http://www.linuxidc.com/Linux/2015-08/121865.htm</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"> yum install epel-release</div><div class="line"> yum install shellinabox</div><div class="line"> vi /etc/sysconfig/shellinaboxd</div><div class="line"> <span class="comment"># 重启服务</span></div><div class="line">sudo systemctl restart shellinabox</div><div class="line"><span class="comment"># 开机启动</span></div><div class="line">systemctl <span class="built_in">enable</span> shellinaboxd</div><div class="line"><span class="comment"># 防火墙</span></div><div class="line">firewall-cmd --permanent --add-port=4200/tcp</div><div class="line">firewall-cmd --reload</div></pre></td></tr></table></figure></p>
-<h3 id="配置好了"><a href="#配置好了" class="headerlink" title="配置好了"></a>配置好了</h3><p>打开网址 ： <a href="https://ip-address-of-remote-servers:4200" target="_blank" rel="external">https://ip-address-of-remote-servers:4200</a><br>一个wiki页面： <a href="https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki" target="_blank" rel="external">https://code.google.com/archive/p/shellinabox/wikis/shellinaboxd_man.wiki</a></p>
-<p>###<br>事实上，这篇博客就是用shellinabox完成的。简直炫酷！</p>
+    	<p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
+<p>总算明白了别人的画图代码加的这两行的用处了！</p>
 
   	</div>
 	  
 	  <div class="article-tags tags">
       
-        <a href="https:/arlier1.github.io/tags/webterm/">webterm</a>
+        <a href="https:/arlier1.github.io/tags/TMultiGraph/">TMultiGraph</a>
       
 	  </div>
     
@@ -189,7 +183,7 @@
 </article>
 <script>
 	window.subData = {
-		title: 'webterm',
+		title: 'TMultiGraph添加title',
 		tools: true
 	}
 </script>
