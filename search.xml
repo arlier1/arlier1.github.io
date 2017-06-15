@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title><![CDATA[tex中label标签的位置]]></title>
+      <url>https://arlier1.github.io/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/</url>
+      <content type="html"><![CDATA[<p>今天在编译tex的时候发现图片的label标签必须写在插入图片命令的后面，否则应用这个图片的时候显示的图题是不对的；这真是一个很微妙的问题。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> program </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> TEX </tag>
+            
+            <tag> LABEL </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[TMultiGraph添加title]]></title>
       <url>https://arlier1.github.io/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/</url>
       <content type="html"><![CDATA[<p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>

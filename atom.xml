@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-11T11:48:46.908Z</updated>
+  <updated>2017-06-15T09:17:13.852Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tex中label标签的位置</title>
+    <link href="/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/"/>
+    <id>/2017/06/15/tex中label标签的位置/</id>
+    <published>2017-06-15T09:14:32.000Z</published>
+    <updated>2017-06-15T09:17:13.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在编译tex的时候发现图片的label标签必须写在插入图片命令的后面，否则应用这个图片的时候显示的图题是不对的；这真是一个很微妙的问题。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在编译tex的时候发现图片的label标签必须写在插入图片命令的后面，否则应用这个图片的时候显示的图题是不对的；这真是一个很微妙的问题。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="program" scheme="/categories/program/"/>
+    
+    
+      <category term="TEX" scheme="/tags/TEX/"/>
+    
+      <category term="LABEL" scheme="/tags/LABEL/"/>
+    
+  </entry>
   
   <entry>
     <title>TMultiGraph添加title</title>
