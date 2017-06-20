@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-15T09:17:13.852Z</updated>
+  <updated>2017-06-20T00:46:59.749Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>delayed</title>
+    <link href="/2017/06/20/delayed/"/>
+    <id>/2017/06/20/delayed/</id>
+    <published>2017-06-20T00:42:59.000Z</published>
+    <updated>2017-06-20T00:46:59.749Z</updated>
+    
+    <content type="html"><![CDATA[<p>delay due to mechanical failure.wtf!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;delay due to mechanical failure.wtf!&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>tex中label标签的位置</title>
