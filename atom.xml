@@ -146,16 +146,16 @@
     <link href="/2017/06/08/approxiamationinphy/"/>
     <id>/2017/06/08/approxiamationinphy/</id>
     <published>2017-06-08T07:41:56.000Z</published>
-    <updated>2017-07-06T14:47:41.117Z</updated>
+    <updated>2017-07-06T14:49:34.544Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="物理学是不是精确的？"><a href="#物理学是不是精确的？" class="headerlink" title="物理学是不是精确的？"></a>物理学是不是精确的？</h1><p>和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。<br>&lt;—!more—&gt;<br>如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首先我们不是指某个理论或者公式是不是精确的，因为用数学表达出来的公式几乎都有明确的意义,也就是说物理理论都是准确的陈述，没有含混不清的。这个问题的意思是指，物理理论通过实验验证的这一过程是不是精确的，比如实验上测出的某个常数或者物理量的数值是不是精确的，实验上对理论的验证是不是完全有效的，也就是理论的普遍性的检验。</p>
+    <content type="html"><![CDATA[<h1 id="物理学是不是精确的？"><a href="#物理学是不是精确的？" class="headerlink" title="物理学是不是精确的？"></a>物理学是不是精确的？</h1><p>和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。<br><a id="more"></a><br>如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首先我们不是指某个理论或者公式是不是精确的，因为用数学表达出来的公式几乎都有明确的意义,也就是说物理理论都是准确的陈述，没有含混不清的。这个问题的意思是指，物理理论通过实验验证的这一过程是不是精确的，比如实验上测出的某个常数或者物理量的数值是不是精确的，实验上对理论的验证是不是完全有效的，也就是理论的普遍性的检验。</p>
 <p>从这个角度来看<code>物理学必然是不精确的</code>，因为物理学几乎完全依赖于实验，而实验的精确性取决于测量的精确性，测量的精确性以来于测量仪器的精确性;而根据量子力学的不确定关系，所有的物理量测量都必然“测不准”而带有误差。这也就是我们看到的所以物理量和自然常数的实验测量值都会带有误差限，这些误差限度对于一个物理量的取值的重要意义就类似与，数学里面一个假设对命题结论的意义一样。</p>
 <h1 id="物理学-近似？"><a href="#物理学-近似？" class="headerlink" title="物理学=近似？"></a>物理学=近似？</h1><p>你可能不相信或者没有意识到，近似几乎物理学的秘密武器。<br>级数展开，数量级估算。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;物理学是不是精确的？&quot;&gt;&lt;a href=&quot;#物理学是不是精确的？&quot; class=&quot;headerlink&quot; title=&quot;物理学是不是精确的？&quot;&gt;&lt;/a&gt;物理学是不是精确的？&lt;/h1&gt;&lt;p&gt;和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型
+      &lt;h1 id=&quot;物理学是不是精确的？&quot;&gt;&lt;a href=&quot;#物理学是不是精确的？&quot; class=&quot;headerlink&quot; title=&quot;物理学是不是精确的？&quot;&gt;&lt;/a&gt;物理学是不是精确的？&lt;/h1&gt;&lt;p&gt;和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。&lt;br&gt;
     
     </summary>
     
@@ -201,10 +201,11 @@
     <link href="/2017/06/05/sshlogin/"/>
     <id>/2017/06/05/sshlogin/</id>
     <published>2017-06-05T04:42:08.000Z</published>
-    <updated>2017-06-05T05:14:21.437Z</updated>
+    <updated>2017-07-06T14:50:38.825Z</updated>
     
     <content type="html"><![CDATA[<p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
 <h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="配置sshd"><a href="#配置sshd" class="headerlink" title="配置sshd"></a>配置sshd</h2><p>打开/etc/ssh/sshd_config 文件，确认以下配置打开<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">RSAAuthentication yes</div><div class="line">PubkeyAuthentication yes</div><div class="line">AuthorizedKeysFile      .ssh/authorized_keys</div><div class="line">HostKey /etc/ssh/ssh_host_rsa_key</div><div class="line"><span class="comment"># 也可以顺便禁用密码登录</span></div><div class="line">ChallengeResponseAuthentication no</div><div class="line">PasswordAuthentication no</div><div class="line">UsePAM no</div></pre></td></tr></table></figure></p>
 <p>重启ssh服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service sshd restart</div><div class="line"><span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure></p>
 <h2 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h2><p>在本地电脑下载服务器上生成的id_rsa文件，保存~/.ssh路径;此时只要sshroot@server_ip就可以免密码登录了，非常方便。</p>
@@ -213,7 +214,7 @@
     <summary type="html">
     
       &lt;p&gt;由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。&lt;/p&gt;
-&lt;h1 id=&quot;在centos7上使用密钥登录&quot;&gt;&lt;a href=&quot;#在centos7上使用密钥登录&quot; class=&quot;headerlink&quot; title=
+&lt;h1 id=&quot;在centos7上使用密钥登录&quot;&gt;&lt;a href=&quot;#在centos7上使用密钥登录&quot; class=&quot;headerlink&quot; title=&quot;在centos7上使用密钥登录&quot;&gt;&lt;/a&gt;在centos7上使用密钥登录&lt;/h1&gt;&lt;h2 id=&quot;产生密钥&quot;&gt;&lt;a href=&quot;#产生密钥&quot; class=&quot;headerlink&quot; title=&quot;产生密钥&quot;&gt;&lt;/a&gt;产生密钥&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; ~&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;mkdir .ssh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;chmod 700 .ssh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;touch authorized_keys&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;chmod 700 authorized_keys&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ssh-keygen -t rsa&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cat id_rsa.pub &amp;gt;&amp;gt; authorized_keys   //保存私钥&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

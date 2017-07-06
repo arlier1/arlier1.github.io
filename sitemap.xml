@@ -2,21 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https:/arlier1.github.io/2017/06/08/approxiamationinphy/</loc>
+    <loc>https:/arlier1.github.io/2017/06/05/sshlogin/</loc>
     
-    <lastmod>2017-07-06T14:47:41.117Z</lastmod>
+    <lastmod>2017-07-06T14:50:38.825Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/reading/index.html</loc>
+    <loc>https:/arlier1.github.io/2017/06/08/approxiamationinphy/</loc>
+    
+    <lastmod>2017-07-06T14:49:34.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/about/index.html</loc>
     
     <lastmod>2017-07-06T13:34:56.513Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/about/index.html</loc>
+    <loc>/reading/index.html</loc>
     
     <lastmod>2017-07-06T13:34:56.513Z</lastmod>
     
@@ -82,13 +89,6 @@
     <loc>/neutrino/index.html</loc>
     
     <lastmod>2017-06-05T05:26:23.148Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https:/arlier1.github.io/2017/06/05/sshlogin/</loc>
-    
-    <lastmod>2017-06-05T05:14:21.437Z</lastmod>
     
   </url>
   
