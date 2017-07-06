@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/about/index.html</loc>
+    
+    <lastmod>2017-07-06T15:33:38.870Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https:/arlier1.github.io/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/</loc>
     
     <lastmod>2017-07-06T14:55:01.434Z</lastmod>
@@ -66,13 +73,6 @@
   
   <url>
     <loc>/reading/index.html</loc>
-    
-    <lastmod>2017-07-06T13:34:56.513Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/about/index.html</loc>
     
     <lastmod>2017-07-06T13:34:56.513Z</lastmod>
     
