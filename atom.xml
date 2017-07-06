@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-20T00:50:27.518Z</updated>
+  <updated>2017-06-15T09:17:13.852Z</updated>
   <id>/</id>
   
   <author>
@@ -14,26 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>delayed</title>
-    <link href="/2017/06/20/delayed/"/>
-    <id>/2017/06/20/delayed/</id>
-    <published>2017-06-20T00:42:59.000Z</published>
-    <updated>2017-06-20T00:50:27.518Z</updated>
-    
-    <content type="html"><![CDATA[<p>delay due to mechanical failure.wtf!<br>what will happen?i do not know.<br>the second law of thermaldynamics drive every thing.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;delay due to mechanical failure.wtf!&lt;br&gt;what will happen?i do not know.&lt;br&gt;the second law of thermaldynamics drive every thing.&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>tex中label标签的位置</title>
