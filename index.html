@@ -269,8 +269,17 @@
 
 
             
+                <div class="entry red-link-context">
+                    <p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
+<p>总算明白了别人的画图代码加的这两行的用处了！<br>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/11/TMultiGraph添加title/">阅读全文</a>
+        </ div>
         
     </div>
 </article>
@@ -302,8 +311,16 @@
 
 
             
+                <div class="entry red-link-context">
+                    <h1 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h1><p>ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通过搜索引擎方便地找到答案;最后一步就是对细节进行微调，包括整体配色，线条尺寸，标记形状等进行合理优化，使得输出结果更加美观。<br>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/11/ROOT画图技巧/">阅读全文</a>
+        </ div>
         
     </div>
 </article>
@@ -364,8 +381,16 @@
 
 
             
+                <div class="entry red-link-context">
+                    <p>今天在画图的时候，一直找不到直方图的colormap，在谷歌搜索了很多关于<a href="https://root.cern.ch/doc/master/classTColor.html">palette</a>的信息，最后发现只要把<code>COL</code>变成<code>COLZ</code>就可以了！这是对比的图：<br><img src="http://o98383o2a.bkt.clouddn.com/rootcolz.png" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/rootcol.png" alt=""><br>通过palette可以详细设置颜色。<br>画图代码如下：<br>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/10/col和colz/">阅读全文</a>
+        </ div>
         
     </div>
 </article>
@@ -428,8 +453,17 @@
 
 
             
+                <div class="entry red-link-context">
+                    <h1 id="get新技能"><a href="#get新技能" class="headerlink" title="get新技能"></a>get新技能</h1><p>科技类写作的主要目的就是通过论文表达出作者的研究方法以及得到的观点和结论，而在一篇文章中最有说服力的的就是公式和数据，所以一篇文章的核心就是准确地表达出公式和数据。为了展示一个理论或者实验的结果，公式是最有效的、最准确的方案，其次是用图和表，日常语言的描述效率最低。虽然从反方向来看，理解自然语言最容易，图标要进行简单的思考和分析，而公式往往要详细研究。</p>
+<p>据说学术界的大牛们看文章一般都只看图表和公式（顶多看看结论和摘要）就可以知道一篇文章的实际水平是什么层次。因为很难想象一篇科技论文是纯文字格式，没有任何图表公式（这就像是在读小说？）所以文章中图表、公式所代表的数据或者理论的水平就大约等于这篇文献的水平。<br>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/08/thesiswriting/">阅读全文</a>
+        </ div>
         
     </div>
 </article>
@@ -501,8 +535,17 @@
 
 
             
+                <div class="entry red-link-context">
+                    <h1 id="文献管理软件zotera"><a href="#文献管理软件zotera" class="headerlink" title="文献管理软件zotera"></a>文献管理软件zotera</h1><p>去年的时候师兄就告诉我说<a href="https://www.zotero.org/">zotera</a>非常好用，当时下载了个浏览器插件版，然后自己的使用频率不高就放在那里了。现在我觉得自己需要一个工具来整理看过的文献和笔记，比较各种文献管理软件之后我决定就使用zotera了。</p>
+<h1 id="ubuntu的安装"><a href="#ubuntu的安装" class="headerlink" title="ubuntu的安装"></a>ubuntu的安装</h1><p>先到<a href="https://www.zotero.org/download/">官网</a>下载独版本立的安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">tar -jxvf Zotero-4.0.29.10_linux-x86_64.tar.bz2</div><div class="line"><span class="built_in">cd</span> Zotero_linux-x86_64 </div><div class="line">bash run-zotera.sh</div></pre></td></tr></table></figure></p>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/01/zotera安装和使用/">阅读全文</a>
+        </ div>
         
     </div>
 </article>
@@ -526,8 +569,17 @@
 
 
             
+                <div class="entry red-link-context">
+                    <p>未经授权，不得转载。</p>
+<h1 id="高能物理为什么“高能”？"><a href="#高能物理为什么“高能”？" class="headerlink" title="高能物理为什么“高能”？"></a>高能物理为什么“高能”？</h1><p>你可能经常听说高能物理或者粒子物理这些词汇，<br>人们通常把粒子物理称为高能物理，因为它们之间有着非常紧密的联系。粒子物理的研究对象是空间尺度非常小的物理对象，比如夸克，介子，中微子等。为了研究这么小的空间中的过程当然要想办法来发生一些相互作用来看看会有什么结果，比如我们把电子或者离子撞到一个原子核上，就可以通过散射出来的电子的空间分布知道一些关于原子核的信息。<br>
+                </div>
+            
         </div>
 
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/05/31/趣说普朗克常量/">阅读全文</a>
+        </ div>
         
     </div>
 </article>

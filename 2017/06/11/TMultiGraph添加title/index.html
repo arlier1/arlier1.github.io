@@ -10,7 +10,8 @@
     <title>TMultiGraph添加title | </title>
     <meta name="author" content="arlier">
     
-    <meta name="description" content="在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：1234mg-&amp;gt;Draw(&quot;ALP&quot;);   //一定要在draw之后设置相关内容mg-&amp;gt;GetYaxis()-&amp;gt;SetTitle(&quot;yaxis&quot;);mycan-&amp;gt;Upd">
+    <meta name="description" content="在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：1234mg-&amp;gt;Draw(&quot;ALP&quot;);   //一定要在draw之后设置相关内容mg-&amp;gt;GetYaxis()-&amp;gt;SetTitle(&quot;yaxis&quot;);mycan-&amp;gt;Update();gPad-&amp;gt;Modified();
+总算明白了别人的画图代码加的这两行的用处了！">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -260,7 +261,7 @@
 
             <div class="entry red-link-context">
                 <p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
-<p>总算明白了别人的画图代码加的这两行的用处了！</p>
+<p>总算明白了别人的画图代码加的这两行的用处了！<br><a id="more"></a></p>
 
                 
 <p class="red-link-context">
