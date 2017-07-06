@@ -1,311 +1,550 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  <title>物理学与近似 | arlier的学习笔记</title>
-  <meta name="description" content="null" />
-  <meta name="keywords" content="" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="https:/arlier1.github.io/">
-  <link rel="alternate" href="https:/arlier1.github.io/atom.xml" title="arlier的学习笔记">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="物理学是不是精确的？和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。 如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首">
-<meta name="keywords" content="近似 approximation">
-<meta property="og:type" content="article">
-<meta property="og:title" content="物理学与近似">
-<meta property="og:url" content="/2017/06/08/approxiamationinphy/index.html">
-<meta property="og:site_name" content="arlier的学习笔记">
-<meta property="og:description" content="物理学是不是精确的？和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。 如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首">
-<meta property="og:updated_time" content="2017-06-08T08:22:30.737Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="物理学与近似">
-<meta name="twitter:description" content="物理学是不是精确的？和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。 如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https:/arlier1.github.io/style.css">
-  <script>
-    function setLoadingBarProgress(num) {
-      document.getElementById('loading-bar').style.width=num+"%";
-    }
-  </script>
+
+    <title>物理学与近似 | </title>
+    <meta name="author" content="arlier">
+    
+    <meta name="description" content="物理学是不是精确的？和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="物理学与近似"/>
+    <meta property="og:site_name" content="arlier的学习笔记"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="https://arlier1.github.io/favicon.png">
+    <link rel="alternate" href="https://arlier1.github.io/atom.xml" title="arlier的学习笔记" type="application/atom+xml">
+    <link rel="stylesheet" href="https://arlier1.github.io/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="https://arlier1.github.io/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="https://arlier1.github.io/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="https://arlier1.github.io/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
+
 <body>
-  <div id="loading-bar-wrapper">
-  <div id="loading-bar"></div>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">arlier的学习笔记</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            Archives
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            Categories
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            Reading
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            About
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            Search
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    Home
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    Archives
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    Categories
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    Reading
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    About
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    Search
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="https://arlier1.github.io/categories/ROOTTIPS/">
+                    ROOTTIPS <span class="right">4</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="https://arlier1.github.io/categories/physics/">
+                    physics <span class="right">1</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="https://arlier1.github.io/categories/computer/">
+                    computer <span class="right">2</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="https://arlier1.github.io/categories/program/">
+                    program <span class="right">2</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">Search</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
 </div>
 
 
-  <script>setLoadingBarProgress(20)</script> 
-  <header class="l_header">
-	<div class='wrapper'>
-		<div class="nav-main container container--flex">
-			<a class="logo flat-box" href='https:/arlier1.github.io/' >
-				arlier的学习笔记
-			</a>
-			<div class='menu'>
-				<ul class='h-list'>
-					
-						<li>
-							<a class='flat-box nav-home' href='https:/arlier1.github.io/'>
-								主页
-							</a>
-						</li>
-					
-						<li>
-							<a class='flat-box nav-archives' href='https:/arlier1.github.io/archives'>
-								归档
-							</a>
-						</li>
-					
-						<li>
-							<a class='flat-box nav-neutrino' href='https:/arlier1.github.io/neutrino'>
-								中微子
-							</a>
-						</li>
-					
-						<li>
-							<a class='flat-box nav-ROOT' href='https:/arlier1.github.io/ROOT'>
-								ROOT
-							</a>
-						</li>
-					
-						<li>
-							<a class='flat-box nav-about' href='https:/arlier1.github.io/about'>
-								关于
-							</a>
-						</li>
-					
-				</ul>
-				<div class='underline'></div>
-			</div>
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search" />
-						<span class="icon icon-search"></span>
-					</form>
-				</div>
-			
-			<ul class='switcher h-list'>
-				
-					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
-				
-				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
-			</ul>
-		</div>
-		
-		<div class='nav-sub container container--flex'>
-			<a class="logo" class="flat-box" href='javascript:void(0)'>
-				Word of Forks
-			</a>
-
-			<ul class='switcher h-list'>
-				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
-				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
-				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
-			</ul>
-		</div>
-	</div>
-</header>
-<aside class="menu-phone">
-	<nav>
-		
-			<a href="https:/arlier1.github.io/" class="nav-home nav">
-				主页
-			</a>
-		
-			<a href="https:/arlier1.github.io/archives" class="nav-archives nav">
-				归档
-			</a>
-		
-			<a href="https:/arlier1.github.io/neutrino" class="nav-neutrino nav">
-				中微子
-			</a>
-		
-			<a href="https:/arlier1.github.io/ROOT" class="nav-ROOT nav">
-				ROOT
-			</a>
-		
-			<a href="https:/arlier1.github.io/about" class="nav-about nav">
-				关于
-			</a>
-		
-	</nav>
-</aside>
-
-    <script>setLoadingBarProgress(40);</script>
-  <div class="l_body">
-    <div class='container clearfix'>
-      <div class='l_main'>
-        <article id="post-approxiamationinphy"
-  class="post white-box article-type-post"
-  itemscope itemprop="blogPost">
-	<section class='meta'>
-	<h2 class="title">
-  	<a href="https:/arlier1.github.io/2017/06/08/approxiamationinphy/">
-    	物理学与近似
-    </a>
-  </h2>
-	<time>
-	  Jun 8, 2017
-	</time>
-	
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">Current page(Categories)</span>
+        
+            
     
-    <div class='cats'>
-        <a href="https:/arlier1.github.io/categories/physics/">physics</a>
+    
+    <a class="breadcrumb" href="https://arlier1.github.io/categories/physics/">physics</a>
+
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>物理学与近似</h1>
+    
+
+
+            </div>
+            <time class="pink-link-context" datetime="2017-06-08T07:41:56.000Z"><a href="https:/arlier1.github.io/2017/06/08/approxiamationinphy/">2017-06-08</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
+        
+            <a href="https://arlier1.github.io/tags/近似-approximation/" class="chip pink lighten-1">近似 approximation</a>
+        
     </div>
 
-	</section>
-	
-		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#物理学是不是精确的？"><span class="toc-number">1.</span> <span class="toc-text">物理学是不是精确的？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#物理学-近似？"><span class="toc-number">2.</span> <span class="toc-text">物理学=近似？</span></a></li></ol></section>
-	
-	<section class="article typo">
-  	<div class="article-entry" itemprop="articleBody">
-    	<h1 id="物理学是不是精确的？"><a href="#物理学是不是精确的？" class="headerlink" title="物理学是不是精确的？"></a>物理学是不是精确的？</h1><p>和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。</p>
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#物理学是不是精确的？"><span class="section table-of-contents-text">物理学是不是精确的？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#物理学-近似？"><span class="section table-of-contents-text">物理学=近似？</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h1 id="物理学是不是精确的？"><a href="#物理学是不是精确的？" class="headerlink" title="物理学是不是精确的？"></a>物理学是不是精确的？</h1><p>和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。</p>
 <p>如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首先我们不是指某个理论或者公式是不是精确的，因为用数学表达出来的公式几乎都有明确的意义,也就是说物理理论都是准确的陈述，没有含混不清的。这个问题的意思是指，物理理论通过实验验证的这一过程是不是精确的，比如实验上测出的某个常数或者物理量的数值是不是精确的，实验上对理论的验证是不是完全有效的，也就是理论的普遍性的检验。</p>
 <p>从这个角度来看<code>物理学必然是不精确的</code>，因为物理学几乎完全依赖于实验，而实验的精确性取决于测量的精确性，测量的精确性以来于测量仪器的精确性;而根据量子力学的不确定关系，所有的物理量测量都必然“测不准”而带有误差。这也就是我们看到的所以物理量和自然常数的实验测量值都会带有误差限，这些误差限度对于一个物理量的取值的重要意义就类似与，数学里面一个假设对命题结论的意义一样。</p>
 <h1 id="物理学-近似？"><a href="#物理学-近似？" class="headerlink" title="物理学=近似？"></a>物理学=近似？</h1><p>你可能不相信或者没有意识到，近似几乎物理学的秘密武器。<br>级数展开，数量级估算。</p>
 
-  	</div>
-	  
-	  <div class="article-tags tags">
-      
-        <a href="https:/arlier1.github.io/tags/近似-approximation/">近似 approximation</a>
-      
-	  </div>
-    
-	</section>
-	
+                
+<p class="pink-link-context">
+    <a href="https:/arlier1.github.io/2017/06/08/thesiswriting/" rel="next" title="关于论文的tips">
+    Prev: 关于论文的tips
+  </a>
+</p>
+
+
+
+<p class="pink-link-context">
+    <a href="https:/arlier1.github.io/2017/06/10/col和colz/" rel="next" title="col和colz">
+    Next: col和colz
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
 </article>
-<script>
-	window.subData = {
-		title: '物理学与近似',
-		tools: true
-	}
-</script>
 
-      </div>
-      <aside class='l_side'>
-        
-  <section class='m_widget about'>
 
-<img class='avatar waves-image' src='http://res.cloudinary.com/dilgkayrp/image/upload/c_scale,e_shadow:40,w_400/v1496203134/Header_Mass_hierarchy_tc9rsx.png' />
 
-<div class='header'>arlier</div>
-<div class='content'>
-<div class='desc'>always believe in The Second Law of Thermodynamics </div>
+
+
+
 </div>
-</section>
 
-
-  <section class='m_widget links'>
-<div class='header'>Links</div>
-<div class='content'>
-    <ul class="entry">
-    
-        <li><a class="flat-box" target="_blank" href="http://hithep.science">
-            <div class='name'>HITHEP</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="http://arlier.work/">
-            <div class='name'>arlier</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="http://www.regulus.online/">
-            <div class='name'>regulus</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="http://hithep.science/">
-            <div class='name'>HITHEP</div>
-        </a></li>
-    
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
     </ul>
-</div>
-</section>
-
-  <section class='m_widget categories'>
-<div class='header'>Categories</div>
-<div class='content'>
-    
-    <ul class="entry">
-    
-        <li><a class="flat-box" href="https:/arlier1.github.io/categories/ROOTTIPS/"><div class='name'>ROOTTIPS</div><div class='badget'>4</div></a></li>
-    
-        <li><a class="flat-box" href="https:/arlier1.github.io/categories/computer/"><div class='name'>computer</div><div class='badget'>2</div></a></li>
-    
-        <li><a class="flat-box" href="https:/arlier1.github.io/categories/physics/"><div class='name'>physics</div><div class='badget'>1</div></a></li>
-    
-        <li><a class="flat-box" href="https:/arlier1.github.io/categories/program/"><div class='name'>program</div><div class='badget'>2</div></a></li>
-    
-    </ul>
-    
-</div>
-</section>
-
-  
-<div class="m_widget tagcloud">
-    <div class="header">Tags</div>
-    <div class='content'>
-        <a href="https:/arlier1.github.io/tags/LABEL/" style="font-size: 14px; color: #808080">LABEL</a> <a href="https:/arlier1.github.io/tags/ROOT/" style="font-size: 14px; color: #808080">ROOT</a> <a href="https:/arlier1.github.io/tags/ROOT-COLZ/" style="font-size: 14px; color: #808080">ROOT COLZ</a> <a href="https:/arlier1.github.io/tags/ROOT-histogram/" style="font-size: 14px; color: #808080">ROOT histogram</a> <a href="https:/arlier1.github.io/tags/TEX/" style="font-size: 14px; color: #808080">TEX</a> <a href="https:/arlier1.github.io/tags/TMultiGraph/" style="font-size: 14px; color: #808080">TMultiGraph</a> <a href="https:/arlier1.github.io/tags/hexo/" style="font-size: 14px; color: #808080">hexo</a> <a href="https:/arlier1.github.io/tags/sshkey-密钥登录/" style="font-size: 14px; color: #808080">sshkey 密钥登录</a> <a href="https:/arlier1.github.io/tags/webterm/" style="font-size: 14px; color: #808080">webterm</a> <a href="https:/arlier1.github.io/tags/zotera/" style="font-size: 14px; color: #808080">zotera</a> <a href="https:/arlier1.github.io/tags/文献管理/" style="font-size: 14px; color: #808080">文献管理</a> <a href="https:/arlier1.github.io/tags/画图/" style="font-size: 14px; color: #808080">画图</a> <a href="https:/arlier1.github.io/tags/近似-approximation/" style="font-size: 14px; color: #808080">近似 approximation</a>
-    </div>
-</div>
-
-
-
-      </aside>
-      <script>setLoadingBarProgress(60);</script>
-    </div>
   </div>
-  <footer id="footer" class="clearfix">
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	<div class="social-wrapper">
-  	
-      
-        <a href="/atom.xml" class="social rss"
-          target="_blank" rel="external">
-          <span class="icon icon-rss"></span>
-        </a>
-      
+    </main>
+    <footer class="page-footer indigo darken-1">
     
-  
-          mapping the observed world to our imagination <a href="http://arlier.science" target="_blank">arlier</a>
-            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-  </div>
+
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">Blog powered by <a href="https://hexo.io">Hexo</a> | Theme <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
 </footer>
 
 
-  <script>setLoadingBarProgress(80);</script>
-  
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
 
-<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
-<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
-<script src="https:/arlier1.github.io/js/jquery.fitvids.js"></script>
+
+<script src="https://arlier1.github.io/js/jquery.min.js"></script>
+<script src="https://arlier1.github.io/js/materialize.min.js"></script>
+
 <script>
-	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-	var ALGOLIA_API_KEY = "";
-	var ALGOLIA_APP_ID = "";
-	var ALGOLIA_INDEX_NAME = "";
-  var AZURE_SERVICE_NAME = "";
-  var AZURE_INDEX_NAME = "";
-  var AZURE_QUERY_KEY = "";
-  var BAIDU_API_ID = "";
-  var SEARCH_SERVICE = "hexo";
-  var ROOT = "https://arlier1.github.io/"||"/";
-  if(!ROOT.endsWith('/'))ROOT += '/';
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+
+            // 目录随屏幕滚动（防止目录过长越过footer）
+            var $toc = $('.toc');
+            var scrollTargetTop = 0;
+            $(window).scroll(function() {
+                var $activeLink = $toc.find('a.active.section');
+                if ($(window).scrollTop() < 100) {
+                    scrollTargetTop = 0;
+                } else {
+                    if ($activeLink[0]) {
+                        scrollTargetTop = $activeLink.offset().top - $toc.offset().top;
+                    }
+                }
+                $toc.css('top', '-' + scrollTargetTop + 'px');
+            });
+
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "https://arlier1.github.io/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
 </script>
-<script src="https:/arlier1.github.io/js/search.js"></script>
-<script src="https:/arlier1.github.io/js/app.js"></script>
 
 
-  <script>setLoadingBarProgress(100);</script>
+<script src="https://arlier1.github.io/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
 </body>
 </html>
