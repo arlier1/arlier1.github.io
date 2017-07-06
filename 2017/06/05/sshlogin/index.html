@@ -39,7 +39,7 @@
 <body>
     <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-    <nav class="indigo">
+    <nav class="green">
     <div class="nav-wrapper">
         <a href="#" data-activates="main-menu" class="button-collapse">
             <i class="fa fa-navicon"></i>
@@ -98,7 +98,7 @@
                 
             </ul>
             <div>
-    <ul class="side-nav indigo darken-1" id="main-menu">
+    <ul class="side-nav green darken-1" id="main-menu">
         
 
         
@@ -152,7 +152,7 @@
         
     </ul>
 
-    <ul class="side-nav indigo darken-1" id="category-menu">
+    <ul class="side-nav green darken-1" id="category-menu">
     
 
             
@@ -213,7 +213,7 @@
     <main>
         <div class="container main-container">
     <nav class="page-nav hide-on-small-only">
-    <div class="nav-wrapper indigo">
+    <div class="nav-wrapper green">
         <span class="breadcrumb">Current page(Categories)</span>
         
             
@@ -241,7 +241,7 @@
 
 
             </div>
-            <time class="pink-link-context" datetime="2017-06-05T04:42:08.000Z"><a href="https:/arlier1.github.io/2017/06/05/sshlogin/">2017-06-05</a></time>
+            <time class="red-link-context" datetime="2017-06-05T04:42:08.000Z"><a href="https:/arlier1.github.io/2017/06/05/sshlogin/">2017-06-05</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -251,17 +251,17 @@
             
     <div class="tags-row">
         
-            <a href="https://arlier1.github.io/tags/sshkey-密钥登录/" class="chip pink lighten-1">sshkey 密钥登录</a>
+            <a href="https://arlier1.github.io/tags/sshkey-密钥登录/" class="chip red lighten-1">sshkey 密钥登录</a>
         
     </div>
 
 
-            <div class="toc pink-link-context hide-on-med-and-down">
+            <div class="toc red-link-context hide-on-med-and-down">
     <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#在centos7上使用密钥登录"><span class="section table-of-contents-text">在centos7上使用密钥登录</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#产生密钥"><span class="section table-of-contents-text">产生密钥</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#配置sshd"><span class="section table-of-contents-text">配置sshd</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#本地设置"><span class="section table-of-contents-text">本地设置</span></a></li></ol></li></ol>
 </div>
 
 
-            <div class="entry pink-link-context">
+            <div class="entry red-link-context">
                 <p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
 <h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
 <h2 id="配置sshd"><a href="#配置sshd" class="headerlink" title="配置sshd"></a>配置sshd</h2><p>打开/etc/ssh/sshd_config 文件，确认以下配置打开<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">RSAAuthentication yes</div><div class="line">PubkeyAuthentication yes</div><div class="line">AuthorizedKeysFile      .ssh/authorized_keys</div><div class="line">HostKey /etc/ssh/ssh_host_rsa_key</div><div class="line"><span class="comment"># 也可以顺便禁用密码登录</span></div><div class="line">ChallengeResponseAuthentication no</div><div class="line">PasswordAuthentication no</div><div class="line">UsePAM no</div></pre></td></tr></table></figure></p>
@@ -269,7 +269,7 @@
 <h2 id="本地设置"><a href="#本地设置" class="headerlink" title="本地设置"></a>本地设置</h2><p>在本地电脑下载服务器上生成的id_rsa文件，保存~/.ssh路径;此时只要sshroot@server_ip就可以免密码登录了，非常方便。</p>
 
                 
-<p class="pink-link-context">
+<p class="red-link-context">
     <a href="https:/arlier1.github.io/2017/06/01/zotera安装和使用/" rel="next" title="zotera安装和使用">
     Prev: zotera安装和使用
   </a>
@@ -277,7 +277,7 @@
 
 
 
-<p class="pink-link-context">
+<p class="red-link-context">
     <a href="https:/arlier1.github.io/2017/06/08/thesiswriting/" rel="next" title="关于论文的tips">
     Next: 关于论文的tips
   </a>
@@ -298,20 +298,20 @@
 </div>
 
         <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large pink">
+    <a class="btn-floating btn-large red">
       <i class="fa fa-caret-square-o-up"></i>
     </a>
     <ul>
-      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+      <li><a class="btn-return-top btn-floating waves-effect cyan" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse light-green"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
     </ul>
   </div>
 
     </main>
-    <footer class="page-footer indigo darken-1">
+    <footer class="page-footer green darken-1">
     
 
-    <div class="footer-copyright pink-link-context">
+    <div class="footer-copyright red-link-context">
         <div class="container">
             © 2016 arlier.science, All rights reserved.
             <p class="right" style="margin-top: 0;">Blog powered by <a href="https://hexo.io">Hexo</a> | Theme <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
@@ -408,7 +408,7 @@
             $('li.tab a').hover(function() {
                 $(this).toggleClass('text-lighten-4');
             });
-            $('.indicator').addClass('pink lighten-2');
+            $('.indicator').addClass('red lighten-2');
 
             
 
@@ -484,7 +484,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -506,7 +506,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"

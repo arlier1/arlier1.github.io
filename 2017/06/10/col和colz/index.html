@@ -38,7 +38,7 @@
 <body>
     <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-    <nav class="indigo">
+    <nav class="green">
     <div class="nav-wrapper">
         <a href="#" data-activates="main-menu" class="button-collapse">
             <i class="fa fa-navicon"></i>
@@ -97,7 +97,7 @@
                 
             </ul>
             <div>
-    <ul class="side-nav indigo darken-1" id="main-menu">
+    <ul class="side-nav green darken-1" id="main-menu">
         
 
         
@@ -151,7 +151,7 @@
         
     </ul>
 
-    <ul class="side-nav indigo darken-1" id="category-menu">
+    <ul class="side-nav green darken-1" id="category-menu">
     
 
             
@@ -212,7 +212,7 @@
     <main>
         <div class="container main-container">
     <nav class="page-nav hide-on-small-only">
-    <div class="nav-wrapper indigo">
+    <div class="nav-wrapper green">
         <span class="breadcrumb">Current page(Categories)</span>
         
             
@@ -240,7 +240,7 @@
 
 
             </div>
-            <time class="pink-link-context" datetime="2017-06-10T06:53:57.000Z"><a href="https:/arlier1.github.io/2017/06/10/col和colz/">2017-06-10</a></time>
+            <time class="red-link-context" datetime="2017-06-10T06:53:57.000Z"><a href="https:/arlier1.github.io/2017/06/10/col和colz/">2017-06-10</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -250,23 +250,23 @@
             
     <div class="tags-row">
         
-            <a href="https://arlier1.github.io/tags/ROOT-COLZ/" class="chip pink lighten-1">ROOT COLZ</a>
+            <a href="https://arlier1.github.io/tags/ROOT-COLZ/" class="chip red lighten-1">ROOT COLZ</a>
         
     </div>
 
 
-            <div class="toc pink-link-context hide-on-med-and-down">
+            <div class="toc red-link-context hide-on-med-and-down">
     
 </div>
 
 
-            <div class="entry pink-link-context">
+            <div class="entry red-link-context">
                 <p>今天在画图的时候，一直找不到直方图的colormap，在谷歌搜索了很多关于<a href="https://root.cern.ch/doc/master/classTColor.html" target="_blank" rel="external">palette</a>的信息，最后发现只要把<code>COL</code>变成<code>COLZ</code>就可以了！这是对比的图：<br><img src="http://o98383o2a.bkt.clouddn.com/rootcolz.png" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/rootcol.png" alt=""><br>通过palette可以详细设置颜色。<br>画图代码如下：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">testdraw</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">TString filedir=<span class="string">"/junofs/users/zhaor/Rm107/PMTtest/Defullscan/mcps.txt"</span>;</div><div class="line">	<span class="built_in">string</span> ss1;</div><div class="line"><span class="comment">//infilestream</span></div><div class="line"><span class="function">ifstream <span class="title">filein</span><span class="params">(filedir)</span></span>;</div><div class="line"></div><div class="line">	gStyle-&gt;SetOptStat(<span class="number">0</span>);</div><div class="line">	 <span class="comment">//gStyle-&gt;SetPalette(55);</span></div><div class="line">	   Int_t palette[<span class="number">5</span>];</div><div class="line">	   palette[<span class="number">0</span>] = <span class="number">15</span>;</div><div class="line">	   palette[<span class="number">1</span>] = <span class="number">20</span>;</div><div class="line">	   palette[<span class="number">2</span>] = <span class="number">23</span>;</div><div class="line">	   palette[<span class="number">3</span>] = <span class="number">30</span>;</div><div class="line">	   palette[<span class="number">4</span>] = <span class="number">32</span>;</div><div class="line">	   gStyle-&gt;SetPalette(<span class="number">5</span>,palette);</div><div class="line">    <span class="function">Double_t <span class="title">rmax</span><span class="params">(<span class="number">1.</span>)</span></span>;</div><div class="line"></div><div class="line">TH2D* pol_his = <span class="keyword">new</span> TH2D(<span class="string">"polarHist"</span>, <span class="string">"polarHist"</span>, <span class="number">36</span>, <span class="number">0.</span>, <span class="number">2.</span>*TMath::Pi(), <span class="number">8</span>, <span class="number">0.</span>, rmax); </div><div class="line"><span class="comment">// the polar data. X maps to theta, Y maps to R</span></div><div class="line"></div><div class="line">Double_t mu, muerr;</div><div class="line"><span class="comment">//fill the histogram with something nice.</span></div><div class="line"><span class="keyword">for</span>(Int_t i=<span class="number">1</span>; i&lt;=pol_his-&gt;GetNbinsX()/<span class="number">2</span>; i++)</div><div class="line">&#123;</div><div class="line">	getline(filein,ss1);<span class="comment">//jump the odegree</span></div><div class="line">	<span class="keyword">for</span>(Int_t j=<span class="number">1</span>; j&lt;=pol_his-&gt;GetNbinsY(); j++)</div><div class="line">	&#123;</div><div class="line">	getline(filein,ss1);</div><div class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">is1</span><span class="params">(ss1)</span></span>;</div><div class="line">	is1&gt;&gt;mu&gt;&gt;muerr;</div><div class="line">	pol_his-&gt;SetBinContent(i+pol_his-&gt;GetNbinsX()/<span class="number">2</span>, j, mu);</div><div class="line">	getline(filein,ss1);</div><div class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">is1</span><span class="params">(ss1)</span></span>;</div><div class="line">	is1&gt;&gt;mu&gt;&gt;muerr;</div><div class="line">	pol_his-&gt;SetBinContent(i, j, mu);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//make a dummy histogram to set the axis range from -rmax to rmax in both directions</span></div><div class="line">TH2D* dummy_his = <span class="keyword">new</span> TH2D(<span class="string">"dummy"</span>, <span class="string">"histo title"</span>, <span class="number">100</span>, -rmax, rmax, <span class="number">100</span>, -rmax, rmax);</div><div class="line"></div><div class="line">TCanvas* c1 = <span class="keyword">new</span> TCanvas(<span class="string">"theCanvas"</span>, <span class="string">"theCanvas"</span>, <span class="number">600</span>, <span class="number">600</span>);</div><div class="line">dummy_his-&gt;Draw(<span class="string">"COLZ"</span>); <span class="comment">// draw the dummy histogram first</span></div><div class="line">pol_his-&gt;Draw(<span class="string">"COLZPOL SAME "</span>);</div><div class="line"> <span class="comment">// now draw the data histogram. If it has "SAME" it will use the first histogram ranges</span></div><div class="line">pol_his-&gt;SetContour(<span class="number">20</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>修改数据的显示范围和颜色的深度，可以使用：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">pol_his-&gt;GetZaxis()-&gt;SetRangeUser(<span class="number">0</span>,<span class="number">.2</span>);</div><div class="line">pol_his-&gt;SetContour(<span class="number">40</span>);</div></pre></td></tr></table></figure></p>
 <p>修改后的效果：<br><img src="http://o98383o2a.bkt.clouddn.com/rootpolz.png" alt=""><br>此时还有一个问题就是右边的colormap显示不完整，一个简单的办法是直接在图片上拖动进行调整，效果是这样的：<br><img src="http://o98383o2a.bkt.clouddn.com/rootfullcolz.png" alt=""><br>也可以采用添加TPAD的方法，但是会出现一些白边;暂时就这样了。</p>
 
                 
-<p class="pink-link-context">
+<p class="red-link-context">
     <a href="https:/arlier1.github.io/2017/06/08/approxiamationinphy/" rel="next" title="物理学与近似">
     Prev: 物理学与近似
   </a>
@@ -274,7 +274,7 @@
 
 
 
-<p class="pink-link-context">
+<p class="red-link-context">
     <a href="https:/arlier1.github.io/2017/06/11/Histogram进行积分/" rel="next" title="Histogram进行积分">
     Next: Histogram进行积分
   </a>
@@ -295,20 +295,20 @@
 </div>
 
         <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large pink">
+    <a class="btn-floating btn-large red">
       <i class="fa fa-caret-square-o-up"></i>
     </a>
     <ul>
-      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+      <li><a class="btn-return-top btn-floating waves-effect cyan" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse light-green"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
     </ul>
   </div>
 
     </main>
-    <footer class="page-footer indigo darken-1">
+    <footer class="page-footer green darken-1">
     
 
-    <div class="footer-copyright pink-link-context">
+    <div class="footer-copyright red-link-context">
         <div class="container">
             © 2016 arlier.science, All rights reserved.
             <p class="right" style="margin-top: 0;">Blog powered by <a href="https://hexo.io">Hexo</a> | Theme <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
@@ -405,7 +405,7 @@
             $('li.tab a').hover(function() {
                 $(this).toggleClass('text-lighten-4');
             });
-            $('.indicator').addClass('pink lighten-2');
+            $('.indicator').addClass('red lighten-2');
 
             
 
@@ -481,7 +481,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -503,7 +503,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword red lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"
