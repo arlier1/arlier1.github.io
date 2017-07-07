@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title><![CDATA[Dorigo-statistics]]></title>
+      <url>https://arlier1.github.io/2017/07/07/Dorigo-statistics/</url>
+      <content type="html"><![CDATA[<p>高能物理中的统计，From： <a href="http://indico.ihep.ac.cn/event/4869/other-view?view=standard" target="_blank" rel="external">http://indico.ihep.ac.cn/event/4869/other-view?view=standard</a></p>
+<h1 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h1><p>统计学很重要：</p>
+<ul>
+<li>高能物理中的实验结果通常是不确定的</li>
+<li>很容易从数据中得出不正确的结论</li>
+<li>不同的统计方法会得出不同的结果；不同的问题对应不同的结果，真正的困难在于我们提出怎样的问题<a id="more"></a>
+</li>
+</ul>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> statistics </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[tex中label标签的位置]]></title>
       <url>https://arlier1.github.io/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/</url>
       <content type="html"><![CDATA[<p>今天在编译tex的时候发现图片的label标签必须写在插入图片命令的后面，否则应用这个图片的时候显示的图题是不对的；这真是一个很微妙的问题。</p>

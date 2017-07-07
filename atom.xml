@@ -5,7 +5,7 @@
   <link href="https://arlier1.github.io/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2017-06-15T09:17:13.852Z</updated>
+  <updated>2017-07-07T02:02:40.908Z</updated>
   <id>/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dorigo-statistics</title>
+    <link href="/2017/07/07/Dorigo-statistics/"/>
+    <id>/2017/07/07/Dorigo-statistics/</id>
+    <published>2017-07-07T01:30:07.000Z</published>
+    <updated>2017-07-07T02:02:40.908Z</updated>
+    
+    <content type="html"><![CDATA[<p>高能物理中的统计，From： <a href="http://indico.ihep.ac.cn/event/4869/other-view?view=standard" target="_blank" rel="external">http://indico.ihep.ac.cn/event/4869/other-view?view=standard</a></p>
+<h1 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h1><p>统计学很重要：</p>
+<ul>
+<li>高能物理中的实验结果通常是不确定的</li>
+<li>很容易从数据中得出不正确的结论</li>
+<li>不同的统计方法会得出不同的结果；不同的问题对应不同的结果，真正的困难在于我们提出怎样的问题<a id="more"></a>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;高能物理中的统计，From： &lt;a href=&quot;http://indico.ihep.ac.cn/event/4869/other-view?view=standard&quot;&gt;http://indico.ihep.ac.cn/event/4869/other-view?view=standard&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;学习笔记&quot;&gt;&lt;a href=&quot;#学习笔记&quot; class=&quot;headerlink&quot; title=&quot;学习笔记&quot;&gt;&lt;/a&gt;学习笔记&lt;/h1&gt;&lt;p&gt;统计学很重要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高能物理中的实验结果通常是不确定的&lt;/li&gt;
+&lt;li&gt;很容易从数据中得出不正确的结论&lt;/li&gt;
+&lt;li&gt;不同的统计方法会得出不同的结果；不同的问题对应不同的结果，真正的困难在于我们提出怎样的问题
+    
+    </summary>
+    
+    
+      <category term="statistics" scheme="/tags/statistics/"/>
+    
+  </entry>
   
   <entry>
     <title>tex中label标签的位置</title>
