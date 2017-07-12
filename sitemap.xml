@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/writing/index.html</loc>
+    
+    <lastmod>2017-07-12T04:09:07.589Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/wordlist/index.html</loc>
+    
+    <lastmod>2017-07-12T03:23:58.106Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/about/index.html</loc>
     
     <lastmod>2017-07-12T02:51:09.728Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>/spectrum-bump/index.html</loc>
     
     <lastmod>2017-07-12T02:48:05.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/writing/index.html</loc>
-    
-    <lastmod>2017-07-12T02:24:26.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/wordlist/index.html</loc>
-    
-    <lastmod>2017-07-10T13:28:57.303Z</lastmod>
     
   </url>
   
