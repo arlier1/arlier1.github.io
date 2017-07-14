@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/wordlist/worldlist1.html</loc>
+    
+    <lastmod>2017-07-14T01:28:31.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/about/index.html</loc>
+    
+    <lastmod>2017-07-14T01:23:35.241Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/wordlist/index.html</loc>
     
-    <lastmod>2017-07-13T13:40:50.244Z</lastmod>
+    <lastmod>2017-07-14T01:21:46.990Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>/writing/index.html</loc>
     
     <lastmod>2017-07-12T05:34:01.155Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/about/index.html</loc>
-    
-    <lastmod>2017-07-12T02:51:09.728Z</lastmod>
     
   </url>
   
