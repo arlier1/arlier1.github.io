@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/writing/chaos.html</loc>
+    <loc>/wordlist/wordlist2.html</loc>
     
-    <lastmod>2017-07-16T13:46:24.568Z</lastmod>
+    <lastmod>2017-07-19T08:33:26.493Z</lastmod>
     
   </url>
   
   <url>
     <loc>/about/index.html</loc>
     
-    <lastmod>2017-07-16T13:42:07.940Z</lastmod>
+    <lastmod>2017-07-19T08:21:52.671Z</lastmod>
     
   </url>
   
   <url>
     <loc>/wordlist/wordlist1.html</loc>
     
-    <lastmod>2017-07-16T13:11:26.641Z</lastmod>
+    <lastmod>2017-07-19T08:20:06.053Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/writing/chaos.html</loc>
+    
+    <lastmod>2017-07-16T13:49:24.434Z</lastmod>
     
   </url>
   
