@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https:/arlier1.github.io/2017/07/27/time-choice/</loc>
+    
+    <lastmod>2017-07-27T14:42:12.531Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/wordlist/wordlist2.html</loc>
     
-    <lastmod>2017-07-19T08:33:26.493Z</lastmod>
+    <lastmod>2017-07-19T08:41:46.032Z</lastmod>
     
   </url>
   
@@ -30,16 +37,16 @@
   </url>
   
   <url>
-    <loc>/writing/index.html</loc>
+    <loc>/wordlist/index.html</loc>
     
-    <lastmod>2017-07-16T12:28:44.025Z</lastmod>
+    <lastmod>2017-07-16T13:45:53.022Z</lastmod>
     
   </url>
   
   <url>
-    <loc>/wordlist/index.html</loc>
+    <loc>/writing/index.html</loc>
     
-    <lastmod>2017-07-14T01:21:46.990Z</lastmod>
+    <lastmod>2017-07-16T12:28:44.025Z</lastmod>
     
   </url>
   

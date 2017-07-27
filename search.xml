@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title><![CDATA[time=choice]]></title>
+      <url>https://arlier1.github.io/2017/07/27/time-choice/</url>
+      <content type="html"><![CDATA[<h1 id="time-is-limited"><a href="#time-is-limited" class="headerlink" title="time is limited"></a>time is limited</h1><p>how to make use of your time is just how to choice;means you decide what things really matter for you and what not.</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[树莓派播放音乐]]></title>
       <url>https://arlier1.github.io/2017/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/</url>
       <content type="html"><![CDATA[<h1 id="使用MusicBox"><a href="#使用MusicBox" class="headerlink" title="使用MusicBox"></a>使用MusicBox</h1><p>From: <a href="https://github.com/darknessomi/musicbox" target="_blank" rel="external">https://github.com/darknessomi/musicbox</a><br>sudo apt-get install python-dev  开始的时候没这个命令就一直安装不成功，看来是系统自带的Python不完整。</p>
