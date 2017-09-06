@@ -259,37 +259,6 @@
             <div class="article-title">
                 
     
-        <h1 class="green-link-context"><a href="https:/arlier1.github.io/2017/07/08/树莓派播放音乐/">树莓派播放音乐</a></h1>
-    
-
-
-            </div>
-
-            <time class="red-link-context" datetime="2017-07-08T01:32:57.000Z"><a href="https:/arlier1.github.io/2017/07/08/树莓派播放音乐/">2017-07-08</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="https://arlier1.github.io/tags/树莓派/" class="chip red lighten-1">树莓派</a>
-        
-    </div>
-
-
-
-            
-        </div>
-
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
         <h1 class="green-link-context"><a href="https:/arlier1.github.io/2017/07/07/Dorigo-statistics/">Dorigo-statistics</a></h1>
     
 
@@ -579,6 +548,46 @@
         
         <div class="card-action red-link-context">
             <a href="/2017/06/08/thesiswriting/">阅读全文</a>
+        </ div>
+        
+    </div>
+</article>
+
+    
+        <article class="simple-article">
+    <div class="card">
+        <div class="card-content">
+            <div class="article-title">
+                
+    
+        <h1 class="green-link-context"><a href="https:/arlier1.github.io/2017/06/05/sshlogin/">用密钥直接登录服务器</a></h1>
+    
+
+
+            </div>
+
+            <time class="red-link-context" datetime="2017-06-05T04:42:08.000Z"><a href="https:/arlier1.github.io/2017/06/05/sshlogin/">2017-06-05</a></time>
+
+            
+    <div class="tags-row">
+        
+            <a href="https://arlier1.github.io/tags/sshkey-密钥登录/" class="chip red lighten-1">sshkey 密钥登录</a>
+        
+    </div>
+
+
+
+            
+                <div class="entry red-link-context">
+                    <p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
+<h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
+                </div>
+            
+        </div>
+
+        
+        <div class="card-action red-link-context">
+            <a href="/2017/06/05/sshlogin/">阅读全文</a>
         </ div>
         
     </div>

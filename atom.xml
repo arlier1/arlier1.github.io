@@ -35,27 +35,6 @@
   </entry>
   
   <entry>
-    <title>树莓派播放音乐</title>
-    <link href="/2017/07/08/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/"/>
-    <id>/2017/07/08/树莓派播放音乐/</id>
-    <published>2017-07-08T01:32:57.000Z</published>
-    <updated>2017-07-08T02:01:36.422Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="使用MusicBox"><a href="#使用MusicBox" class="headerlink" title="使用MusicBox"></a>使用MusicBox</h1><p>From: <a href="https://github.com/darknessomi/musicbox" target="_blank" rel="external">https://github.com/darknessomi/musicbox</a><br>sudo apt-get install python-dev  开始的时候没这个命令就一直安装不成功，看来是系统自带的Python不完整。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;使用MusicBox&quot;&gt;&lt;a href=&quot;#使用MusicBox&quot; class=&quot;headerlink&quot; title=&quot;使用MusicBox&quot;&gt;&lt;/a&gt;使用MusicBox&lt;/h1&gt;&lt;p&gt;From: &lt;a href=&quot;https://github.com/dark
-    
-    </summary>
-    
-    
-      <category term="树莓派" scheme="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Dorigo-statistics</title>
     <link href="/2017/07/07/Dorigo-statistics/"/>
     <id>/2017/07/07/Dorigo-statistics/</id>
