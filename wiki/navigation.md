@@ -1,6 +1,6 @@
 [HOME](home.md)
 [实验记录](exp_rec.md)
-[MCPxinh信号分析](mcpsig.md)
+[MCP信号分析](mcpsig.md)
 [QE](qe.md)
 [R5912-WB](r5912wb.md)
 [R5912-OB](r5912ob.md)
