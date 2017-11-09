@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/test/js/jquery.js</loc>
+    
+    <lastmod>2017-11-09T12:23:25.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/js/jquery.mousewheel.min.js</loc>
+    
+    <lastmod>2017-11-09T12:23:25.835Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/js/index.js</loc>
+    
+    <lastmod>2017-11-09T12:23:22.247Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/js/animate.js</loc>
+    
+    <lastmod>2017-11-09T12:23:22.246Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/css/index.css</loc>
+    
+    <lastmod>2017-11-09T12:23:18.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/css/animate.min.css</loc>
+    
+    <lastmod>2017-11-09T12:23:18.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/test/arlier.html</loc>
+    
+    <lastmod>2017-11-09T12:23:17.129Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/writing/index.html</loc>
     
     <lastmod>2017-09-10T04:17:50.980Z</lastmod>
