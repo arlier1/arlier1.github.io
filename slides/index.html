@@ -78,53 +78,7 @@
         <li>Easy install; 100% integration</li>
         <li>Facility to customize rating icons</li>
       </ul>
-      <h3 id="license"> License</h3>
-      <p> This Feedback Collection and Polling widget is free for personal and commercial
-        projects as long as you are providing a link back to this page. If you don’t want
-        to provide a link back, simply contribute to the development and improvement of
-        this tool. To contribute to this and many other interesting projects, go to Support
-        Efforts and become a patron.</p>
-      <hr>
-      <h2> Customizing Opineo</h2>
-      <p> Before you make any cusomization or even start using Opineo create a 'div' element
-        and assign it some id. Now add references to necessary Javascrip files e.g.</p>
-      <ul>
-        <li>A reference to latest jQuery library </li>
-        <li>A reference to Opineo script file sudo nano opineo.js</li>
-      </ul>
       <p> The following customization options are available in Opineo:</p>
-      <h3 id="view_type"> View Type</h3>
-      <ul>
-        <li>Detailed View</li>
-      </ul>
-     
-      <pre class="prettyprint">&lt;script&gt;
-      	$(document).ready(function (){
-        $('#DefaultOptions').opineo('results.php', {curvalue:3,
-            view: 'detailed',
-            animation_speed: 'super',
-            show_total_votes_counter: false,
-            show_overall_rating: true});
-         })
-&lt;/script&gt;</pre>
-      <ul>
-        <li>Compact View</li>
-      </ul>
-      <pre class="prettyprint">&lt;script&gt;
-	$(document).ready(function (){
-	$('#CompactView').opineo('results.php',
-    	    {curvalue:3, view: 'compact',
-    	    animation_speed: 'super'});
-	})
-&lt;/script&gt;</pre>
-      <ul>
-        <li>Mini View</li>
-      </ul>
-      <pre class="prettyprint">&lt;script&gt;
-    $(document).ready(function (){
-    $('#MiniView').opineo('results.php', {curvalue:0, view: 'mini', callback: myCallback});
-    })	
-&lt;/script&gt;</pre>
   </div>
 </section>
 <section class="vibrant centered">
