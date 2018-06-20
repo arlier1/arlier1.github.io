@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Dorigo-statistics]]></title>
-      <url>https://arlier1.github.io/blog/2017/07/07/Dorigo-statistics/</url>
+      <url>/blog/2017/07/07/Dorigo-statistics/</url>
       <content type="html"><![CDATA[<p>高能物理中的统计，From： <a href="http://indico.ihep.ac.cn/event/4869/other-view?view=standard" target="_blank" rel="external">http://indico.ihep.ac.cn/event/4869/other-view?view=standard</a></p>
 <h1 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h1><p>统计学很重要：</p>
 <ul>
@@ -26,7 +26,7 @@
     
     <entry>
       <title><![CDATA[tex中label标签的位置]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/</url>
+      <url>/blog/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/</url>
       <content type="html"><![CDATA[<p>今天在编译tex的时候发现图片的label标签必须写在插入图片命令的后面，否则应用这个图片的时候显示的图题是不对的；这真是一个很微妙的问题。</p>
 ]]></content>
       
@@ -49,7 +49,7 @@
     
     <entry>
       <title><![CDATA[TMultiGraph添加title]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/</url>
+      <url>/blog/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/</url>
       <content type="html"><![CDATA[<p>在给MultiGraph添加标题的时候一直加不上，发现了问题是没有更新，添加modified命令之后即可：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mg-&gt;Draw(<span class="string">"ALP"</span>);   <span class="comment">//一定要在draw之后设置相关内容</span></div><div class="line">mg-&gt;GetYaxis()-&gt;SetTitle(<span class="string">"yaxis"</span>);</div><div class="line">mycan-&gt;Update();</div><div class="line">gPad-&gt;Modified();</div></pre></td></tr></table></figure></p>
 <p>总算明白了别人的画图代码加的这两行的用处了！<br><a id="more"></a></p>
 ]]></content>
@@ -71,7 +71,7 @@
     
     <entry>
       <title><![CDATA[ROOT画图技巧]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/</url>
+      <url>/blog/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/</url>
       <content type="html"><![CDATA[<h1 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h1><p>ROOT中画图和其他基于脚本控制的画图程序一样，对所作图形具有完全的控制能力。学习画图重要的是理解各种基本对象以及他们的关系:camvas,pad,frame,axis等;然后根据自己的数据，以及需要的展示形式选择最合适的布局，配色，尺寸等信息。在了解自己的数据的特征之后你其实已经可以想象出要画出怎么样的图了，这时候可以先画一张草图，定好布局和需要展示的信息，然后画图的时候遇到问题总可以通过搜索引擎方便地找到答案;最后一步就是对细节进行微调，包括整体配色，线条尺寸，标记形状等进行合理优化，使得输出结果更加美观。<br><a id="more"></a></p>
 <h1 id="几个技巧"><a href="#几个技巧" class="headerlink" title="几个技巧"></a>几个技巧</h1><p>ROOT画图之后可以通过脚本详细调节，也可以用GUI调节（VIEW-EDITOR），脚本比较慢但好处是每次都能重复;GUI相对快一些但关闭之后就保存不了了。一般情况下（报告，网页等）使用GUI进行简单调节就可以了，调好之后另存为.root格式，方便以后继续修改;在往论文插图的时候需要使用脚本比较好。</p>
 <h1 id="图片输出"><a href="#图片输出" class="headerlink" title="图片输出"></a>图片输出</h1><p>一般输出ps,eps,pdf等矢量格式显示效果会很好，文件也不大;jpg，png等格式多用于网站，放大容易失真。</p>
@@ -96,7 +96,7 @@
     
     <entry>
       <title><![CDATA[Histogram进行积分]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/11/Histogram%E8%BF%9B%E8%A1%8C%E7%A7%AF%E5%88%86/</url>
+      <url>/blog/2017/06/11/Histogram%E8%BF%9B%E8%A1%8C%E7%A7%AF%E5%88%86/</url>
       <content type="html"><![CDATA[<p>对于一个柱状图，统计特定的bin范围内的计数，也就是进行积分<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hist-&gt;Integral(bin1,bin2);</div></pre></td></tr></table></figure></p>
 <p>表示对第bin1个和bin2个bin中间的区域进行积分。</p>
 ]]></content>
@@ -118,7 +118,7 @@
     
     <entry>
       <title><![CDATA[col和colz]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/10/col%E5%92%8Ccolz/</url>
+      <url>/blog/2017/06/10/col%E5%92%8Ccolz/</url>
       <content type="html"><![CDATA[<p>今天在画图的时候，一直找不到直方图的colormap，在谷歌搜索了很多关于<a href="https://root.cern.ch/doc/master/classTColor.html" target="_blank" rel="external">palette</a>的信息，最后发现只要把<code>COL</code>变成<code>COLZ</code>就可以了！这是对比的图：<br><img src="http://o98383o2a.bkt.clouddn.com/rootcolz.png" alt=""><br><img src="http://o98383o2a.bkt.clouddn.com/rootcol.png" alt=""><br>通过palette可以详细设置颜色。<br>画图代码如下：<br><a id="more"></a><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">testdraw</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">TString filedir=<span class="string">"/junofs/users/zhaor/Rm107/PMTtest/Defullscan/mcps.txt"</span>;</div><div class="line">	<span class="built_in">string</span> ss1;</div><div class="line"><span class="comment">//infilestream</span></div><div class="line"><span class="function">ifstream <span class="title">filein</span><span class="params">(filedir)</span></span>;</div><div class="line"></div><div class="line">	gStyle-&gt;SetOptStat(<span class="number">0</span>);</div><div class="line">	 <span class="comment">//gStyle-&gt;SetPalette(55);</span></div><div class="line">	   Int_t palette[<span class="number">5</span>];</div><div class="line">	   palette[<span class="number">0</span>] = <span class="number">15</span>;</div><div class="line">	   palette[<span class="number">1</span>] = <span class="number">20</span>;</div><div class="line">	   palette[<span class="number">2</span>] = <span class="number">23</span>;</div><div class="line">	   palette[<span class="number">3</span>] = <span class="number">30</span>;</div><div class="line">	   palette[<span class="number">4</span>] = <span class="number">32</span>;</div><div class="line">	   gStyle-&gt;SetPalette(<span class="number">5</span>,palette);</div><div class="line">    <span class="function">Double_t <span class="title">rmax</span><span class="params">(<span class="number">1.</span>)</span></span>;</div><div class="line"></div><div class="line">TH2D* pol_his = <span class="keyword">new</span> TH2D(<span class="string">"polarHist"</span>, <span class="string">"polarHist"</span>, <span class="number">36</span>, <span class="number">0.</span>, <span class="number">2.</span>*TMath::Pi(), <span class="number">8</span>, <span class="number">0.</span>, rmax); </div><div class="line"><span class="comment">// the polar data. X maps to theta, Y maps to R</span></div><div class="line"></div><div class="line">Double_t mu, muerr;</div><div class="line"><span class="comment">//fill the histogram with something nice.</span></div><div class="line"><span class="keyword">for</span>(Int_t i=<span class="number">1</span>; i&lt;=pol_his-&gt;GetNbinsX()/<span class="number">2</span>; i++)</div><div class="line">&#123;</div><div class="line">	getline(filein,ss1);<span class="comment">//jump the odegree</span></div><div class="line">	<span class="keyword">for</span>(Int_t j=<span class="number">1</span>; j&lt;=pol_his-&gt;GetNbinsY(); j++)</div><div class="line">	&#123;</div><div class="line">	getline(filein,ss1);</div><div class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">is1</span><span class="params">(ss1)</span></span>;</div><div class="line">	is1&gt;&gt;mu&gt;&gt;muerr;</div><div class="line">	pol_his-&gt;SetBinContent(i+pol_his-&gt;GetNbinsX()/<span class="number">2</span>, j, mu);</div><div class="line">	getline(filein,ss1);</div><div class="line">	<span class="function"><span class="built_in">istringstream</span> <span class="title">is1</span><span class="params">(ss1)</span></span>;</div><div class="line">	is1&gt;&gt;mu&gt;&gt;muerr;</div><div class="line">	pol_his-&gt;SetBinContent(i, j, mu);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//make a dummy histogram to set the axis range from -rmax to rmax in both directions</span></div><div class="line">TH2D* dummy_his = <span class="keyword">new</span> TH2D(<span class="string">"dummy"</span>, <span class="string">"histo title"</span>, <span class="number">100</span>, -rmax, rmax, <span class="number">100</span>, -rmax, rmax);</div><div class="line"></div><div class="line">TCanvas* c1 = <span class="keyword">new</span> TCanvas(<span class="string">"theCanvas"</span>, <span class="string">"theCanvas"</span>, <span class="number">600</span>, <span class="number">600</span>);</div><div class="line">dummy_his-&gt;Draw(<span class="string">"COLZ"</span>); <span class="comment">// draw the dummy histogram first</span></div><div class="line">pol_his-&gt;Draw(<span class="string">"COLZPOL SAME "</span>);</div><div class="line"> <span class="comment">// now draw the data histogram. If it has "SAME" it will use the first histogram ranges</span></div><div class="line">pol_his-&gt;SetContour(<span class="number">20</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>修改数据的显示范围和颜色的深度，可以使用：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">pol_his-&gt;GetZaxis()-&gt;SetRangeUser(<span class="number">0</span>,<span class="number">.2</span>);</div><div class="line">pol_his-&gt;SetContour(<span class="number">40</span>);</div></pre></td></tr></table></figure></p>
 <p>修改后的效果：<br><img src="http://o98383o2a.bkt.clouddn.com/rootpolz.png" alt=""><br>此时还有一个问题就是右边的colormap显示不完整，一个简单的办法是直接在图片上拖动进行调整，效果是这样的：<br><img src="http://o98383o2a.bkt.clouddn.com/rootfullcolz.png" alt=""><br>也可以采用添加TPAD的方法，但是会出现一些白边;暂时就这样了。</p>
@@ -141,7 +141,7 @@
     
     <entry>
       <title><![CDATA[物理学与近似]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/08/approxiamationinphy/</url>
+      <url>/blog/2017/06/08/approxiamationinphy/</url>
       <content type="html"><![CDATA[<h1 id="物理学是不是精确的？"><a href="#物理学是不是精确的？" class="headerlink" title="物理学是不是精确的？"></a>物理学是不是精确的？</h1><p>和其他自然科学一样，物理学的重要目标之一就是描述客观世界，建立一些普遍的模型和理论来表达事物之间的关系。具体的过程就是从客观世界中提取出各种物理量，然后建立出一个映射，用公式、方程、假设来描述它们之间的关系;并通过与实验结果的比较来验证这种映射的有效行，从而不断完善和修正这些映射，使其和实验有更准确的对应关系。<br><a id="more"></a><br>如果要讨论物理学是不是精确的，需要确认这个问题的具体含义是什么：首先我们不是指某个理论或者公式是不是精确的，因为用数学表达出来的公式几乎都有明确的意义,也就是说物理理论都是准确的陈述，没有含混不清的。这个问题的意思是指，物理理论通过实验验证的这一过程是不是精确的，比如实验上测出的某个常数或者物理量的数值是不是精确的，实验上对理论的验证是不是完全有效的，也就是理论的普遍性的检验。</p>
 <p>从这个角度来看<code>物理学必然是不精确的</code>，因为物理学几乎完全依赖于实验，而实验的精确性取决于测量的精确性，测量的精确性以来于测量仪器的精确性;而根据量子力学的不确定关系，所有的物理量测量都必然“测不准”而带有误差。这也就是我们看到的所以物理量和自然常数的实验测量值都会带有误差限，这些误差限度对于一个物理量的取值的重要意义就类似与，数学里面一个假设对命题结论的意义一样。</p>
 <h1 id="物理学-近似？"><a href="#物理学-近似？" class="headerlink" title="物理学=近似？"></a>物理学=近似？</h1><p>你可能不相信或者没有意识到，近似几乎物理学的秘密武器。<br>级数展开，数量级估算。</p>
@@ -164,7 +164,7 @@
     
     <entry>
       <title><![CDATA[关于论文的tips]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/08/thesiswriting/</url>
+      <url>/blog/2017/06/08/thesiswriting/</url>
       <content type="html"><![CDATA[<h1 id="get新技能"><a href="#get新技能" class="headerlink" title="get新技能"></a>get新技能</h1><p>科技类写作的主要目的就是通过论文表达出作者的研究方法以及得到的观点和结论，而在一篇文章中最有说服力的的就是公式和数据，所以一篇文章的核心就是准确地表达出公式和数据。为了展示一个理论或者实验的结果，公式是最有效的、最准确的方案，其次是用图和表，日常语言的描述效率最低。虽然从反方向来看，理解自然语言最容易，图标要进行简单的思考和分析，而公式往往要详细研究。</p>
 <p>据说学术界的大牛们看文章一般都只看图表和公式（顶多看看结论和摘要）就可以知道一篇文章的实际水平是什么层次。因为很难想象一篇科技论文是纯文字格式，没有任何图表公式（这就像是在读小说？）所以文章中图表、公式所代表的数据或者理论的水平就大约等于这篇文献的水平。<br><a id="more"></a><br>说白了，写科技论文就是从你得到的理论或者数据中挖掘出有价值的东西，然后用合理的方式呈现出来。那么很自然地，写作的时候只要围绕图、表、公式进行展开就可以了;甚至你可以开发出一套适合于自己的论文模板库，专门保存写论文时候常用的模块。既然如此，我们可以制作一个简单的“论文生产流程”，只要在得出一个重要的理论或者数据的集合（来源于你对课题的研究的积累）之后，可以“标准化”地产出论文。</p>
 <h1 id="简单的论文生产流程图"><a href="#简单的论文生产流程图" class="headerlink" title="简单的论文生产流程图"></a>简单的论文生产流程图</h1><h2 id="创建多个小节"><a href="#创建多个小节" class="headerlink" title="创建多个小节"></a>创建多个小节</h2><p>按照上面的思路，先把我们得到的图表公式进行整理，确认逻辑清楚之后开始进行写作。首先就是以这些图表公式为中心进行内容扩展，具体的思路如下图：<br><img src="http://o98383o2a.bkt.clouddn.com/subsection.png" alt=""></p>
@@ -183,7 +183,7 @@
     
     <entry>
       <title><![CDATA[用密钥直接登录服务器]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/05/sshlogin/</url>
+      <url>/blog/2017/06/05/sshlogin/</url>
       <content type="html"><![CDATA[<p>由于经常登录服务器每次都要输入密码感觉很麻烦，而且密码的方式安全性也不高;所以决定使用sshkey的方式登录。</p>
 <h1 id="在centos7上使用密钥登录"><a href="#在centos7上使用密钥登录" class="headerlink" title="在centos7上使用密钥登录"></a>在centos7上使用密钥登录</h1><h2 id="产生密钥"><a href="#产生密钥" class="headerlink" title="产生密钥"></a>产生密钥</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir .ssh</div><div class="line">chmod 700 .ssh</div><div class="line">touch authorized_keys</div><div class="line">chmod 700 authorized_keys</div><div class="line">ssh-keygen -t rsa</div><div class="line">cat id_rsa.pub &gt;&gt; authorized_keys   //保存私钥</div></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -209,7 +209,7 @@
     
     <entry>
       <title><![CDATA[zotera安装和使用]]></title>
-      <url>https://arlier1.github.io/blog/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
+      <url>/blog/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h1 id="文献管理软件zotera"><a href="#文献管理软件zotera" class="headerlink" title="文献管理软件zotera"></a>文献管理软件zotera</h1><p>去年的时候师兄就告诉我说<a href="https://www.zotero.org/" target="_blank" rel="external">zotera</a>非常好用，当时下载了个浏览器插件版，然后自己的使用频率不高就放在那里了。现在我觉得自己需要一个工具来整理看过的文献和笔记，比较各种文献管理软件之后我决定就使用zotera了。</p>
 <h1 id="ubuntu的安装"><a href="#ubuntu的安装" class="headerlink" title="ubuntu的安装"></a>ubuntu的安装</h1><p>先到<a href="https://www.zotero.org/download/" target="_blank" rel="external">官网</a>下载独版本立的安装文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">tar -jxvf Zotero-4.0.29.10_linux-x86_64.tar.bz2</div><div class="line"><span class="built_in">cd</span> Zotero_linux-x86_64 </div><div class="line">bash run-zotera.sh</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
@@ -234,7 +234,7 @@
     
     <entry>
       <title><![CDATA[高能的物理-趣说普朗克常量]]></title>
-      <url>https://arlier1.github.io/blog/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/</url>
+      <url>/blog/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/</url>
       <content type="html"><![CDATA[<p>未经授权，不得转载。</p>
 <h1 id="高能物理为什么“高能”？"><a href="#高能物理为什么“高能”？" class="headerlink" title="高能物理为什么“高能”？"></a>高能物理为什么“高能”？</h1><p>你可能经常听说高能物理或者粒子物理这些词汇，<br>人们通常把粒子物理称为高能物理，因为它们之间有着非常紧密的联系。粒子物理的研究对象是空间尺度非常小的物理对象，比如夸克，介子，中微子等。为了研究这么小的空间中的过程当然要想办法来发生一些相互作用来看看会有什么结果，比如我们把电子或者离子撞到一个原子核上，就可以通过散射出来的电子的空间分布知道一些关于原子核的信息。<br><a id="more"></a></p>
 <h1 id="高能量-强穿透力"><a href="#高能量-强穿透力" class="headerlink" title="高能量=强穿透力"></a>高能量=强穿透力</h1><p>理论上我们当然想要探测越来越小的结构，最直接的想法就是我们去找一个本身就非常小的粒子来作为我们的“探针”。这时候粒子的探测能力的大小是用它的德布罗意波长来描述的[lambda=h/p]，同一种粒子当它的动量越大的时候探测能力越强。你可以试想一下，一个能量非常高的电子显然比能量低的电子更容易打入原子的内部，它的穿透能力更强。能量越高穿透力越强的例子在宏观世界更为明显，比如一个高速的子弹能够轻而易举穿过一个木板，而如果你用手把同一颗子弹扔到木板上，显然它会被弹走。</p>
@@ -247,7 +247,7 @@
     
     <entry>
       <title><![CDATA[关于这个博客]]></title>
-      <url>https://arlier1.github.io/blog/2017/05/31/thisblog/</url>
+      <url>/blog/2017/05/31/thisblog/</url>
       <content type="html"><![CDATA[<h1 id="this-blog"><a href="#this-blog" class="headerlink" title="this blog"></a>this blog</h1><p>is powerd by hexo.contact me with <a href="mailto:1278118931@qq.com" target="_blank" rel="external">1278118931@qq.com</a></p>
 ]]></content>
       
@@ -262,7 +262,7 @@
     
     <entry>
       <title><![CDATA[webterm]]></title>
-      <url>https://arlier1.github.io/blog/2017/04/21/webterm/</url>
+      <url>/blog/2017/04/21/webterm/</url>
       <content type="html"><![CDATA[<h3 id="SHELLINABOX"><a href="#SHELLINABOX" class="headerlink" title="SHELLINABOX"></a>SHELLINABOX</h3><p>今天下午看到一个帖子，说是在安卓上运行Ubuntu，看了之后觉得很不靠谱。结果就去搜索相关内容，然后想到既然不能再arm上安装linux，那么有没有可能ssh上去服务器呢？这个算是比较简单的，在本地安装一个安卓模拟器或者sshd或者相关的第三方软件（如connectbot,juicessh等）就可以实现。这只是CLI的连接，能不能实现X11端口转发实现GUI呢？Google一下发现也是可以的，如果这个实现了那么几乎就能用手机完全实现xshell的功能了。</p>
 <p>作为一个爱折腾的人，总会尝试一下没什么实用价值的功能~~~<br><a id="more"></a></p>
 <h3 id="JUICESSH"><a href="#JUICESSH" class="headerlink" title="JUICESSH"></a>JUICESSH</h3><p>通过端口转发实现ssh和GUI的软件是juicessh，免费版本没有这个功能，付费版本要登录谷歌账号，可是我的手机根本连不上网。。。。。然后就去找破解版好了，倒是找到了<a href="http://www.52pojie.cn/thread-502507-1-4.html" target="_blank" rel="external">两篇</a>帖子<a href="http://www.52pojie.cn/thread-557375-1-1.html" target="_blank" rel="external">帖子</a> 按照教程使用MT、apk修改器和Zipsigner修改成功了。然而高级功能的端口转发还是用不了，只好做罢。</p>
