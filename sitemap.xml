@@ -2,21 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://arlier1.github.io/slides/test.html</loc>
-    
-    <lastmod>2018-06-20T08:54:37.894Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://arlier1.github.io/test/js/jquery.mousewheel.min.js</loc>
+    <loc>https://arlier1.github.io/test/js/jquery.js</loc>
     
     <lastmod>2017-11-09T12:23:25.835Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://arlier1.github.io/test/js/jquery.js</loc>
+    <loc>https://arlier1.github.io/test/js/jquery.mousewheel.min.js</loc>
     
     <lastmod>2017-11-09T12:23:25.835Z</lastmod>
     
