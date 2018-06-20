@@ -4,9 +4,9 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://arlier1.github.io/"/>
+  <link href="https://arlier.science/"/>
   <updated>2017-07-07T02:02:40.908Z</updated>
-  <id>https://arlier1.github.io/</id>
+  <id>https://arlier.science/</id>
   
   <author>
     <name>arlier</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Dorigo-statistics</title>
-    <link href="https://arlier1.github.io/2017/07/07/Dorigo-statistics/"/>
-    <id>https://arlier1.github.io/2017/07/07/Dorigo-statistics/</id>
+    <link href="https://arlier.science/2017/07/07/Dorigo-statistics/"/>
+    <id>https://arlier.science/2017/07/07/Dorigo-statistics/</id>
     <published>2017-07-07T01:30:07.000Z</published>
     <updated>2017-07-07T02:02:40.908Z</updated>
     
@@ -44,14 +44,14 @@
     </summary>
     
     
-      <category term="statistics" scheme="https://arlier1.github.io/tags/statistics/"/>
+      <category term="statistics" scheme="https://arlier.science/tags/statistics/"/>
     
   </entry>
   
   <entry>
     <title>tex中label标签的位置</title>
-    <link href="https://arlier1.github.io/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/"/>
-    <id>https://arlier1.github.io/2017/06/15/tex中label标签的位置/</id>
+    <link href="https://arlier.science/2017/06/15/tex%E4%B8%ADlabel%E6%A0%87%E7%AD%BE%E7%9A%84%E4%BD%8D%E7%BD%AE/"/>
+    <id>https://arlier.science/2017/06/15/tex中label标签的位置/</id>
     <published>2017-06-15T09:14:32.000Z</published>
     <updated>2017-06-15T09:17:13.852Z</updated>
     
@@ -65,19 +65,19 @@
     
     </summary>
     
-      <category term="program" scheme="https://arlier1.github.io/categories/program/"/>
+      <category term="program" scheme="https://arlier.science/categories/program/"/>
     
     
-      <category term="TEX" scheme="https://arlier1.github.io/tags/TEX/"/>
+      <category term="TEX" scheme="https://arlier.science/tags/TEX/"/>
     
-      <category term="LABEL" scheme="https://arlier1.github.io/tags/LABEL/"/>
+      <category term="LABEL" scheme="https://arlier.science/tags/LABEL/"/>
     
   </entry>
   
   <entry>
     <title>TMultiGraph添加title</title>
-    <link href="https://arlier1.github.io/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/"/>
-    <id>https://arlier1.github.io/2017/06/11/TMultiGraph添加title/</id>
+    <link href="https://arlier.science/2017/06/11/TMultiGraph%E6%B7%BB%E5%8A%A0title/"/>
+    <id>https://arlier.science/2017/06/11/TMultiGraph添加title/</id>
     <published>2017-06-11T11:41:38.000Z</published>
     <updated>2017-07-06T14:52:19.389Z</updated>
     
@@ -92,17 +92,17 @@
     
     </summary>
     
-      <category term="ROOTTIPS" scheme="https://arlier1.github.io/categories/ROOTTIPS/"/>
+      <category term="ROOTTIPS" scheme="https://arlier.science/categories/ROOTTIPS/"/>
     
     
-      <category term="TMultiGraph" scheme="https://arlier1.github.io/tags/TMultiGraph/"/>
+      <category term="TMultiGraph" scheme="https://arlier.science/tags/TMultiGraph/"/>
     
   </entry>
   
   <entry>
     <title>ROOT画图技巧</title>
-    <link href="https://arlier1.github.io/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/"/>
-    <id>https://arlier1.github.io/2017/06/11/ROOT画图技巧/</id>
+    <link href="https://arlier.science/2017/06/11/ROOT%E7%94%BB%E5%9B%BE%E6%8A%80%E5%B7%A7/"/>
+    <id>https://arlier.science/2017/06/11/ROOT画图技巧/</id>
     <published>2017-06-11T08:31:48.000Z</published>
     <updated>2017-07-06T14:53:46.600Z</updated>
     
@@ -117,19 +117,19 @@
     
     </summary>
     
-      <category term="ROOTTIPS" scheme="https://arlier1.github.io/categories/ROOTTIPS/"/>
+      <category term="ROOTTIPS" scheme="https://arlier.science/categories/ROOTTIPS/"/>
     
     
-      <category term="ROOT" scheme="https://arlier1.github.io/tags/ROOT/"/>
+      <category term="ROOT" scheme="https://arlier.science/tags/ROOT/"/>
     
-      <category term="画图" scheme="https://arlier1.github.io/tags/%E7%94%BB%E5%9B%BE/"/>
+      <category term="画图" scheme="https://arlier.science/tags/%E7%94%BB%E5%9B%BE/"/>
     
   </entry>
   
   <entry>
     <title>Histogram进行积分</title>
-    <link href="https://arlier1.github.io/2017/06/11/Histogram%E8%BF%9B%E8%A1%8C%E7%A7%AF%E5%88%86/"/>
-    <id>https://arlier1.github.io/2017/06/11/Histogram进行积分/</id>
+    <link href="https://arlier.science/2017/06/11/Histogram%E8%BF%9B%E8%A1%8C%E7%A7%AF%E5%88%86/"/>
+    <id>https://arlier.science/2017/06/11/Histogram进行积分/</id>
     <published>2017-06-11T08:25:18.000Z</published>
     <updated>2017-06-11T09:04:11.340Z</updated>
     
@@ -143,17 +143,17 @@
     
     </summary>
     
-      <category term="ROOTTIPS" scheme="https://arlier1.github.io/categories/ROOTTIPS/"/>
+      <category term="ROOTTIPS" scheme="https://arlier.science/categories/ROOTTIPS/"/>
     
     
-      <category term="ROOT histogram" scheme="https://arlier1.github.io/tags/ROOT-histogram/"/>
+      <category term="ROOT histogram" scheme="https://arlier.science/tags/ROOT-histogram/"/>
     
   </entry>
   
   <entry>
     <title>col和colz</title>
-    <link href="https://arlier1.github.io/2017/06/10/col%E5%92%8Ccolz/"/>
-    <id>https://arlier1.github.io/2017/06/10/col和colz/</id>
+    <link href="https://arlier.science/2017/06/10/col%E5%92%8Ccolz/"/>
+    <id>https://arlier.science/2017/06/10/col和colz/</id>
     <published>2017-06-10T06:53:57.000Z</published>
     <updated>2017-07-06T14:53:16.341Z</updated>
     
@@ -168,17 +168,17 @@
     
     </summary>
     
-      <category term="ROOTTIPS" scheme="https://arlier1.github.io/categories/ROOTTIPS/"/>
+      <category term="ROOTTIPS" scheme="https://arlier.science/categories/ROOTTIPS/"/>
     
     
-      <category term="ROOT COLZ" scheme="https://arlier1.github.io/tags/ROOT-COLZ/"/>
+      <category term="ROOT COLZ" scheme="https://arlier.science/tags/ROOT-COLZ/"/>
     
   </entry>
   
   <entry>
     <title>物理学与近似</title>
-    <link href="https://arlier1.github.io/2017/06/08/approxiamationinphy/"/>
-    <id>https://arlier1.github.io/2017/06/08/approxiamationinphy/</id>
+    <link href="https://arlier.science/2017/06/08/approxiamationinphy/"/>
+    <id>https://arlier.science/2017/06/08/approxiamationinphy/</id>
     <published>2017-06-08T07:41:56.000Z</published>
     <updated>2017-07-06T14:49:34.544Z</updated>
     
@@ -193,17 +193,17 @@
     
     </summary>
     
-      <category term="physics" scheme="https://arlier1.github.io/categories/physics/"/>
+      <category term="physics" scheme="https://arlier.science/categories/physics/"/>
     
     
-      <category term="近似 approximation" scheme="https://arlier1.github.io/tags/%E8%BF%91%E4%BC%BC-approximation/"/>
+      <category term="近似 approximation" scheme="https://arlier.science/tags/%E8%BF%91%E4%BC%BC-approximation/"/>
     
   </entry>
   
   <entry>
     <title>关于论文的tips</title>
-    <link href="https://arlier1.github.io/2017/06/08/thesiswriting/"/>
-    <id>https://arlier1.github.io/2017/06/08/thesiswriting/</id>
+    <link href="https://arlier.science/2017/06/08/thesiswriting/"/>
+    <id>https://arlier.science/2017/06/08/thesiswriting/</id>
     <published>2017-06-08T04:33:55.000Z</published>
     <updated>2017-07-06T14:51:47.503Z</updated>
     
@@ -232,8 +232,8 @@
   
   <entry>
     <title>用密钥直接登录服务器</title>
-    <link href="https://arlier1.github.io/2017/06/05/sshlogin/"/>
-    <id>https://arlier1.github.io/2017/06/05/sshlogin/</id>
+    <link href="https://arlier.science/2017/06/05/sshlogin/"/>
+    <id>https://arlier.science/2017/06/05/sshlogin/</id>
     <published>2017-06-05T04:42:08.000Z</published>
     <updated>2017-07-06T14:50:38.825Z</updated>
     
@@ -252,17 +252,17 @@
     
     </summary>
     
-      <category term="computer" scheme="https://arlier1.github.io/categories/computer/"/>
+      <category term="computer" scheme="https://arlier.science/categories/computer/"/>
     
     
-      <category term="sshkey 密钥登录" scheme="https://arlier1.github.io/tags/sshkey-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/"/>
+      <category term="sshkey 密钥登录" scheme="https://arlier.science/tags/sshkey-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>zotera安装和使用</title>
-    <link href="https://arlier1.github.io/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
-    <id>https://arlier1.github.io/2017/06/01/zotera安装和使用/</id>
+    <link href="https://arlier.science/2017/06/01/zotera%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
+    <id>https://arlier.science/2017/06/01/zotera安装和使用/</id>
     <published>2017-06-01T12:56:26.000Z</published>
     <updated>2017-07-06T14:52:48.826Z</updated>
     
@@ -278,19 +278,19 @@
     
     </summary>
     
-      <category term="program" scheme="https://arlier1.github.io/categories/program/"/>
+      <category term="program" scheme="https://arlier.science/categories/program/"/>
     
     
-      <category term="zotera" scheme="https://arlier1.github.io/tags/zotera/"/>
+      <category term="zotera" scheme="https://arlier.science/tags/zotera/"/>
     
-      <category term="文献管理" scheme="https://arlier1.github.io/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/"/>
+      <category term="文献管理" scheme="https://arlier.science/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>高能的物理-趣说普朗克常量</title>
-    <link href="https://arlier1.github.io/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/"/>
-    <id>https://arlier1.github.io/2017/05/31/趣说普朗克常量/</id>
+    <link href="https://arlier.science/2017/05/31/%E8%B6%A3%E8%AF%B4%E6%99%AE%E6%9C%97%E5%85%8B%E5%B8%B8%E9%87%8F/"/>
+    <id>https://arlier.science/2017/05/31/趣说普朗克常量/</id>
     <published>2017-05-31T16:43:00.000Z</published>
     <updated>2017-07-06T14:55:01.434Z</updated>
     
@@ -313,8 +313,8 @@
   
   <entry>
     <title>关于这个博客</title>
-    <link href="https://arlier1.github.io/2017/05/31/thisblog/"/>
-    <id>https://arlier1.github.io/2017/05/31/thisblog/</id>
+    <link href="https://arlier.science/2017/05/31/thisblog/"/>
+    <id>https://arlier.science/2017/05/31/thisblog/</id>
     <published>2017-05-31T07:39:59.000Z</published>
     <updated>2017-06-05T05:32:03.079Z</updated>
     
@@ -328,14 +328,14 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://arlier1.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://arlier.science/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>webterm</title>
-    <link href="https://arlier1.github.io/2017/04/21/webterm/"/>
-    <id>https://arlier1.github.io/2017/04/21/webterm/</id>
+    <link href="https://arlier.science/2017/04/21/webterm/"/>
+    <id>https://arlier.science/2017/04/21/webterm/</id>
     <published>2017-04-21T16:59:25.000Z</published>
     <updated>2017-07-06T14:54:37.024Z</updated>
     
@@ -354,10 +354,10 @@
     
     </summary>
     
-      <category term="computer" scheme="https://arlier1.github.io/categories/computer/"/>
+      <category term="computer" scheme="https://arlier.science/categories/computer/"/>
     
     
-      <category term="webterm" scheme="https://arlier1.github.io/tags/webterm/"/>
+      <category term="webterm" scheme="https://arlier.science/tags/webterm/"/>
     
   </entry>
   
